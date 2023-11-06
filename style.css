@@ -37,14 +37,17 @@ button {
   outline: none;
 }
 
-header nav,
-header .nav-top {
+nav,
+.nav-top,
+.footer-bottom {
   padding-left: 100px;
   padding-right: 100px;
   display: flex;
   align-items: center;
 }
-header .nav-top {
+
+.nav-top,
+.footer-bottom {
   height: 50px;
   font-size: 0.9rem;
   color: var(--white-color);
@@ -52,19 +55,24 @@ header .nav-top {
   display: flex;
   justify-content: space-between;
 }
-header .nav-top .left,
-header .nav-top .right {
+.nav-top .left,
+.nav-top .right,
+.footer-bottom .left,
+.footer-bottom .right {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-header .nav-top .right li {
+.nav-top .right li,
+.footer-bottom .right li {
   margin-left: 15px;
   display: inline-block;
 }
-header .nav-top .right li a {
+.nav-top .right li a,
+.footer-bottom .right li a {
   color: var(--white-color);
 }
+
 header nav {
   height: 80px;
   justify-content: space-between;
@@ -496,6 +504,66 @@ section .hamkorlar .bottom .logo {
 }
 
 footer {
+  background-color: var(--light-white);
+  padding-left: 100px;
+  padding-right: 100px;
   height: 780px;
-  background: var(--light-white);
+  padding-top: 79px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .foot-container {
+  background-color: var(--white-color);
+  padding: 48px 325px;
+  text-align: center;
+}
+footer .foot-container h2 {
+  color: var(--green);
+  font-weight: 600;
+  line-height: 44px;
+}
+footer .foot-container h1 {
+  color: var(--ink-color);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 56px;
+}
+footer .foot-container p {
+  margin-top: 24px;
+  color: var(--dark-white);
+  line-height: 24px;
+}
+footer .foot-container button {
+  margin-top: 64px;
+  padding: 14px 20px;
+  gap: 10px;
+  border-radius: 12px;
+  background: var(--green);
+  box-shadow: 0px 8px 32px 0px var(--green-shadow);
+  color: var(--white-color);
+  font-weight: 600;
+  transition: 0.5s;
+  cursor: pointer;
+}
+footer .foot-container button:hover {
+  border: 1px solid var(--green);
+  color: var(--green);
+  background-color: var(--white-color);
+}
+footer img {
+  width: 72px;
+  height: 72px;
+  margin-top: 56px;
+}
+footer h1 {
+  color: var(--green);
+  font-weight: 700;
+  line-height: 44px;
+  margin-top: 16px;
+}
+footer p {
+  color: var(--dark-white);
+  line-height: 24px;
+  margin-top: 12px;
 }/*# sourceMappingURL=style.css.map */
