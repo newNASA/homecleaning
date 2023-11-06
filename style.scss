@@ -364,10 +364,10 @@ header {
 
         .bottom {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: center;
             align-items: center;
             margin-top: 50px;
-
+            gap: 20px;
             .card {
                 width: 300px;
                 height: 400px;
@@ -429,7 +429,7 @@ section {
     padding-left: 100px;
 
     .our-app {
-        margin-top: 200px;
+        margin-top: 160px;
         height: 350px;
         padding: 48px 108px;
         border-radius: 32px;
@@ -462,6 +462,9 @@ section {
                 line-height: 24px;
             }
             .platforms {
+                width: 340px;
+                display: flex;
+                justify-content: space-between;
                 margin-top: 50px;
             }
         }
@@ -470,7 +473,7 @@ section {
             width: 40%;
             img {
                 position: absolute;
-                right: 18%;
+                right: 17%;
                 margin-top: -100px;
             }
         }
