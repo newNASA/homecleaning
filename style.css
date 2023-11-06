@@ -342,4 +342,40 @@ header .head-body .head-right img {
 .why-forYou .forYou .bottom .card button a:hover {
   background: var(--green);
   color: var(--white-color);
+}
+
+section {
+  padding-right: 100px;
+  padding-left: 100px;
+}
+section .our-app {
+  margin-top: 200px;
+  border: 1px solid red;
+  padding: 48px 108px;
+  border-radius: 32px;
+  display: flex;
+  background-color: var(--light-white);
+}
+section .our-app .left {
+  width: 60%;
+}
+section .our-app .left h2 {
+  color: var(--green);
+  font-weight: 600;
+  line-height: 44px;
+}
+section .our-app .left h1 {
+  color: var(--ink-color);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 56px;
+}
+section .our-app .left p {
+  margin-top: 24px;
+  width: 492px;
+  color: var(--dark-white);
+  line-height: 24px;
+}
+section .our-app .right {
+  width: 40%;
 }/*# sourceMappingURL=style.css.map */
