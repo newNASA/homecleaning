@@ -364,7 +364,7 @@ section {
 }
 section .our-app {
   margin-top: 160px;
-  height: 350px;
+  height: 365px;
   padding: 48px 108px;
   border-radius: 32px;
   display: flex;
@@ -407,4 +407,57 @@ section .our-app .right img {
   position: absolute;
   right: 17%;
   margin-top: -100px;
+}
+
+.mijozlarNimaDeydi {
+  margin-top: 200px;
+}
+.mijozlarNimaDeydi .top p {
+  color: var(--green);
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px;
+}
+.mijozlarNimaDeydi .top h1 {
+  color: var(--ink-color);
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+}
+.mijozlarNimaDeydi .bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.mijozlarNimaDeydi .bottom .qt {
+  width: 630px;
+  height: 250px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.mijozlarNimaDeydi .bottom .qt p {
+  margin-top: 16px;
+  color: var(--ink-color);
+  text-align: center;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+.mijozlarNimaDeydi .bottom .qt .profile {
+  margin-top: 24px;
+}
+.mijozlarNimaDeydi .bottom .qt .profile p {
+  color: var(--dark-white);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  margin: 8px 0 12px 0;
 }/*# sourceMappingURL=style.css.map */
