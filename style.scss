@@ -103,7 +103,7 @@ header {
             font-weight: 600;
             font-size: 18px;
             margin-left: 140px;
-
+            
             a {
                 color: var(--ink-color);
                 display: flex;
@@ -375,6 +375,17 @@ header {
                 padding: 24px;
                 gap: 16px;
                 background: var(--light-white);
+                .title-p {
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: var(--dark);
+                }
+                .content-p {
+                    color: var(--ink-color);
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 22px;
+                }
 
                 button {
                     width: 100%;
