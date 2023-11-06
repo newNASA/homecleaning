@@ -305,9 +305,10 @@ header .head-body .head-right img {
 }
 .why-forYou .forYou .bottom {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   margin-top: 50px;
+  gap: 20px;
 }
 .why-forYou .forYou .bottom .card {
   width: 300px;
@@ -362,7 +363,7 @@ section {
   padding-left: 100px;
 }
 section .our-app {
-  margin-top: 200px;
+  margin-top: 160px;
   height: 350px;
   padding: 48px 108px;
   border-radius: 32px;
@@ -394,6 +395,9 @@ section .our-app .left p {
   line-height: 24px;
 }
 section .our-app .left .platforms {
+  width: 340px;
+  display: flex;
+  justify-content: space-between;
   margin-top: 50px;
 }
 section .our-app .right {
@@ -401,6 +405,6 @@ section .our-app .right {
 }
 section .our-app .right img {
   position: absolute;
-  right: 18%;
+  right: 17%;
   margin-top: -100px;
 }/*# sourceMappingURL=style.css.map */
