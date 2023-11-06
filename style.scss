@@ -3,9 +3,8 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Inter";
-    // border: 1px solid red;
 
-    &::selection{
+    &::selection {
         background-color: var(--green);
         color: var(--white-color);
     }
@@ -18,7 +17,9 @@
     --ink-color: #332942;
     --ink-shadow: rgba(51, 41, 66, 0.32);
     --green: #0FC36D;
+    --dark: #000;
     --green-shadow: rgba(15, 195, 109, 0.32);
+
 }
 
 li {
@@ -29,7 +30,7 @@ a {
     text-decoration: none;
 }
 
-button{
+button {
     border: none;
     outline: none;
 }
@@ -94,12 +95,23 @@ header {
         }
 
         .center {
-            display: inline-block;
+            width: 30%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
             color: var(--ink-color);
             font-weight: 600;
-            line-height: 24px;
+            font-size: 18px;
+            margin-left: 140px;
 
             a {
+                color: var(--dark);
+                display: flex;
+                align-items: center;
+                img {
+                    margin-left: 5px;
+                }
                 &:active {
                     color: var(--green);
                 }
@@ -215,9 +227,9 @@ header {
                     padding: 12px 20px;
                     color: var(--green);
                     font-weight: 600;
-                    border:1px solid var(--green);
+                    border: 1px solid var(--green);
 
-                    &:hover{
+                    &:hover {
                         color: var(--ink-color);
                         border: 1px solid var(--ink-color);
                     }
@@ -225,9 +237,170 @@ header {
             }
         }
 
-        .head-right{
-            img{
-                // margin-right: 100px;
+        .head-right {
+            img {
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+// Section is start
+
+.why-forYou {
+    margin-top: 120px;
+    text-align: center;
+
+    // section "why us"
+
+    .why {
+        height: 60vh;
+
+        .top {
+            .why-p {
+                color: var(--green);
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 44px;
+            }
+
+            h1 {
+                color: var(--ink-color);
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 56px;
+                margin: 10px 0 20px 0;
+            }
+
+            .why-ct {
+                color: var(--dark-white);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px;
+            }
+        }
+
+        .bottom {
+            width: 100%;
+            height: 40%;
+            display: flex;
+            margin-top: 40px;
+            padding-left: 80px;
+            padding-right: 50px;
+            justify-content: space-evenly;
+
+            .bx {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+
+                img {
+                    width: 48px;
+                    height: 48px;
+                    flex-shrink: 0;
+                }
+
+                h4 {
+                    color: var(--ink-color);
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 26px;
+                }
+
+                p {
+                    color: var(--dark-white);
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+
+    // Section "what we can offer you"
+
+    .forYou {
+        padding-left: 150px;
+        padding-right: 150px;
+        margin-top: 20px;
+
+        .top {
+            .weForYou-p {
+                color: var(--green);
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 44px;
+            }
+
+            h1 {
+                color: var(--ink-color);
+                font-size: 40px;
+                margin: 10px 0 30px 0;
+                font-style: normal;
+                font-weight: 900;
+                line-height: 56px;
+            }
+
+            .yourHouse-p {
+                color: var(--dark-white);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px;
+            }
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 50px;
+
+            .card {
+                width: 300px;
+                height: 400px;
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                border-radius: 30px;
+                text-align: left;
+                padding: 24px;
+                gap: 16px;
+                background: var(--light-white);
+
+                button {
+                    width: 100%;
+                    height: 50px;
+                    border-radius: 12px;
+                    border: 1px solid var(--green);
+                    background: transparent;
+                    overflow: hidden;
+
+                    a {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 16px;
+                        color: var(--green);
+                        font-style: normal;
+                        font-weight: 600;
+                        transition: .5s;
+
+                        &:hover {
+                            background: var(--green);
+                            color: var(--white-color);
+                        }
+                    }
+                }
             }
         }
     }
