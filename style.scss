@@ -217,10 +217,12 @@ header {
                     color: var(--white-color);
                     font-weight: 600;
                     cursor: pointer;
+                    border: 1px solid var(--green);
 
                     &:hover {
-                        background: var(--ink-color);
+                        background: transparent;
                         box-shadow: 0px 8px 32px 0px var(--ink-shadow);
+                        color: var(--green);
                     }
                 }
 
@@ -419,6 +421,7 @@ header {
         }
     }
 }
+<<<<<<< HEAD
 
 // our app styles
 
@@ -463,3 +466,5 @@ section {
         }
     }
 }
+=======
+>>>>>>> 6eaf22b (third commit)
