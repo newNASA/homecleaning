@@ -42,20 +42,17 @@ const chat_active = document.querySelector(".chat-unactive");
 
 chat.addEventListener("click", function () {
     chat_active.classList.toggle("chat-active");
-<<<<<<< HEAD
     if (chat_active.classList.contains("chat-active")) {
         chat.style.backgroundColor = "var(--white-color)";
         chat.style.border = "1px solid var(--green)";
         chat.style.backgroundImage = "url(./imgs/add.png)";
     } else {
         chat.style.backgroundColor = "var(--green)";
-        chat.style.border = "none"; 
+        chat.style.border = "none";
         chat.style.backgroundImage = "url(./imgs/sms.png)";
     }
 });
 
-=======
-});
 
 // ________________________________________________________________________________
 
@@ -88,4 +85,3 @@ fetch("../jsons/xizmatlar.json")
             xizmatlarCards.appendChild(card);
         });
     });
->>>>>>> 686db70a778ee68b7589b7512765d964cef58bf8
