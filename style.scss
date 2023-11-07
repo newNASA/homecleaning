@@ -60,6 +60,21 @@ button {
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
+    animation-name: chat_animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    @keyframes chat_animation {
+        0%{
+            box-shadow:0px 0px 20px 0px var(--green) ;
+        }
+        50%{
+            box-shadow:0px 0px 20px 0px var(--green-shadow) ;
+        }
+        100%{
+            box-shadow: 0px 0px 20px 0px var(--green);
+        }
+    }
 }
 
 .chatActive{
@@ -77,7 +92,7 @@ button {
     border-radius: 32px;
     border: solid var(--green);
     background: var(--white-color);
-    box-shadow: 0 0 5px 5px var(--light-green);
+    box-shadow: 0 0 5px 5px var(--green-shadow);
     padding: 32px;
     z-index: 2;
     user-select: none;
