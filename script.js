@@ -37,4 +37,10 @@ contact.forEach(function (item) {
 
 // chat kodlari
 
+const chat = document.querySelector(".chat");
+const chat_active = document.querySelector(".chat-active");
+
+chat.addEventListener("click", function () {
+    chat_active.classList.toggle("chat-active");
+});
 
