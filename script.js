@@ -1,13 +1,15 @@
-// window.addEventListener("scroll", function () {
-//     var nav = document.querySelector("nav");
-//     if (window.scrollY > 80) {
-//         nav.style.position = "fixed";
-//         nav.style.top = "0px";
-//     } else {
-//         nav.style.position = "absolute";
-//         nav.style.top = "80px"; 
-//     }
-// });
+window.addEventListener("scroll", function () {
+    var nav = document.querySelector("nav");
+    var navTop = document.querySelector(".nav-top");
+    
+    if (window.scrollY > navTop.clientHeight) {
+        nav.style.position = "fixed";
+        nav.style.top = "0";
+    } else {
+        nav.style.position = "static";
+        nav.style.top = navTop.clientHeight + "px";
+    }
+});
 
 // ________________________________________________________________________________________________________________________________
 
