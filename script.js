@@ -3,15 +3,13 @@
 window.addEventListener("scroll", function () {
     var nav = document.querySelector("nav");
     var navTop = document.querySelector(".nav-top");
-    var navf = document.querySelector(".navf")
+    
     if (window.scrollY > navTop.clientHeight) {
         nav.style.position = "fixed";
         nav.style.top = "0";
-        navf.style.display = "flex";
     } else {
         nav.style.position = "static";
         nav.style.top = navTop.clientHeight + "px";
-        navf.style.display = "none";
     }
 });
 
@@ -40,12 +38,11 @@ contact.forEach(function (item) {
 // chat kodlari
 
 const chat = document.querySelector(".chat");
-const chatActive = document.querySelector(".chatActive");
+const chat_active = document.querySelector(".chat-unactive");
 
 chat.addEventListener("click", function () {
-    chatActive.classList.toggle("chat-active");
-
-    if (chatActive.classList.contains("chat-active")) {
+    chat_active.classList.toggle("chat-active");
+    if (chat_active.classList.contains("chat-active")) {
         chat.style.backgroundColor = "var(--white-color)";
         chat.style.border = "1px solid var(--green)";
         chat.style.backgroundImage = "url(./imgs/add.png)";
@@ -55,5 +52,4 @@ chat.addEventListener("click", function () {
         chat.style.backgroundImage = "url(./imgs/sms.png)";
     }
 });
-
 
