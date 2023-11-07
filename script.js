@@ -3,7 +3,7 @@
 window.addEventListener("scroll", function () {
     var nav = document.querySelector("nav");
     var navTop = document.querySelector(".nav-top");
-    
+
     if (window.scrollY > navTop.clientHeight) {
         nav.style.position = "fixed";
         nav.style.top = "0";
@@ -29,7 +29,7 @@ contact_us_x.addEventListener("click", function () {
 
 contact.forEach(function (item) {
     item.addEventListener("click", function () {
-        contact_us.style.display = "flex"; 
+        contact_us.style.display = "flex";
     });
 });
 
@@ -43,3 +43,35 @@ const chat_active = document.querySelector(".chat-unactive");
 chat.addEventListener("click", function () {
     chat_active.classList.toggle("chat-active");
 });
+
+// ________________________________________________________________________________
+
+// xizmatlar js codes
+
+const xizmatlarCards = document.querySelector("xizmatlar-bottom");
+
+
+fetch("../jsons/xizmatlar.json")
+    .then(response => response.json())
+    .then(data => {
+        data.forEach(item => {
+            const card = document.createElement("div");
+            card.classList.add("card");
+
+            const cardImage = document.createElement("img");
+            cardImage.setAttribute("src", item.img);
+            cardImage.setAttribute("alt", item.title);
+
+            const cardTitle = document.createElement("h2");
+            cardTitle.textContent = item.title;
+
+            const cardText = document.createElement("p");
+            cardText.textContent = item.text;
+
+            card.appendChild(cardImage);
+            card.appendChild(cardTitle);
+            card.appendChild(cardText);
+
+            xizmatlarCards.appendChild(card);
+        });
+    });
