@@ -3,13 +3,16 @@
 window.addEventListener("scroll", function () {
     var nav = document.querySelector("nav");
     var navTop = document.querySelector(".nav-top");
+    var navf = document.querySelector(".navf");
 
     if (window.scrollY > navTop.clientHeight) {
         nav.style.position = "fixed";
         nav.style.top = "0";
+        navf.style.display = "flex";
     } else {
         nav.style.position = "static";
         nav.style.top = navTop.clientHeight + "px";
+        navf.style.display = "none";
     }
 });
 
