@@ -58,10 +58,9 @@ chat.addEventListener("click", function () {
 
 // xizmatlar js codes
 
-const xizmatlarCards = document.querySelector("xizmatlar-bottom");
+const xizmatlarCards = document.querySelector(".xizmatlar-bottom");
 
-
-fetch("../jsons/xizmatlar.json")
+fetch("./jsons/xizmatlar.json")
     .then(response => response.json())
     .then(data => {
         data.forEach(item => {
@@ -83,5 +82,7 @@ fetch("../jsons/xizmatlar.json")
             card.appendChild(cardText);
 
             xizmatlarCards.appendChild(card);
+
+            console.log(card);
         });
     });

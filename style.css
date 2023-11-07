@@ -779,32 +779,33 @@ button {
   line-height: 24px;
   margin-top: 12px;
 }
-.chat .xizmatlar {
+
+.xizmatlar {
   margin-top: 120px;
 }
-.chat .xizmatlar .top {
+.xizmatlar .top {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.chat .xizmatlar .top h2 {
+.xizmatlar .top h2 {
   color: #0FC36D;
   font-weight: 600;
   line-height: 44px;
 }
-.chat .xizmatlar .top h1 {
+.xizmatlar .top h1 {
   color: var(--ink-color);
   font-size: 40px;
   font-weight: 700;
   line-height: 56px;
 }
-.chat .xizmatlar .top p {
+.xizmatlar .top p {
   width: 610px;
   color: var(--dark-white);
   line-height: 24px;
   margin-top: 24px;
 }
-.chat .xizmatlar .xizmatlar-bottom {
+.xizmatlar .xizmatlar-bottom {
   margin-top: 56px;
 }/*# sourceMappingURL=style.css.map */
