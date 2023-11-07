@@ -55,11 +55,18 @@ button {
     justify-content: center;
     align-items: center;
     z-index: 2;
+    user-select: none;
+    background-image: url(./imgs/sms.png);
+    background-repeat: no-repeat;
+    background-position: center;
     cursor: pointer;
 }
 
-.chat-active {
+.chatActive{
     display: none;
+}
+
+.chat-active {
     width: 482px;
     height: 259px;
     position: fixed;
@@ -71,6 +78,7 @@ button {
     background: var(--white-color);
     padding: 32px;
     z-index: 2;
+    user-select: none;
 
     .top {
         h2 {
