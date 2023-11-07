@@ -39,4 +39,21 @@ contact.forEach(function (item) {
 
 // chat kodlari
 
+const chat = document.querySelector(".chat");
+const chatActive = document.querySelector(".chatActive");
+
+chat.addEventListener("click", function () {
+    chatActive.classList.toggle("chat-active");
+
+    if (chatActive.classList.contains("chat-active")) {
+        chat.style.backgroundColor = "var(--white-color)";
+        chat.style.border = "1px solid var(--green)";
+        chat.style.backgroundImage = "url(./imgs/add.png)";
+    } else {
+        chat.style.backgroundColor = "var(--green)";
+        chat.style.border = "none"; 
+        chat.style.backgroundImage = "url(./imgs/sms.png)";
+    }
+});
+
 
