@@ -67,7 +67,9 @@ button {
     right: 92px;
     bottom: 100px;
     border-radius: 32px;
+    border: solid var(--green);
     background: var(--white-color);
+    box-shadow: 0 0 5px 5px var(--light-green);
     padding: 32px;
     z-index: 2;
 
@@ -94,7 +96,7 @@ button {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
+
         form{
             display: flex;
             .text {
@@ -224,6 +226,11 @@ button {
             }
         }
     }
+}
+
+.navf{
+    display: none;
+    height: 80px;
 }
 
 nav,

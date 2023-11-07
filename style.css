@@ -66,7 +66,9 @@ button {
   right: 92px;
   bottom: 100px;
   border-radius: 32px;
+  border: solid var(--green);
   background: var(--white-color);
+  box-shadow: 0 0 5px 5px var(--light-green);
   padding: 32px;
   z-index: 2;
 }
@@ -206,6 +208,11 @@ button {
   background: var(--white-color);
   border: 1px solid var(--green);
   color: var(--green);
+}
+
+.navf {
+  display: none;
+  height: 80px;
 }
 
 nav,
