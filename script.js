@@ -1,3 +1,5 @@
+// sayt nav-topdan o'tganda navbar fixedga aylanadi
+
 window.addEventListener("scroll", function () {
     var nav = document.querySelector("nav");
     var navTop = document.querySelector(".nav-top");
@@ -12,6 +14,8 @@ window.addEventListener("scroll", function () {
 });
 
 // ________________________________________________________________________________________________________________________________
+
+// biz bilan bog'lanish bo'limi
 
 const contact_us_x = document.querySelector(".contact-us-x");
 const contact_us = document.querySelector(".contact-us");
@@ -28,3 +32,9 @@ contact.forEach(function (item) {
         contact_us.style.display = "flex"; 
     });
 });
+
+// ____________________________________________________________________________-
+
+// chat kodlari
+
+
