@@ -41,13 +41,13 @@ button {
 // contact us styles
 
 .contact-us {
+    display: none;
     width: 100%;
     height: 100vh;
     z-index: 2;
     position: fixed;
     background: var(--blured-black);
     backdrop-filter: blur(27.5px);
-    display: flex;
     justify-content: center;
     align-items: start;
     flex-direction: column;
@@ -91,13 +91,19 @@ button {
                 height: 56px;
                 margin-top: 16px;
                 border-radius: 16px;
-                border: 1px solid var(--dark-white-input);
+                border: 1px  solid var(--dark-white);
                 padding: 16px 52px;
+                outline: none;
 
-                &::placeholder {
-                    background: var(--white-color);
-                    color: var(--dark-white-input);
+                &:focus{
+                    border: 2px solid var(--green) !important;
                 }
+                
+                &::placeholder {
+                    color: var(--dark-white);
+                    background: var(--white-color);
+                }
+
             }
 
             img {
