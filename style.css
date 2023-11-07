@@ -62,6 +62,8 @@ button {
   width: 482px;
   height: 259px;
   position: fixed;
+  display: flex;
+  flex-direction: column;
   right: 92px;
   bottom: 100px;
   border-radius: 32px;
@@ -88,7 +90,10 @@ button {
   justify-content: space-between;
   align-items: center;
 }
-.chat-active .bottom .text {
+.chat-active .bottom form {
+  display: flex;
+}
+.chat-active .bottom form .text {
   width: 350px;
   height: 56px;
   border-radius: 16px;
@@ -97,24 +102,25 @@ button {
   padding: 16px;
   outline: none;
 }
-.chat-active .bottom .text::-moz-placeholder {
+.chat-active .bottom form .text::-moz-placeholder {
   color: var(--dark-white-input-placeholder);
   line-height: 24px;
 }
-.chat-active .bottom .text::placeholder {
+.chat-active .bottom form .text::placeholder {
   color: var(--dark-white-input-placeholder);
   line-height: 24px;
 }
-.chat-active .bottom .text:focus {
+.chat-active .bottom form .text:focus {
   border: 2px solid var(--green);
 }
-.chat-active .bottom button {
+.chat-active .bottom form button {
   width: 56px;
   height: 56px;
   padding: 12px;
   border-radius: 12px;
   background: var(--green);
   cursor: pointer;
+  margin-left: 4px;
 }
 
 .contact-us {
