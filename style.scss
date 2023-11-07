@@ -1083,7 +1083,7 @@ footer {
                     line-height: 24px;
                 }
 
-                &:focus{
+                &:focus {
                     border: 2px solid var(--green);
                 }
             }
@@ -1099,23 +1099,28 @@ footer {
     .xizmatlar-bottom {
         margin-top: 56px;
         display: flex;
-        justify-content: center;
         flex-wrap: wrap;
+        gap: 24px;
 
         div {
-            display: flex;
-            flex-direction: column;
-            padding: 24px;
+            padding: 20px;
             width: 300px;
             border-radius: 32px;
             background: var(--light-white);
 
-            span{
-                display: inline-block !important;
+            span {
+                display: inline-block;
                 margin-top: 10px;
+                border-radius: 5px;
                 padding: 5px;
                 background-color: var(--green);
                 box-shadow: 0px 8px 32px 0px var(--green-shadow);
+                padding: 2px 12px;
+                color: var(--white-color);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 24px;
             }
 
             h2 {

@@ -53,6 +53,10 @@
     <script>
         const listItems = document.querySelectorAll('.center .left li');
 
+        listItems[0].style.backgroundColor = 'var(--green)';
+        listItems[0].style.color = 'white';
+        listItems[0].style.lineHeight = '24px';
+        listItems[0].style.fontWeight = '700';
         listItems.forEach(item => {
             item.addEventListener('click', function () {
                 listItems.forEach(li => {
@@ -123,34 +127,97 @@
 
         const xizmatlarCards = document.querySelector(".xizmatlar-bottom");
 
-        data.forEach(function (item) {
-            const card = document.createElement("div");
-            card.classList.add("card");
+        // Barcha cardlarni yaratib ko'rsatish funktsiyasi
+        function showAllCards() {
+            xizmatlarCards.innerHTML = '';
+            data.forEach(function (item) {
+                const card = document.createElement("div");
+                card.classList.add("card");
 
-            const cardImage = document.createElement("img");
-            cardImage.setAttribute("src", item.img);
-            cardImage.setAttribute("alt", item.title);
+                const cardImage = document.createElement("img");
+                cardImage.setAttribute("src", item.img);
+                cardImage.setAttribute("alt", item.title);
 
-            const cardSpan = document.createElement("span");
-            cardSpan.textContent = item.span
+                const cardSpan = document.createElement("span");
+                cardSpan.textContent = item.span
 
-            const cardTitle = document.createElement("h2");
-            cardTitle.textContent = item.title;
+                const cardTitle = document.createElement("h2");
+                cardTitle.textContent = item.title;
 
-            const cardText = document.createElement("p");
-            cardText.textContent = item.text;
+                const cardText = document.createElement("p");
+                cardText.textContent = item.text;
 
-            const cardLink = document.createElement("a");
-            cardLink.textContent = "Batafsil"
-            cardLink.href = "#";
+                const cardLink = document.createElement("a");
+                cardLink.textContent = "Batafsil"
+                cardLink.href = "#";
 
-            card.appendChild(cardImage);
-            card.appendChild(cardSpan);
-            card.appendChild(cardTitle);
-            card.appendChild(cardText);
-            card.appendChild(cardLink);
+                card.appendChild(cardImage);
+                card.appendChild(cardSpan);
+                card.appendChild(cardTitle);
+                card.appendChild(cardText);
+                card.appendChild(cardLink);
 
-            xizmatlarCards.appendChild(card);
+                xizmatlarCards.appendChild(card);
+            });
+        }
+
+        // Birinchi kirishda barcha cardlar ko'rsatilishi kerak
+        showAllCards();
+
+        listItems.forEach(item => {
+            item.addEventListener('click', function () {
+                listItems.forEach(li => {
+                    li.style.backgroundColor = '';
+                    li.style.color = '';
+                    li.style.fontWeight = '500';
+                });
+
+                this.style.backgroundColor = 'var(--green)';
+                this.style.color = 'white';
+                this.style.lineHeight = '24px';
+                this.style.fontWeight = '700';
+
+                // Filtrlash uchun elementlarni tozalash
+                xizmatlarCards.innerHTML = '';
+
+                // Ma'lumotlarni filtirlash
+                const selectedSpan = this.textContent;
+                const filteredData = data.filter(item => item.span === selectedSpan);
+
+                if (selectedSpan === 'Barchasi') {
+                    showAllCards();
+                } else {
+                    filteredData.forEach(item => {
+                        const card = document.createElement("div");
+                        card.classList.add("card");
+
+                        const cardImage = document.createElement("img");
+                        cardImage.setAttribute("src", item.img);
+                        cardImage.setAttribute("alt", item.title);
+
+                        const cardSpan = document.createElement("span");
+                        cardSpan.textContent = item.span;
+
+                        const cardTitle = document.createElement("h2");
+                        cardTitle.textContent = item.title;
+
+                        const cardText = document.createElement("p");
+                        cardText.textContent = item.text;
+
+                        const cardLink = document.createElement("a");
+                        cardLink.textContent = "Batafsil";
+                        cardLink.href = "#";
+
+                        card.appendChild(cardImage);
+                        card.appendChild(cardSpan);
+                        card.appendChild(cardTitle);
+                        card.appendChild(cardText);
+                        card.appendChild(cardLink);
+
+                        xizmatlarCards.appendChild(card);
+                    });
+                }
+            });
         });
     </script>
 </body>
