@@ -40,12 +40,10 @@
             </div>
             <div class="right">
                 <img src="../imgs/search-normal.png" alt="search img">
-                <input type="text" placeholder="Qidirish">
+                <input type="text" placeholder="Qidirish" class="xizmatlar-search">
             </div>
         </div>
-        <div class="xizmatlar-bottom">
-
-        </div>
+        <div class="xizmatlar-bottom"></div>
     </div>
 
 
@@ -159,6 +157,7 @@
 
                 xizmatlarCards.appendChild(card);
             });
+
         }
 
         // Birinchi kirishda barcha cardlar ko'rsatilishi kerak
@@ -218,6 +217,49 @@
                     });
                 }
             });
+        });
+
+        const searchInput = document.querySelector(".xizmatlar-search");
+
+        searchInput.addEventListener("input", function () {
+            const query = this.value.trim().toLowerCase();
+            xizmatlarCards.innerHTML = '';
+
+            if (query === "") {
+                showAllCards();
+            } else {
+                data.forEach(item => {
+                    if (item.title.toLowerCase().includes(query)) {
+                        const card = document.createElement("div");
+                        card.classList.add("card");
+
+                        const cardImage = document.createElement("img");
+                        cardImage.setAttribute("src", item.img);
+                        cardImage.setAttribute("alt", item.title);
+
+                        const cardSpan = document.createElement("span");
+                        cardSpan.textContent = item.span;
+
+                        const cardTitle = document.createElement("h2");
+                        cardTitle.textContent = item.title;
+
+                        const cardText = document.createElement("p");
+                        cardText.textContent = item.text;
+
+                        const cardLink = document.createElement("a");
+                        cardLink.textContent = "Batafsil";
+                        cardLink.href = "#";
+
+                        card.appendChild(cardImage);
+                        card.appendChild(cardSpan);
+                        card.appendChild(cardTitle);
+                        card.appendChild(cardText);
+                        card.appendChild(cardLink);
+
+                        xizmatlarCards.appendChild(card);
+                    }
+                });
+            }
         });
     </script>
 </body>
