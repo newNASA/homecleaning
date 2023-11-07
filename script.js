@@ -58,31 +58,68 @@ chat.addEventListener("click", function () {
 
 // xizmatlar js codes
 
+const data = [
+    {
+        "img": "../imgs/clean-ser.png",
+        "title": "Uylarni tozalash",
+        "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
+    },
+    {
+        "img": "../imgs/desinfeksiya-ser.png",
+        "title": "Ofislarni tozalash",
+        "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
+    },
+    {
+        "img": "../imgs/desinfeksiya-ser.png",
+        "title": "Bog’larni tozalash",
+        "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
+    },
+    {
+        "img": "../imgs/washing-ser.png",
+        "title": "Yashil maydonlarni tozalash",
+        "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
+    },
+    {
+        "img": "../imgs/clean-ser.png",
+        "title": "Qurilish joylarini tozalash",
+        "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
+    },
+    {
+        "img": "../imgs/desinfeksiya-ser.png",
+        "title": "Umumiy tozalash",
+        "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
+    },
+    {
+        "img": "../imgs/desinfeksiya-ser.png",
+        "title": "Mebellarni tozalash",
+        "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
+    },
+    {
+        "img": "../imgs/desinfeksiya-ser.png",
+        "title": "Mebellarni tozalash",
+        "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
+    }
+];
+
 const xizmatlarCards = document.querySelector(".xizmatlar-bottom");
 
-fetch("./jsons/xizmatlar.json")
-    .then(response => response.json())
-    .then(data => {
-        data.forEach(item => {
-            const card = document.createElement("div");
-            card.classList.add("card");
+data.forEach(function (item) {
+    const card = document.createElement("div");
+    card.classList.add("card");
 
-            const cardImage = document.createElement("img");
-            cardImage.setAttribute("src", item.img);
-            cardImage.setAttribute("alt", item.title);
+    const cardImage = document.createElement("img");
+    cardImage.setAttribute("src", item.img);
+    cardImage.setAttribute("alt", item.title);
 
-            const cardTitle = document.createElement("h2");
-            cardTitle.textContent = item.title;
+    const cardTitle = document.createElement("h2");
+    cardTitle.textContent = item.title;
 
-            const cardText = document.createElement("p");
-            cardText.textContent = item.text;
+    const cardText = document.createElement("p");
+    cardText.textContent = item.text;
 
-            card.appendChild(cardImage);
-            card.appendChild(cardTitle);
-            card.appendChild(cardText);
+    card.appendChild(cardImage);
+    card.appendChild(cardTitle);
+    card.appendChild(cardText);
 
-            xizmatlarCards.appendChild(card);
-
-            console.log(card);
-        });
-    });
+    xizmatlarCards.appendChild(card);
+});
