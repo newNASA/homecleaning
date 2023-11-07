@@ -81,8 +81,9 @@ button {
 
 .chat-unactive {
     width: 422px;
-    height: 259px;
+    height: 500px;
     position: fixed;
+    display: flex;  
     flex-direction: column;
     right: 32px;
     bottom: 100px;
@@ -125,8 +126,38 @@ button {
         }
     }
 
+    .center {
+        margin-top: 20px;
+        flex: 1;
+        overflow-y: auto;
+        text-align: right;
+
+        div {
+            display: block;
+
+            p {
+                display: inline-block;
+                border-radius: 5px;
+                background-color: var(--green);
+                box-shadow: 0px 8px 32px 0px var(--green-shadow);
+                padding: 2px 12px;
+                color: var(--white-color);
+                font-weight: 700;
+                line-height: 24px;
+                margin-top: 5px;
+            }
+        }
+
+        &::-webkit-scrollbar {
+            width: 0px;
+        }
+    }
+
+
+
+
     .bottom {
-        margin-top: 46px;
+        margin-top: 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -170,10 +201,11 @@ button {
 
 .chat-active {
     width: 422px;
-    height: 259px;
+    height: 500px;
     position: fixed;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     right: 32px;
     bottom: 0px;
     border-radius: 32px;
@@ -215,8 +247,38 @@ button {
         }
     }
 
+    .center {
+        margin-top: 20px;
+        flex: 1;
+        overflow-y: auto;
+        text-align: right;
+
+        div {
+            display: block;
+
+            p {
+                display: inline-block;
+                border-radius: 5px;
+                background-color: var(--green);
+                box-shadow: 0px 8px 32px 0px var(--green-shadow);
+                padding: 2px 12px;
+                color: var(--white-color);
+                font-weight: 700;
+                line-height: 24px;
+                margin-top: 5px;
+            }
+        }
+
+        &::-webkit-scrollbar {
+            width: 0px;
+        }
+    }
+
+
+
+
     .bottom {
-        margin-top: 46px;
+        margin-top: 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;

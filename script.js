@@ -56,6 +56,27 @@ chat.addEventListener("click", function () {
     }
 });
 
+const textInput = document.querySelector(".text");
+const sendButton = document.querySelector(".send-btn");
+const center = document.querySelector(".center");
+
+sendButton.addEventListener("click", function (e) {
+    e.preventDefault(); 
+    
+    const message = textInput.value;
+    
+    if (message.trim() !== "") {
+        const messageDiv = document.createElement("div");
+        const messageP = document.createElement("p");
+        messageP.textContent = message;
+        center.appendChild(messageDiv);
+        messageDiv.appendChild(messageP);
+        textInput.value = ""; 
+        center.scrollTop = center.scrollHeight;
+    }
+});
+
+
 
 // ________________________________________________________________________________
 
