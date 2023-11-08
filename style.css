@@ -442,6 +442,12 @@ button {
 .contact-us .container .bottom input:focus::placeholder, .login .container .bottom input:focus::placeholder, .sign-up .container .bottom input:focus::placeholder {
   color: var(--green);
 }
+.contact-us .container .bottom input::-moz-placeholder, .login .container .bottom input::-moz-placeholder, .sign-up .container .bottom input::-moz-placeholder {
+  color: var(--dark-white);
+}
+.contact-us .container .bottom input::placeholder, .login .container .bottom input::placeholder, .sign-up .container .bottom input::placeholder {
+  color: var(--dark-white);
+}
 .contact-us .container .bottom img, .login .container .bottom img, .sign-up .container .bottom img {
   position: absolute;
   margin-top: 32px;
