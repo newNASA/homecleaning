@@ -19,7 +19,6 @@
 </head>
 
 <body>
-
     <div class="xizmatlar">
         <div class="top">
             <h2>Siz uchun</h2>
@@ -43,7 +42,18 @@
                 <input type="text" placeholder="Qidirish" class="xizmatlar-search">
             </div>
         </div>
-        <div class="xizmatlar-bottom"></div>
+        <div class="xizmatlar-bottom">
+            <div class="card"><img src="../imgs/clean-ser.png" alt="Uylarni tozalash"><span>Tozalash</span>
+                <h2>Uylarni tozalash</h2>
+                <p>Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim
+                    etamiz.</p><a href="#">Batafsil</a>
+            </div>
+            <div class="card"><img src="../imgs/clean-ser.png" alt="Uylarni tozalash"><span>Yuvish</span>
+                <h2>Uylarni yig'ishtirish</h2>
+                <p>Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim
+                    etamiz.</p><a href="#">Batafsil</a>
+            </div>
+        </div>
     </div>
 
 
@@ -56,7 +66,7 @@
         listItems[0].style.lineHeight = '24px';
         listItems[0].style.fontWeight = '700';
         listItems.forEach(item => {
-            item.addEventListener('click', function () {
+            item.addEventListener('click', function() {
                 listItems.forEach(li => {
                     li.style.backgroundColor = '';
                     li.style.color = '';
@@ -72,99 +82,10 @@
 
         // xizmatlar js codes
 
-        const data = [
-            {
-                "img": "../imgs/clean-ser.png",
-                "span": "Tozalash",
-                "title": "Uylarni tozalash",
-                "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
-            },
-            {
-                "img": "../imgs/desinfeksiya-ser.png",
-                "span": "Dizinfeksiya",
-                "title": "Ofislarni tozalash",
-                "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
-            },
-            {
-                "img": "../imgs/desinfeksiya-ser.png",
-                "span": "Yuvish",
-                "title": "Bog'larni tozalash",
-                "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
-            },
-            {
-                "img": "../imgs/washing-ser.png",
-                "span": "Oshxona",
-                "title": "Yashil maydonlarni tozalash",
-                "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
-            },
-            {
-                "img": "../imgs/clean-ser.png",
-                "span": "Uy va ofis",
-                "title": "Qurilish joylarini tozalash",
-                "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
-            },
-            {
-                "img": "../imgs/desinfeksiya-ser.png",
-                "span": "Bog' va yashil maydonlar",
-                "title": "Umumiy tozalash",
-                "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
-            },
-            {
-                "img": "../imgs/desinfeksiya-ser.png",
-                "span": "Bog' va yashil maydonlar",
-                "title": "Mebellarni tozalash",
-                "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
-            },
-            {
-                "img": "../imgs/desinfeksiya-ser.png",
-                "span": "Bog' va yashil maydonlar",
-                "title": "Mebellarni tozalash",
-                "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
-            }
-        ];
-
         const xizmatlarCards = document.querySelector(".xizmatlar-bottom");
 
-        // Barcha cardlarni yaratib ko'rsatish funktsiyasi
-        function showAllCards() {
-            xizmatlarCards.innerHTML = '';
-            data.forEach(function (item) {
-                const card = document.createElement("div");
-                card.classList.add("card");
-
-                const cardImage = document.createElement("img");
-                cardImage.setAttribute("src", item.img);
-                cardImage.setAttribute("alt", item.title);
-
-                const cardSpan = document.createElement("span");
-                cardSpan.textContent = item.span
-
-                const cardTitle = document.createElement("h2");
-                cardTitle.textContent = item.title;
-
-                const cardText = document.createElement("p");
-                cardText.textContent = item.text;
-
-                const cardLink = document.createElement("a");
-                cardLink.textContent = "Batafsil"
-                cardLink.href = "#";
-
-                card.appendChild(cardImage);
-                card.appendChild(cardSpan);
-                card.appendChild(cardTitle);
-                card.appendChild(cardText);
-                card.appendChild(cardLink);
-
-                xizmatlarCards.appendChild(card);
-            });
-
-        }
-
-        // Birinchi kirishda barcha cardlar ko'rsatilishi kerak
-        showAllCards();
-
         listItems.forEach(item => {
-            item.addEventListener('click', function () {
+            item.addEventListener('click', function() {
                 listItems.forEach(li => {
                     li.style.backgroundColor = '';
                     li.style.color = '';
@@ -184,7 +105,7 @@
                 const filteredData = data.filter(item => item.span === selectedSpan);
 
                 if (selectedSpan === 'Barchasi') {
-                    showAllCards();
+                    showAllCards()
                 } else {
                     filteredData.forEach(item => {
                         const card = document.createElement("div");
@@ -221,7 +142,7 @@
 
         const searchInput = document.querySelector(".xizmatlar-search");
 
-        searchInput.addEventListener("input", function () {
+        searchInput.addEventListener("input", function() {
             const query = this.value.trim().toLowerCase();
             xizmatlarCards.innerHTML = '';
 

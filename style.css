@@ -26,6 +26,8 @@
   --green: #0FC36D;
   --light-green: #41f19c;
   --green-shadow: rgba(15, 195, 109, 0.32);
+  --ink-colornf: #332942;
+  --white-colornf: #fff;
 }
 
 :root[data-theme=dark] {
@@ -41,6 +43,8 @@
   --green: #0FC36D;
   --light-green: #41f19c;
   --green-shadow: rgba(15, 195, 109, 0.32);
+  --ink-colornf: #001a2c;
+  --white-colornf: #c7f9cc;
 }
 
 body {
@@ -417,8 +421,8 @@ nav,
 .footer-bottom {
   height: 50px;
   font-size: 0.9rem;
-  color: var(--white-color);
-  background-color: var(--ink-color);
+  color: var(--white-colornf);
+  background-color: var(--ink-colornf);
   display: flex;
   justify-content: space-between;
 }
