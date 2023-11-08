@@ -79,9 +79,9 @@ button {
 
 .chat-unactive {
   width: 422px;
-  height: 259px;
+  height: 500px;
   position: fixed;
-  display: block;
+  display: flex;
   flex-direction: column;
   right: 32px;
   bottom: 100px;
@@ -119,8 +119,37 @@ button {
 .chat-unactive .top hr {
   margin-top: 16px;
 }
+.chat-unactive .center {
+  margin-top: 20px;
+  flex: 1;
+  overflow-y: auto;
+  text-align: right;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.chat-unactive .center div {
+  display: block;
+  width: 100%;
+}
+.chat-unactive .center div:first-child {
+  margin-top: auto !important;
+}
+.chat-unactive .center div p {
+  display: inline-block;
+  border-radius: 5px;
+  background-color: var(--green);
+  box-shadow: 0px 8px 32px 0px var(--green-shadow);
+  padding: 2px 12px;
+  color: var(--white-color);
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 5px;
+}
+.chat-unactive .center::-webkit-scrollbar {
+  width: 0px;
+}
 .chat-unactive .bottom {
-  margin-top: 46px;
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -160,10 +189,11 @@ button {
 
 .chat-active {
   width: 422px;
-  height: 259px;
+  height: 500px;
   position: fixed;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   right: 32px;
   bottom: 0px;
   border-radius: 32px;
@@ -200,8 +230,31 @@ button {
 .chat-active .top hr {
   margin-top: 16px;
 }
+.chat-active .center {
+  margin-top: 20px;
+  flex: 1;
+  overflow-y: auto;
+  text-align: right;
+}
+.chat-active .center div {
+  display: block;
+}
+.chat-active .center div p {
+  display: inline-block;
+  border-radius: 5px;
+  background-color: var(--green);
+  box-shadow: 0px 8px 32px 0px var(--green-shadow);
+  padding: 2px 12px;
+  color: var(--white-color);
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 5px;
+}
+.chat-active .center::-webkit-scrollbar {
+  width: 0px;
+}
 .chat-active .bottom {
-  margin-top: 46px;
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -868,6 +921,8 @@ footer p {
 }
 
 .xizmatlar {
+  padding-right: 100px;
+  padding-left: 100px;
   margin-top: 120px;
 }
 .xizmatlar .top {
@@ -893,6 +948,120 @@ footer p {
   line-height: 24px;
   margin-top: 24px;
 }
+.xizmatlar .center {
+  margin-top: 50px;
+  width: 100%;
+  background-color: var(--light-white);
+  border-radius: 24px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+}
+.xizmatlar .center .left li {
+  display: inline-block;
+  padding: 10px 16px;
+  gap: 10px;
+  border-radius: 16px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.xizmatlar .center .left li:hover {
+  box-shadow: 0px 8px 32px 0px var(--green-shadow);
+  background-color: var(--green);
+  color: var(--white-color);
+  font-weight: 700;
+  line-height: 24px;
+}
+.xizmatlar .center .right {
+  display: flex;
+  align-items: center;
+  border-left: 1px solid #786868;
+  height: 100%;
+  padding: 24px;
+}
+.xizmatlar .center .right input {
+  width: 240px;
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid var(--dark-white-input);
+  background: var(--white-color);
+  padding: 0 35px;
+  outline: none;
+}
+.xizmatlar .center .right input::-moz-placeholder {
+  color: var(--dark-white-input-placeholder);
+  line-height: 24px;
+}
+.xizmatlar .center .right input::placeholder {
+  color: var(--dark-white-input-placeholder);
+  line-height: 24px;
+}
+.xizmatlar .center .right input:focus {
+  border: 2px solid var(--green);
+}
+.xizmatlar .center .right img {
+  width: 20px;
+  position: absolute;
+  margin-left: 10px;
+}
 .xizmatlar .xizmatlar-bottom {
   margin-top: 56px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.xizmatlar .xizmatlar-bottom div {
+  padding: 20px;
+  width: 300px;
+  border-radius: 32px;
+  background: var(--light-white);
+}
+.xizmatlar .xizmatlar-bottom div span {
+  display: inline-block;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: var(--green);
+  box-shadow: 0px 8px 32px 0px var(--green-shadow);
+  padding: 2px 12px;
+  color: var(--white-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.xizmatlar .xizmatlar-bottom div h2 {
+  margin-top: 16px;
+  color: var(--ink-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.xizmatlar .xizmatlar-bottom div p {
+  margin-top: 5px;
+  color: var(--dark-white);
+  font-size: 14px;
+  line-height: 22px;
+}
+.xizmatlar .xizmatlar-bottom div a {
+  width: 100%;
+  margin-top: 16px;
+  display: flex;
+  padding: 14px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 12px;
+  border: 1px solid var(--green);
+  color: var(--green);
+  font-weight: 600;
+  transition: 0.5s;
+}
+.xizmatlar .xizmatlar-bottom div a:hover {
+  box-shadow: 0px 8px 32px 0px var(--green-shadow);
+  background: var(--green);
+  color: var(--light-white);
 }/*# sourceMappingURL=style.css.map */

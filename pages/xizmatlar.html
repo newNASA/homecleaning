@@ -26,13 +26,242 @@
             <h1>Qanday tozalash xizmatlar taklif<br> qilamiz</h1>
             <p>Biz sizning uyingiz, ofisingiz tozaligi va farovonligi uchun quyidagi xizmatlarni taklif qilamiz</p>
         </div>
-        <div class="xizmatlar-bottom">
-            
+        <div class="center">
+            <div class="left">
+                <ul>
+                    <li>Barchasi</li>
+                    <li>Tozalash</li>
+                    <li>Dizinfeksiya</li>
+                    <li>Yuvish</li>
+                    <li>Oshxona</li>
+                    <li>Uy va ofis</li>
+                    <li>Bog' va yashil maydonlar</li>
+                </ul>
+            </div>
+            <div class="right">
+                <img src="../imgs/search-normal.png" alt="search img">
+                <input type="text" placeholder="Qidirish" class="xizmatlar-search">
+            </div>
         </div>
+        <div class="xizmatlar-bottom"></div>
     </div>
-    
+
 
     <script src="../script.js"></script>
+    <script>
+        const listItems = document.querySelectorAll('.center .left li');
+
+        listItems[0].style.backgroundColor = 'var(--green)';
+        listItems[0].style.color = 'white';
+        listItems[0].style.lineHeight = '24px';
+        listItems[0].style.fontWeight = '700';
+        listItems.forEach(item => {
+            item.addEventListener('click', function () {
+                listItems.forEach(li => {
+                    li.style.backgroundColor = '';
+                    li.style.color = '';
+                    li.style.fontWeight = '500';
+                });
+
+                this.style.backgroundColor = 'var(--green)';
+                this.style.color = 'white';
+                this.style.lineHeight = '24px';
+                this.style.fontWeight = '700';
+            });
+        });
+
+        // xizmatlar js codes
+
+        const data = [
+            {
+                "img": "../imgs/clean-ser.png",
+                "span": "Tozalash",
+                "title": "Uylarni tozalash",
+                "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
+            },
+            {
+                "img": "../imgs/desinfeksiya-ser.png",
+                "span": "Dizinfeksiya",
+                "title": "Ofislarni tozalash",
+                "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
+            },
+            {
+                "img": "../imgs/desinfeksiya-ser.png",
+                "span": "Yuvish",
+                "title": "Bog'larni tozalash",
+                "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
+            },
+            {
+                "img": "../imgs/washing-ser.png",
+                "span": "Oshxona",
+                "title": "Yashil maydonlarni tozalash",
+                "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
+            },
+            {
+                "img": "../imgs/clean-ser.png",
+                "span": "Uy va ofis",
+                "title": "Qurilish joylarini tozalash",
+                "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
+            },
+            {
+                "img": "../imgs/desinfeksiya-ser.png",
+                "span": "Bog' va yashil maydonlar",
+                "title": "Umumiy tozalash",
+                "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
+            },
+            {
+                "img": "../imgs/desinfeksiya-ser.png",
+                "span": "Bog' va yashil maydonlar",
+                "title": "Mebellarni tozalash",
+                "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
+            },
+            {
+                "img": "../imgs/desinfeksiya-ser.png",
+                "span": "Bog' va yashil maydonlar",
+                "title": "Mebellarni tozalash",
+                "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
+            }
+        ];
+
+        const xizmatlarCards = document.querySelector(".xizmatlar-bottom");
+
+        // Barcha cardlarni yaratib ko'rsatish funktsiyasi
+        function showAllCards() {
+            xizmatlarCards.innerHTML = '';
+            data.forEach(function (item) {
+                const card = document.createElement("div");
+                card.classList.add("card");
+
+                const cardImage = document.createElement("img");
+                cardImage.setAttribute("src", item.img);
+                cardImage.setAttribute("alt", item.title);
+
+                const cardSpan = document.createElement("span");
+                cardSpan.textContent = item.span
+
+                const cardTitle = document.createElement("h2");
+                cardTitle.textContent = item.title;
+
+                const cardText = document.createElement("p");
+                cardText.textContent = item.text;
+
+                const cardLink = document.createElement("a");
+                cardLink.textContent = "Batafsil"
+                cardLink.href = "#";
+
+                card.appendChild(cardImage);
+                card.appendChild(cardSpan);
+                card.appendChild(cardTitle);
+                card.appendChild(cardText);
+                card.appendChild(cardLink);
+
+                xizmatlarCards.appendChild(card);
+            });
+
+        }
+
+        // Birinchi kirishda barcha cardlar ko'rsatilishi kerak
+        showAllCards();
+
+        listItems.forEach(item => {
+            item.addEventListener('click', function () {
+                listItems.forEach(li => {
+                    li.style.backgroundColor = '';
+                    li.style.color = '';
+                    li.style.fontWeight = '500';
+                });
+
+                this.style.backgroundColor = 'var(--green)';
+                this.style.color = 'white';
+                this.style.lineHeight = '24px';
+                this.style.fontWeight = '700';
+
+                // Filtrlash uchun elementlarni tozalash
+                xizmatlarCards.innerHTML = '';
+
+                // Ma'lumotlarni filtirlash
+                const selectedSpan = this.textContent;
+                const filteredData = data.filter(item => item.span === selectedSpan);
+
+                if (selectedSpan === 'Barchasi') {
+                    showAllCards();
+                } else {
+                    filteredData.forEach(item => {
+                        const card = document.createElement("div");
+                        card.classList.add("card");
+
+                        const cardImage = document.createElement("img");
+                        cardImage.setAttribute("src", item.img);
+                        cardImage.setAttribute("alt", item.title);
+
+                        const cardSpan = document.createElement("span");
+                        cardSpan.textContent = item.span;
+
+                        const cardTitle = document.createElement("h2");
+                        cardTitle.textContent = item.title;
+
+                        const cardText = document.createElement("p");
+                        cardText.textContent = item.text;
+
+                        const cardLink = document.createElement("a");
+                        cardLink.textContent = "Batafsil";
+                        cardLink.href = "#";
+
+                        card.appendChild(cardImage);
+                        card.appendChild(cardSpan);
+                        card.appendChild(cardTitle);
+                        card.appendChild(cardText);
+                        card.appendChild(cardLink);
+
+                        xizmatlarCards.appendChild(card);
+                    });
+                }
+            });
+        });
+
+        const searchInput = document.querySelector(".xizmatlar-search");
+
+        searchInput.addEventListener("input", function () {
+            const query = this.value.trim().toLowerCase();
+            xizmatlarCards.innerHTML = '';
+
+            if (query === "") {
+                showAllCards();
+            } else {
+                data.forEach(item => {
+                    if (item.title.toLowerCase().includes(query)) {
+                        const card = document.createElement("div");
+                        card.classList.add("card");
+
+                        const cardImage = document.createElement("img");
+                        cardImage.setAttribute("src", item.img);
+                        cardImage.setAttribute("alt", item.title);
+
+                        const cardSpan = document.createElement("span");
+                        cardSpan.textContent = item.span;
+
+                        const cardTitle = document.createElement("h2");
+                        cardTitle.textContent = item.title;
+
+                        const cardText = document.createElement("p");
+                        cardText.textContent = item.text;
+
+                        const cardLink = document.createElement("a");
+                        cardLink.textContent = "Batafsil";
+                        cardLink.href = "#";
+
+                        card.appendChild(cardImage);
+                        card.appendChild(cardSpan);
+                        card.appendChild(cardTitle);
+                        card.appendChild(cardText);
+                        card.appendChild(cardLink);
+
+                        xizmatlarCards.appendChild(card);
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>

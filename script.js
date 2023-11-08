@@ -132,4 +132,9 @@ data.forEach(function (item) {
     xizmatlarCards.appendChild(card);
 });
 
+var chatBtn = document.querySelector('.send-btn');
+var chatTalk = document.querySelector('.center');
 
+chatBtn.addEventListener('click',  function () {
+    chatTalk.classList.toggle('talkchat');
+})
