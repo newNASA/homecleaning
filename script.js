@@ -92,17 +92,17 @@ const sendButton = document.querySelector(".send-btn");
 const center = document.querySelector(".center");
 
 sendButton.addEventListener("click", function (e) {
-    e.preventDefault(); 
-    
+    e.preventDefault();
+
     const message = textInput.value;
-    
+
     if (message.trim() !== "") {
         const messageDiv = document.createElement("div");
         const messageP = document.createElement("p");
         messageP.textContent = message;
         center.appendChild(messageDiv);
         messageDiv.appendChild(messageP);
-        textInput.value = ""; 
+        textInput.value = "";
         center.scrollTop = center.scrollHeight;
     }
 });
@@ -110,7 +110,7 @@ sendButton.addEventListener("click", function (e) {
 
 // ________________________________________________________________________________
 
-
+// toggle theme
 const elThemeTogglerButton = document.querySelector('.toggle-theme');
 
 function switchTheme() {
@@ -128,4 +128,37 @@ if (elThemeTogglerButton) {
     elThemeTogglerButton.addEventListener('click', switchTheme);
 }
 
-var language = document.querySelector('.language')
+// ___________________________________________________________________________
+
+// change language
+
+const language = document.querySelector('.language');
+
+const hidden_langs = document.querySelector('.hidden');
+let uz = document.querySelector('.uz');
+let en = document.querySelector('.en');
+let ru = document.querySelector('.ru');
+
+language.addEventListener('click', () => {
+    hidden_langs.classList.toggle('lang')
+})
+
+function swapTextContent(element1, element2) {
+    var temp = element1.textContent;
+    element1.textContent = element2.textContent;
+    element2.textContent = temp;
+}
+
+en.addEventListener('click', function () {
+    swapTextContent(en, uz);
+});
+
+function swapTextContent(element1, element2) {
+    var temp = element1.textContent;
+    element1.textContent = element2.textContent;
+    element2.textContent = temp;
+}
+
+ru.addEventListener('click', function () {
+    swapTextContent(ru, uz);
+});
