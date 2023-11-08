@@ -42,8 +42,6 @@ contact.forEach(function (item) {
 
 const chat = document.querySelector(".chat");
 const chat_active = document.querySelector(".chat-unactive");
-var chatBtn = document.querySelector('.send-btn');
-var chatTalk = document.querySelector('.center');
 
 chat.addEventListener("click", function () {
     chat_active.classList.toggle("chat-active");
@@ -57,84 +55,27 @@ chat.addEventListener("click", function () {
         chat.style.backgroundImage = "url(./imgs/sms.png)";
     }
 });
-chatBtn.addEventListener("click", function () {
-    chatTalk.classList.toggle("talkchat");
+
+const textInput = document.querySelector(".text");
+const sendButton = document.querySelector(".send-btn");
+const center = document.querySelector(".center");
+
+sendButton.addEventListener("click", function (e) {
+    e.preventDefault(); 
+    
+    const message = textInput.value;
+    
+    if (message.trim() !== "") {
+        const messageDiv = document.createElement("div");
+        const messageP = document.createElement("p");
+        messageP.textContent = message;
+        center.appendChild(messageDiv);
+        messageDiv.appendChild(messageP);
+        textInput.value = ""; 
+        center.scrollTop = center.scrollHeight;
+    }
 });
+
 
 
 // ________________________________________________________________________________
-
-// xizmatlar js codes
-
-const data = [
-    {
-        "img": "../imgs/clean-ser.png",
-        "title": "Uylarni tozalash",
-        "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
-    },
-    {
-        "img": "../imgs/desinfeksiya-ser.png",
-        "title": "Ofislarni tozalash",
-        "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
-    },
-    {
-        "img": "../imgs/desinfeksiya-ser.png",
-        "title": "Bog’larni tozalash",
-        "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
-    },
-    {
-        "img": "../imgs/washing-ser.png",
-        "title": "Yashil maydonlarni tozalash",
-        "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
-    },
-    {
-        "img": "../imgs/clean-ser.png",
-        "title": "Qurilish joylarini tozalash",
-        "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
-    },
-    {
-        "img": "../imgs/desinfeksiya-ser.png",
-        "title": "Umumiy tozalash",
-        "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
-    },
-    {
-        "img": "../imgs/desinfeksiya-ser.png",
-        "title": "Mebellarni tozalash",
-        "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
-    },
-    {
-        "img": "../imgs/desinfeksiya-ser.png",
-        "title": "Mebellarni tozalash",
-        "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
-    }
-];
-
-const xizmatlarCards = document.querySelector(".xizmatlar-bottom");
-
-data.forEach(function (item) {
-    const card = document.createElement("div");
-    card.classList.add("card");
-
-    const cardImage = document.createElement("img");
-    cardImage.setAttribute("src", item.img);
-    cardImage.setAttribute("alt", item.title);
-
-    const cardTitle = document.createElement("h2");
-    cardTitle.textContent = item.title;
-
-    const cardText = document.createElement("p");
-    cardText.textContent = item.text;
-
-    card.appendChild(cardImage);
-    card.appendChild(cardTitle);
-    card.appendChild(cardText);
-
-    xizmatlarCards.appendChild(card);
-});
-
-var chatBtn = document.querySelector('.send-btn');
-var chatTalk = document.querySelector('.center');
-
-chatBtn.addEventListener('click',  function () {
-    chatTalk.classList.toggle('talkchat');
-})
