@@ -124,9 +124,15 @@ button {
   flex: 1;
   overflow-y: auto;
   text-align: right;
+  display: flex;
+  flex-flow: column nowrap;
 }
 .chat-unactive .center div {
   display: block;
+  width: 100%;
+}
+.chat-unactive .center div:first-child {
+  margin-top: auto !important;
 }
 .chat-unactive .center div p {
   display: inline-block;

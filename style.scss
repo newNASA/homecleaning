@@ -131,9 +131,16 @@ button {
         flex: 1;
         overflow-y: auto;
         text-align: right;
+        display: flex;
+        flex-flow: column nowrap;
 
         div {
             display: block;
+            width: 100%;
+
+            &:first-child {
+                margin-top: auto !important;
+            }
 
             p {
                 display: inline-block;
