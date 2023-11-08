@@ -96,3 +96,5 @@ function switchTheme() {
 if (elThemeTogglerButton) {
     elThemeTogglerButton.addEventListener('click', switchTheme);
 }
+
+var language = document.querySelector('.language')

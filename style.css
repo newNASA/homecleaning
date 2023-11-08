@@ -123,6 +123,7 @@ button {
   100% {
     bottom: 50px;
     opacity: 0;
+    z-index: -2;
   }
 }
 .chat-unactive .top h2 {
@@ -498,6 +499,43 @@ header nav .right button {
   border-radius: 12px;
   background: var(--light-white);
   cursor: pointer;
+}
+header nav .right .language {
+  z-index: 10;
+}
+header nav .right .lang {
+  position: absolute;
+  margin-top: 148px;
+  margin-left: 64px;
+  z-index: 9;
+  overflow: hidden;
+}
+header nav .right .lang .ru, header nav .right .lang .en {
+  width: 100%;
+  width: 44px;
+  padding: 10px;
+  gap: 10px;
+  color: var(--green);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  border-radius: 12px;
+  background: var(--light-white);
+  cursor: pointer;
+  border: solid var(--green) 1px;
+}
+header nav .right .lang .ru {
+  margin-bottom: 5px;
+}
+header nav .right .lang-fixer {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  border: solid red;
+  top: 0;
+  left: 0;
+  z-index: 8;
 }
 header nav .right a {
   background-color: var(--green);
@@ -1096,7 +1134,7 @@ footer p {
   align-items: center;
 }
 .xizlmatlar-2 .b1 {
-  width: 50%;
+  width: 40%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -1151,15 +1189,15 @@ footer p {
   color: var(--green);
 }
 .xizlmatlar-2 .b2 {
-  width: 50%;
+  width: 60%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
 }
 .xizlmatlar-2 .b2 .video-youtube {
-  width: 600px;
-  height: 337px;
+  width: 700px;
+  height: 392px;
   border-radius: 20px;
   overflow: hidden;
 }
