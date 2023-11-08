@@ -97,4 +97,20 @@ if (elThemeTogglerButton) {
     elThemeTogglerButton.addEventListener('click', switchTheme);
 }
 
-var language = document.querySelector('.language')
+var lang = document.querySelector('.lang')
+var uz = document.querySelector('.uz')
+var ru = document.querySelector('.ru')
+var en = document.querySelector('.en')
+var langFixer = document.querySelector('.lang-fixer')
+
+uz.addEventListener('click', () => {
+    uz.classList.toggle('lang-border')
+    lang.classList.toggle('lang-on')
+    langFixer.classList.toggle('lang-fix')
+})
+
+langFixer.addEventListener('click', ()=>{
+    uz.classList.remove('lang-border')
+    langFixer.classList.remove('lang-fix')
+    lang.classList.remove('lang-on')
+})
