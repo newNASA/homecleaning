@@ -139,19 +139,12 @@ button {
   margin-top: 16px;
 }
 .chat-unactive .center {
-  margin-top: 20px;
   flex: 1;
   overflow-y: auto;
   text-align: right;
-  display: flex;
-  flex-flow: column nowrap;
 }
 .chat-unactive .center div {
   display: block;
-  width: 100%;
-}
-.chat-unactive .center div:first-child {
-  margin-top: auto !important;
 }
 .chat-unactive .center div p {
   display: inline-block;
@@ -163,12 +156,15 @@ button {
   font-weight: 700;
   line-height: 24px;
   margin-top: 5px;
+  margin-right: 20px;
+}
+.chat-unactive .center div:last-child {
+  margin-bottom: 20px;
 }
 .chat-unactive .center::-webkit-scrollbar {
   width: 0px;
 }
 .chat-unactive .bottom {
-  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -527,6 +523,7 @@ header nav .right a {
   color: var(--white-color);
   font-weight: 600;
   transition: 0.5s;
+  border: 1px solid transparent;
 }
 header nav .right a:hover {
   background: var(--white-color);
@@ -933,6 +930,7 @@ footer .foot-container button {
   color: var(--white-color);
   font-weight: 600;
   transition: 0.5s;
+  border: 1px solid var(--white-color);
   cursor: pointer;
 }
 footer .foot-container button:hover {
