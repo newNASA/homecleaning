@@ -132,31 +132,28 @@ if (elThemeTogglerButton) {
 
 // change language
 
-const language = document.querySelector('.language');
-
-const hidden_langs = document.querySelector('.hidden');
+var lang = document.querySelector('.hidden');
+var langFixer = document.querySelector('.lang-fixer')
 let uz = document.querySelector('.uz');
 let en = document.querySelector('.en');
 let ru = document.querySelector('.ru');
 
 window.addEventListener('scroll', () => {
-    hidden_langs.classList.remove('lang');
-});
-
-language.addEventListener('click', () => {
-    hidden_langs.classList.toggle('lang');
+    lang.classList.remove('lang-on');
+    langFixer.classList.remove('lang-fix')
+    uz.classList.remove('lang-border')
 });
 
 uz.addEventListener('click', () => {
     uz.classList.toggle('lang-border')
-    hidden_langs.classList.toggle('hidden')
+    lang.classList.toggle('lang-on')
     langFixer.classList.toggle('lang-fix')
 })
 
 langFixer.addEventListener('click', ()=>{
     uz.classList.remove('lang-border')
+    lang.classList.remove('lang-on')
     langFixer.classList.remove('lang-fix')
-    hidden_langs.classList.remove('hidden')
 })
 
 function swapTextContent(element1, element2) {
