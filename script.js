@@ -135,7 +135,6 @@ if (elThemeTogglerButton) {
 const language = document.querySelector('.language');
 
 const hidden_langs = document.querySelector('.hidden');
-const langs = document.querySelector('.lang');
 let uz = document.querySelector('.uz');
 let en = document.querySelector('.en');
 let ru = document.querySelector('.ru');
@@ -147,6 +146,18 @@ window.addEventListener('scroll', () => {
 language.addEventListener('click', () => {
     hidden_langs.classList.toggle('lang');
 });
+
+uz.addEventListener('click', () => {
+    uz.classList.toggle('lang-border')
+    hidden_langs.classList.toggle('hidden')
+    langFixer.classList.toggle('lang-fix')
+})
+
+langFixer.addEventListener('click', ()=>{
+    uz.classList.remove('lang-border')
+    langFixer.classList.remove('lang-fix')
+    hidden_langs.classList.remove('hidden')
+})
 
 function swapTextContent(element1, element2) {
     var temp = element1.textContent;
