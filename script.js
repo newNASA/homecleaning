@@ -1,3 +1,8 @@
+var pre = document.querySelector('.preloader')
+setTimeout(()=>{
+    pre.style.display = 'none'
+},2000)
+
 // sayt nav-topdan o'tganda navbar fixedga aylanadi
 
 window.addEventListener("scroll", function () {
@@ -47,6 +52,7 @@ login_x.addEventListener("click", function () {
 
 sign_log.addEventListener("click", function () {
     login.style.display = "flex";
+    sign_up.style.display = "none";
 });
 
 login_open.addEventListener("click", function () {
@@ -65,6 +71,7 @@ sign_up_x.addEventListener("click", function () {
 
 log_sign.addEventListener("click", function () {
     sign_up.style.display = "flex";
+    login.style.display = "none";
 });
 
 // ____________________________________________________________________________-
