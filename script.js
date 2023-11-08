@@ -42,6 +42,8 @@ contact.forEach(function (item) {
 
 const chat = document.querySelector(".chat");
 const chat_active = document.querySelector(".chat-unactive");
+var chatBtn = document.querySelector('.send-btn');
+var chatTalk = document.querySelector('.center');
 
 chat.addEventListener("click", function () {
     chat_active.classList.toggle("chat-active");
@@ -54,6 +56,9 @@ chat.addEventListener("click", function () {
         chat.style.border = "none";
         chat.style.backgroundImage = "url(./imgs/sms.png)";
     }
+});
+chatBtn.addEventListener("click", function () {
+    chatTalk.classList.toggle("talkchat");
 });
 
 
@@ -127,9 +132,4 @@ data.forEach(function (item) {
     xizmatlarCards.appendChild(card);
 });
 
-var chatBtn = document.querySelector('.send-btn');
-var chatTalk = document.querySelector('.center');
 
-chatBtn.addEventListener('click',  function () {
-    chatTalk.classList.toggle('talkchat');
-})
