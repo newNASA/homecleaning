@@ -24,8 +24,6 @@ const contact_us_x = document.querySelector(".contact-us-x");
 const contact_us = document.querySelector(".contact-us");
 const contact = document.querySelectorAll(".contact");
 
-// contact_us.style.display = "none";
-
 contact_us_x.addEventListener("click", function () {
     contact_us.style.display = "none";
 });
@@ -34,6 +32,39 @@ contact.forEach(function (item) {
     item.addEventListener("click", function () {
         contact_us.style.display = "flex";
     });
+});
+
+// login open
+
+const login_x = document.querySelector(".login-x");
+const login = document.querySelector(".login");
+const login_open = document.querySelector(".profile");
+const sign_log = document.querySelector(".sign_log");
+
+login_x.addEventListener("click", function () {
+    login.style.display = "none";
+});
+
+sign_log.addEventListener("click", function () {
+    login.style.display = "flex";
+});
+
+login_open.addEventListener("click", function () {
+    login.style.display = "flex";
+});
+
+// sign up open
+
+const log_sign = document.querySelector(".log_sign");
+const sign_up_x = document.querySelector(".sign-up-x");
+const sign_up = document.querySelector(".sign-up");
+
+sign_up_x.addEventListener("click", function () {
+    sign_up.style.display = "none";
+});
+
+log_sign.addEventListener("click", function () {
+    sign_up.style.display = "flex";
 });
 
 // ____________________________________________________________________________-

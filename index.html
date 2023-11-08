@@ -18,11 +18,11 @@
     <script>
         let localSTheme = localStorage.getItem('theme');
         let themeToSet = localSTheme;
-    
+
         if (!localSTheme) {
-          themeToSet = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            themeToSet = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
         }
-    
+
         document.documentElement.setAttribute('data-theme', themeToSet);
     </script>
 </head>
@@ -49,6 +49,58 @@
     </div>
 
     <!-- chat coding end -->
+
+    <!-- login page coding -->
+
+        <div class="login">
+            <div class="container">
+                <div class="top">
+                    <h2>Kirish</h2>
+                    <img src="./imgs/add.png" alt="x img" class="login-x">
+                </div>
+                <div class="bottom">
+                    <p>Kirish uchun login va parolingizni kiriting</p>
+                    <form action="">
+                        <img src="./imgs/profile.png" alt="profile icon">
+                        <input type="text" placeholder="Login" required>
+                        <img src="./imgs/lock.png" alt="phone img">
+                        <input type="text" placeholder="Parol" required>
+                        <input type="submit" value="Kirish" class="submit">
+                    </form>
+                    <a class="log_sign">Ro'yxatdan o'tish</a>
+                </div>
+            </div>
+        </div>
+
+    <!-- login page coding end -->
+
+    <!-- sign up coding -->
+
+    <div class="sign-up">
+        <div class="container">
+            <div class="top">
+                <h2>Ro'yxatdan o'tish</h2>
+                <img src="./imgs/add.png" alt="x img" class="sign-up-x">
+            </div>
+            <div class="bottom">
+                <p>Ro'yxatdan o'tish uchun login va parolingizni kiriting</p>
+                <form action="">
+                    <img src="./imgs/profile-circle.svg" alt="profile icon">
+                    <input type="text" placeholder="Ismingiz" required>
+                    <img src="./imgs/profile.png" alt="profile icon">
+                    <input type="text" placeholder="Login" required>
+                    <img src="./imgs/lock.png" alt="phone img">
+                    <input type="text" placeholder="Parol" required>
+                    <img src="./imgs/lock.png" alt="lock img">
+                    <input type="text" placeholder="Parolni qaytadan kiriting" required>
+                    <input type="submit" value="Ro'yxatdan o'tish" class="submit">
+                </form>
+                <a class="sign_log">Kirish</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- sign up coding end -->
 
     <!-- contact-us coding -->
 
@@ -114,6 +166,9 @@
                     <img src="./imgs/sun.svg" alt="Sun img">
                 </button>
                 <button class="language">UZ</button>
+                <button class="profile">
+                    <img src="./imgs/profile.svg" alt="profile img">
+                </button>
                 <a href="https://play.google.com/store/apps/details?id=io.hometasker.android" target="_blank">Ilovamizni
                     sinab ko’ring</a>
             </div>
@@ -186,7 +241,8 @@
                 <p class="weForYou-p">Biz siz uchun</p>
                 <h1>Nimalarni taklif qilamiz</h1>
                 <p class="yourHouse-p">Biz sizning uyingiz, ofisingiz tozaligi va farovonligi uchun quyidagi xizmatlarni
-                    <br> taklif qilamiz</p>
+                    <br> taklif qilamiz
+                </p>
             </div>
             <div class="bottom">
                 <div class="card left">
