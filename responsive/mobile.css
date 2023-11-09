@@ -1,0 +1,101 @@
+@media screen and (max-width: 376px) {
+  .nav-top {
+    padding-right: 25px;
+    padding-left: 25px;
+    font-size: 12px;
+    height: 40px;
+  }
+  .nav-top .left img {
+    width: 20px;
+    height: 20px;
+  }
+  .nav-top .left .arrow, .nav-top .left .text, .nav-top .left .ish {
+    display: none;
+  }
+  header {
+    display: block;
+  }
+  header nav {
+    padding-right: 25px;
+    padding-left: 25px;
+    height: 60px;
+  }
+  header nav .left h1 {
+    display: none;
+  }
+  header nav .center {
+    display: none;
+  }
+  header nav .right .gamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav .right button {
+    width: 33px;
+    height: 33px;
+  }
+  header nav .right .ilova {
+    display: none;
+  }
+  header .head-body {
+    display: block;
+    height: 85vh;
+  }
+  header .head-body .head-left {
+    text-align: center;
+    padding-right: 25px;
+    padding-left: 25px;
+    width: 100%;
+    padding-top: 75px;
+  }
+  header .head-body .head-left h2 {
+    font-size: 1rem;
+  }
+  header .head-body .head-left h1 {
+    width: auto;
+    font-size: 2.5rem;
+    line-height: 50px;
+  }
+  header .head-body .head-left p {
+    margin-top: 15px;
+    width: auto;
+    font-size: 12px;
+  }
+  header .head-body .head-left .btns {
+    justify-content: center;
+    font-size: 12px;
+  }
+  header .head-body .head-left .btns button {
+    padding: 10px 16px;
+  }
+  header .head-body .head-right {
+    display: none;
+  }
+  .why-forYou {
+    margin-top: 60px;
+  }
+  .why-forYou .why {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .why-forYou .why .top .why-p {
+    font-size: 1rem;
+  }
+  .why-forYou .why .top h1 {
+    font-size: 2rem;
+    line-height: 40px;
+    margin-top: 5px 0 10px 0;
+  }
+  .why-forYou .why .top .why-ct {
+    font-size: 12px;
+  }
+  .why-forYou .why .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+}/*# sourceMappingURL=mobile.css.map */
