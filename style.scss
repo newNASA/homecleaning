@@ -2,11 +2,12 @@
     position: fixed;
     width: 100%;
     height: 100vh;
+    left: 0;
+    top: 0;
     background: var(--white-color);
     z-index: 99999999999;
     display: flex;
     justify-content: center;
-    // transition: .5s;
     align-items: center;
     animation: preload .5s linear forwards 1.5s;
     @keyframes preload {
@@ -1399,7 +1400,7 @@ footer {
 // info-xizmatlar sytle
 
 
-.xizlmatlar-2{
+.xizmatlar-2{
     padding: 20px 100px;
     width: 100%;
 // info2: info xizmatlarning asosiy stylelar 
@@ -1469,7 +1470,6 @@ footer {
     }
 
     .b2{
-        
         width: 60%;
         height: 100%;
         display: flex;
