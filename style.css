@@ -57,7 +57,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
-  border: 1px solid red;
 }
 *::-moz-selection {
   background-color: var(--green);
