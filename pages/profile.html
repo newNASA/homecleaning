@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../imgs/logo.svg" type="image/x-icon">
+
+    <!-- link style -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- link responsive -->
+    <link rel="stylesheet" href="../responsive/mobile.css">
+
+    <!-- fontlar ulandi -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script>
+        let localSTheme = localStorage.getItem('theme');
+        let themeToSet = localSTheme;
+
+        if (!localSTheme) {
+            themeToSet = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+
+        document.documentElement.setAttribute('data-theme', themeToSet);
+    </script>
+
+</head>
+
+<body>
+    <div class="profile">
+        <div class="container">
+            <div class="top">
+                <div class="left">
+                    <h2>Profile ma'lumotlari</h2>
+                </div>
+                <div class="right">
+                    <button class="edit"></button>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="left">
+                    <div class="img">
+                        <img src="../imgs/turkiston-muxtoriyati.png" alt="">
+                    </div>
+                </div>
+                <div class="right"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
