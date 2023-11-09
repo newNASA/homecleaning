@@ -10,7 +10,9 @@
     width: 20px;
     height: 20px;
   }
-  .nav-top .left .arrow, .nav-top .left .text, .nav-top .left .ish {
+  .nav-top .left .arrow,
+  .nav-top .left .text,
+  .nav-top .left .ish {
     display: none;
   }
   header {
@@ -92,12 +94,61 @@
     font-size: 12px;
   }
   .why-forYou .why .bottom {
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: auto;
-    padding-right: 25px;
+    margin: 0;
+    height: auto;
+  }
+  .why-forYou .why .bottom .bx {
+    width: 100%;
+    margin-top: 25px;
+    gap: 10px;
+  }
+  .why-forYou .why .bottom .bx img {
+    margin-bottom: 10px;
+  }
+  .why-forYou .why .bottom .bx h4 {
+    font-size: 16px;
+  }
+  .why-forYou .why .bottom .bx p {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .why-forYou .forYou {
+    padding: 0;
     padding-left: 25px;
+    padding-right: 25px;
+  }
+  .why-forYou .forYou .top {
+    width: 100%;
+  }
+  .why-forYou .forYou .top h2 {
+    font-size: 1rem;
+  }
+  .why-forYou .forYou .top h1 {
+    font-size: 2rem;
+    line-height: 40px;
+    margin: 5px 0 15px 0;
+  }
+  .why-forYou .forYou .top .yourHouse-p {
+    font-size: 12px;
+  }
+  .why-forYou .forYou .bottom {
+    flex-direction: column;
+  }
+  .why-forYou .forYou .bottom .card .title-p {
+    font-size: 1rem;
+  }
+  .why-forYou .forYou .bottom .card .content-p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .why-forYou .forYou .bottom .card button {
+    font-size: 12px;
+    padding: 10px 16px;
   }
 }
 @media screen and (max-width: 376px) {
@@ -157,4 +208,22 @@
     width: 350px;
     height: 196px;
   }
+}
+section {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+section .our-app {
+  display: flex;
+  padding: 32px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section .our-app .left {
+  width: 100%;
+  text-align: center !important;
+}
+section .our-app .left h2 {
+  text-align: center;
 }/*# sourceMappingURL=mobile.css.map */

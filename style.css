@@ -57,6 +57,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  border: 1px solid red;
 }
 *::-moz-selection {
   background-color: var(--green);
@@ -805,9 +806,12 @@ header .head-body .head-right img {
 .why-forYou .forYou {
   padding-left: 150px;
   padding-right: 150px;
-  margin-top: 20px;
+  margin-top: 70px;
 }
-.why-forYou .forYou .top .weForYou-p {
+.why-forYou .forYou .top {
+  width: 100%;
+}
+.why-forYou .forYou .top h2 {
   color: var(--green);
   font-size: 24px;
   font-style: normal;
@@ -838,7 +842,6 @@ header .head-body .head-right img {
 }
 .why-forYou .forYou .bottom .card {
   width: 300px;
-  height: 400px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -861,7 +864,7 @@ header .head-body .head-right img {
 }
 .why-forYou .forYou .bottom .card button {
   width: 100%;
-  height: 50px;
+  padding: 14px 20px;
   border-radius: 12px;
   border: 1px solid var(--green);
   background: transparent;
@@ -890,7 +893,6 @@ section {
 }
 section .our-app {
   margin-top: 160px;
-  height: 365px;
   padding: 48px 108px;
   border-radius: 32px;
   display: flex;
