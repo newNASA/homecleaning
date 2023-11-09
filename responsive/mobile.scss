@@ -257,6 +257,7 @@
             flex-direction: column-reverse;
 
             .left {
+                padding: 6px 0;
                 select {
                     width: 240px;
                     height: 45px;
@@ -277,66 +278,23 @@
             }
 
             .right {
+                padding: 6px 0;
                 border: none;
             }
-
         }
 
         .xizmatlar-bottom {
-            display: none;
-        }
-    }
-}
-
-// Section "what we can offer you" 375
-
-.forYou {
-    padding: 0;
-    padding-left: 25px;
-    padding-right: 25px;
-
-    .top {
-        width: 100%;
-
-        h2 {
-            font-size: 1rem;
-        }
-
-        h1 {
-            font-size: 2rem;
-            line-height: 40px;
-            margin: 5px 0 15px 0;
-        }
-
-        .yourHouse-p {
-            font-size: 12px;
-
-        }
-    }
-
-    .bottom {
-        flex-direction: column;
-
-        .card {
-            .title-p {
-                font-size: 1rem;
-            }
-
-            .content-p {
-                font-size: 12px;
-                line-height: 18px;
-            }
-
-            button {
-                font-size: 12px;
-                padding: 10px 16px;
+            align-items: center;
+            flex-direction: column;
+            div{
+                display: block;
+                a{
+                    padding: 10px 16px;
+                }
             }
         }
     }
 }
-
-
-
 
 // info-xizmatlar bolimi uchun responsive
 @media screen and (max-width:376px) {
