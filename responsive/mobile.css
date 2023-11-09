@@ -28,6 +28,15 @@
   header nav .center {
     display: none;
   }
+  header nav .right .toggle-theme img {
+    width: 20px;
+  }
+  header nav .right .profile img {
+    width: 20px;
+  }
+  header nav .right .uz {
+    font-size: 12px;
+  }
   header nav .right .gamburger {
     display: flex;
     justify-content: center;
@@ -76,6 +85,7 @@
   }
   .why-forYou {
     margin-top: 60px;
+    display: flex;
   }
   .why-forYou .why {
     padding-right: 25px;
@@ -120,6 +130,7 @@
     padding: 0;
     padding-left: 25px;
     padding-right: 25px;
+    display: none;
   }
   .why-forYou .forYou .top {
     width: 100%;
@@ -155,16 +166,208 @@
   }
   section .our-app {
     display: flex;
-    padding: 32px;
+    padding: 25px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
   }
   section .our-app .left {
     width: 100%;
-    text-align: center !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
   }
   section .our-app .left h2 {
+    color: var(--green);
+    font-weight: 600;
     text-align: center;
+    font-size: 1rem;
+  }
+  section .our-app .left h1 {
+    color: var(--ink-color);
+    font-weight: 700;
+    width: 115%;
+    font-size: 2rem;
+  }
+  section .our-app .left p {
+    margin-top: 24px;
+    width: 100%;
+    color: var(--dark-white);
+  }
+  section .our-app .left .platforms {
+    width: 115%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  section .our-app .left .platforms img {
+    width: 130px;
+  }
+  section .our-app .left {
+    text-align: center !important;
+  }
+  section .our-app .right {
+    width: 40%;
+    display: none;
+  }
+  section .our-app .right img {
+    position: absolute;
+    right: 17%;
+    margin-top: -100px;
+  }
+  section .mijozlarNimaDeydi {
+    display: block;
+    margin-top: 200px;
+  }
+  section .mijozlarNimaDeydi .top p {
+    color: var(--green);
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px;
+  }
+  section .mijozlarNimaDeydi .top h1 {
+    color: var(--ink-color);
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+  }
+  section .mijozlarNimaDeydi .bottom {
+    display: flex;
+    justify-content: space-between;
+    height: 700px;
+    margin-top: 60px;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  section .mijozlarNimaDeydi .bottom .qt {
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section .mijozlarNimaDeydi .bottom .qt p {
+    margin-top: 16px;
+    color: var(--ink-color);
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+  }
+  section .mijozlarNimaDeydi .bottom .qt .profile {
+    margin-top: 24px;
+  }
+  section .mijozlarNimaDeydi .bottom .qt .profile p {
+    color: var(--dark-white);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+  }
+  section .hamkorlar {
+    display: block;
+  }
+  section .hamkorlar .top p {
+    font-size: 1rem;
+  }
+  section .hamkorlar .top h1 {
+    font-size: 2.5rem;
+  }
+  section .hamkorlar .slide-bottom {
+    display: flex;
+    width: 114%;
+    overflow: hidden;
+    margin-left: -7%;
+  }
+  section .hamkorlar .slide-bottom .bottom {
+    display: flex;
+    align-items: center;
+    height: 130px;
+  }
+  section .hamkorlar .slide-bottom .bottom .logo {
+    width: 275px;
+    height: 110;
+    margin-left: 45.5px;
+  }
+  section .hamkorlar .slide-bottom .bottom .log1 {
+    animation: log1 10s linear infinite;
+  }
+  @keyframes log1 {
+    0% {
+      margin-left: 46px;
+    }
+    10% {
+      margin-left: 46px;
+    }
+    85% {
+      margin-left: -167.5%;
+    }
+    95% {
+      margin-left: -167.5%;
+    }
+    100% {
+      margin-left: 46px;
+    }
+  }
+  footer {
+    width: 100%;
+    padding: 79px 0;
+    display: flex;
+  }
+  footer .foot-container {
+    padding: 48px 0;
+  }
+  footer .foot-container h2 {
+    font-size: 1rem;
+  }
+  footer .foot-container h1 {
+    font-size: 2rem;
+  }
+  footer .foot-container p {
+    font-size: 12px;
+  }
+  .footer-bottom {
+    height: 500px;
+    height: 100%;
+    display: flex;
+    padding: 20px 0;
+  }
+  .footer-bottom .left {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  .footer-bottom .left p {
+    text-align: center;
+  }
+  .footer-bottom .right {
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-bottom .right ul {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .footer-bottom .right ul li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .chat {
+    display: none;
+  }
+  .chat-unactive {
+    display: none;
   }
 }/*# sourceMappingURL=mobile.css.map */
