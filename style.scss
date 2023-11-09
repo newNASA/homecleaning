@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
-    // border: 1px solid red;
+    // border: 1px solid red;  
 
     &::selection {
         background-color: var(--green);
@@ -308,7 +308,6 @@ button {
         }
     }
 
-
     .bottom {
         display: flex;
         justify-content: space-between;
@@ -510,6 +509,7 @@ nav,
 }
 
 // headerga styles
+
 header {
 
     nav {
@@ -523,7 +523,7 @@ header {
         .left,
         .center,
         .right {
-            display: flex;
+            display: flex;  
             align-items: center;
         }
 
@@ -564,11 +564,17 @@ header {
         .right {
             gap: 10px;
 
+            .gamburger{
+                display: none;
+            }
+
             button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 width: 44px;
                 height: 44px;
                 padding: 10px;
-                gap: 10px;
                 color: var(--green);
                 text-align: center;
                 font-size: 14px;
@@ -770,7 +776,7 @@ header {
     // section "why us"
 
     .why {
-        height: 60vh;
+        // height: 60vh;
 
         .top {
             .why-p {

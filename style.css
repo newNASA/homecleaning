@@ -536,11 +536,16 @@ header nav .center a:active {
 header nav .right {
   gap: 10px;
 }
+header nav .right .gamburger {
+  display: none;
+}
 header nav .right button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   padding: 10px;
-  gap: 10px;
   color: var(--green);
   text-align: center;
   font-size: 14px;
@@ -708,9 +713,6 @@ header .head-body .head-right img {
 .why-forYou {
   margin-top: 120px;
   text-align: center;
-}
-.why-forYou .why {
-  height: 60vh;
 }
 .why-forYou .why .top .why-p {
   color: var(--green);
