@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
+    // border: 1px solid red;
     &::selection {
         background-color: var(--green);
         color: var(--white-color);
@@ -543,7 +544,7 @@ button {
 }
 
 .profile-edit {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 
@@ -687,7 +688,6 @@ header {
                 height: 44px;
                 padding: 10px;
                 color: var(--green);
-                // text-align: center;
                 font-size: 14px;
                 font-weight: 600;
                 line-height: 24px;
@@ -1340,6 +1340,9 @@ footer {
         padding: 24px;
 
         .left {
+            select{
+                display: none;
+            }
             li {
                 display: inline-block;
                 padding: 10px 16px;
@@ -1470,7 +1473,7 @@ footer {
 // info-xizmatlar sytle
 
 
-.xizlmatlar-2 {
+.xizmatlar-2 {
     padding: 20px 100px;
     width: 100%;
     // info2: info xizmatlarning asosiy stylelar 

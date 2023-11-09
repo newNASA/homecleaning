@@ -1,4 +1,56 @@
 @media screen and (max-width: 376px) {
+  .xizmatlar {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .xizmatlar .top h2 {
+    font-size: 1rem;
+  }
+  .xizmatlar .top h1 {
+    width: 100%;
+    font-size: 2rem;
+    line-height: 40px;
+  }
+  .xizmatlar .top p {
+    width: 100%;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .xizmatlar .center {
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: 150px;
+  }
+  .xizmatlar .center .left select {
+    outline: none;
+    width: 240px;
+    height: 50px;
+    border-radius: 12px;
+    display: block !important;
+    padding: 14px 20px;
+    background: var(--green);
+    box-shadow: 0px 8px 32px 0px var(--green-shadow);
+    color: var(--white-color);
+    font-weight: 600;
+    border: 1px solid var(--green);
+    cursor: pointer;
+  }
+  .xizmatlar .center .left ul {
+    display: none;
+  }
+  .xizmatlar .center .right {
+    border: none;
+    padding: 0;
+  }
+  .xizmatlar .xizmatlar-bottom {
+    justify-content: center;
+  }
+  .xizmatlar .xizmatlar-bottom div p {
+    font-size: 12px;
+  }
+  .xizmatlar .xizmatlar-bottom div a {
+    padding: 10px 16px;
+  }
   .nav-top,
   .footer-bottom {
     padding-right: 25px;
@@ -412,7 +464,7 @@
     font-size: 12px;
   }
   .xizmatlar-2 .b1 .menu-w .siz-btn {
-    transform: translateY(250px);
+    transform: translateY(225px);
   }
   .xizmatlar-2 .b2 {
     display: flex;
@@ -424,6 +476,7 @@
   .xizmatlar-2 .b2 .video-youtube {
     width: 350px;
     height: 196px;
+    margin-top: 20px;
   }
   .profile {
     padding-right: 25px;
