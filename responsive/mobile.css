@@ -1,17 +1,22 @@
 @media screen and (max-width: 376px) {
-  .nav-top {
+  .nav-top,
+  .footer-bottom {
     padding-right: 25px;
     padding-left: 25px;
     font-size: 12px;
     height: 40px;
   }
-  .nav-top .left img {
+  .nav-top .left img,
+  .footer-bottom .left img {
     width: 20px;
     height: 20px;
   }
   .nav-top .left .arrow,
   .nav-top .left .text,
-  .nav-top .left .ish {
+  .nav-top .left .ish,
+  .footer-bottom .left .arrow,
+  .footer-bottom .left .text,
+  .footer-bottom .left .ish {
     display: none;
   }
   header {
@@ -85,7 +90,7 @@
   }
   .why-forYou {
     margin-top: 60px;
-    display: flex;
+    display: block;
   }
   .why-forYou .why {
     padding-right: 25px;
@@ -130,7 +135,7 @@
     padding: 0;
     padding-left: 25px;
     padding-right: 25px;
-    display: none;
+    display: block;
   }
   .why-forYou .forYou .top {
     width: 100%;
@@ -159,6 +164,18 @@
   .why-forYou .forYou .bottom .card button {
     font-size: 12px;
     padding: 10px 16px;
+  }
+  header nav .right .hidden {
+    margin-left: 43px;
+    margin-top: 115px;
+    width: 33px;
+  }
+  header nav .right .hidden .ru,
+  header nav .right .hidden .en {
+    height: 33px;
+  }
+  header nav .right .hidden .ru {
+    margin-bottom: 5px;
   }
   section {
     padding-right: 25px;
@@ -297,7 +314,7 @@
     margin-left: 45.5px;
   }
   section .hamkorlar .slide-bottom .bottom .log1 {
-    animation: log1 10s linear infinite;
+    animation: log1 14s linear infinite;
   }
   @keyframes log1 {
     0% {
@@ -306,14 +323,11 @@
     10% {
       margin-left: 46px;
     }
-    85% {
-      margin-left: -167.5%;
-    }
-    95% {
+    90% {
       margin-left: -167.5%;
     }
     100% {
-      margin-left: 46px;
+      margin-left: -167.5%;
     }
   }
   footer {
@@ -333,41 +347,67 @@
   footer .foot-container p {
     font-size: 12px;
   }
-  .footer-bottom {
-    height: 500px;
-    height: 100%;
-    display: flex;
-    padding: 20px 0;
-  }
-  .footer-bottom .left {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-  }
-  .footer-bottom .left p {
-    text-align: center;
-  }
-  .footer-bottom .right {
-    width: 50%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  .footer-bottom .right ul {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-  }
-  .footer-bottom .right ul li {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
   .chat {
-    display: none;
+    right: 10px;
+    bottom: 10px;
   }
-  .chat-unactive {
-    display: none;
+  .contact-us .container,
+  .login .container,
+  .sign-up .container,
+  .profile-edit .container {
+    width: 370px;
+  }
+  .xizmatlar-2 {
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 0 25px;
+    height: 100vh;
+  }
+  .xizmatlar-2 .b1 {
+    width: 100%;
+    display: flex;
+    margin-top: 30%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .xizmatlar-2 .b1 .menu-x {
+    text-align: center;
+    width: 100%;
+  }
+  .xizmatlar-2 .b1 .menu-w {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    flex-direction: column;
+  }
+  .xizmatlar-2 .b1 .menu-w .sizuchun {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  .xizmatlar-2 .b1 .menu-w .siz-2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  .xizmatlar-2 .b1 .menu-w .siz-3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 12px;
+  }
+  .xizmatlar-2 .b1 .menu-w .siz-btn {
+    transform: translateY(250px);
+  }
+  .xizmatlar-2 .b2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    transform: translateY(-80px);
+    align-items: center;
+  }
+  .xizmatlar-2 .b2 .video-youtube {
+    width: 350px;
+    height: 196px;
   }
 }/*# sourceMappingURL=mobile.css.map */

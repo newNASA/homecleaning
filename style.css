@@ -21,6 +21,8 @@
   z-index: 99999999999;
   display: flex;
   justify-content: center;
+  left: 0;
+  top: 0;
   align-items: center;
   animation: preload 0.5s linear forwards 1.5s;
 }
@@ -65,24 +67,6 @@
   }
 }
 
-<<<<<<< HEAD
-=======
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
-}
-*::-moz-selection {
-  background-color: var(--green);
-  color: var(--white-color);
-}
-*::selection {
-  background-color: var(--green);
-  color: var(--white-color);
-}
-
->>>>>>> bc228d1e3c1d17519220b68b316373e196ffadf2
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -411,6 +395,7 @@ button {
 .login,
 .sign-up,
 .profile-edit {
+  display: none;
   width: 100%;
   height: 100vh;
   z-index: 100;
@@ -649,6 +634,7 @@ header nav .right button {
   justify-content: center;
   width: 44px;
   height: 44px;
+  padding: 10px;
   color: var(--green);
   font-size: 14px;
   font-weight: 600;
@@ -666,9 +652,6 @@ header nav .right .language {
 }
 header nav .right .lang-border {
   border: solid var(--green) 1px;
-}
-header nav .right .hidden {
-  display: none;
 }
 header nav .right .hidden {
   display: inline-block;

@@ -1,10 +1,8 @@
-<<<<<<< HEAD
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
-    // border: solid red 1px;
     &::selection {
         background-color: var(--green);
         color: var(--white-color);
@@ -12,10 +10,7 @@
 }
 
 
-.preloader{
-=======
 .preloader {
->>>>>>> bc228d1e3c1d17519220b68b316373e196ffadf2
     position: fixed;
     width: 100%;
     height: 100%;
@@ -23,7 +18,8 @@
     z-index: 99999999999;
     display: flex;
     justify-content: center;
-    // transition: .5s;
+    left: 0;
+    top: 0;
     align-items: center;
     animation: preload .5s linear forwards 1.5s;
 
@@ -76,22 +72,6 @@
     }
 }
 
-
-<<<<<<< HEAD
-=======
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
-    // border: 1px solid red;
-
-    &::selection {
-        background-color: var(--green);
-        color: var(--white-color);
-    }
-}
->>>>>>> bc228d1e3c1d17519220b68b316373e196ffadf2
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -454,7 +434,7 @@ button {
 .login,
 .sign-up,
 .profile-edit {
-    // display: none;
+    display: none;
     width: 100%;
     height: 100vh;
     z-index: 100;
@@ -471,7 +451,6 @@ button {
         width: 482px;
         padding: 32px;
         border-radius: 32px;
-
         .top {
             display: flex;
             align-items: center;
@@ -671,7 +650,7 @@ header {
                 justify-content: center;
                 width: 44px;
                 height: 44px;
-                // padding: 10px;
+                padding: 10px;
                 color: var(--green);
                 // text-align: center;
                 font-size: 14px;
@@ -690,10 +669,6 @@ header {
 
             .lang-border {
                 border: solid var(--green) 1px;
-            }
-
-            .hidden {
-                display: none;
             }
 
             .hidden {
@@ -1147,7 +1122,6 @@ section {
 
                 .profile {
                     margin-top: 24px;
-
                     p {
                         color: var(--dark-white);
                         font-size: 16px;
