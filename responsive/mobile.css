@@ -410,4 +410,27 @@
     width: 350px;
     height: 196px;
   }
+  .profile {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .profile .container .top .right .edit {
+    width: 33px;
+    height: 33px;
+    background-size: auto;
+  }
+  .profile .container .bottom {
+    flex-direction: column;
+  }
+  .profile .container .bottom .left {
+    width: 100%;
+  }
+  .profile .container .bottom .left .img {
+    width: 100px;
+    height: 100px;
+  }
+  .profile .container .bottom .right {
+    align-items: start;
+    gap: 35px;
+  }
 }/*# sourceMappingURL=mobile.css.map */

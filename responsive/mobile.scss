@@ -532,4 +532,34 @@
             }
         }
     }
+
+    .profile{
+        padding-right: 25px;
+        padding-left: 25px;
+        .container{
+            .top{
+                .right{
+                    .edit{
+                        width: 33px;
+                        height: 33px;
+                        background-size: auto;
+                    }
+                }
+            }
+            .bottom{
+                flex-direction: column;
+                .left{
+                    width: 100%;
+                    .img{
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+                .right{
+                    align-items: start;
+                    gap: 35px;
+                }
+            }
+        }
+    }
 }
