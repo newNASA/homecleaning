@@ -55,7 +55,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
-  border: 1px solid red;
 }
 *::-moz-selection {
   background-color: var(--green);
@@ -392,8 +391,8 @@ button {
 
 .contact-us,
 .login,
-.sign-up {
-  display: none;
+.sign-up,
+.profile-edit {
   width: 100%;
   height: 100vh;
   z-index: 100;
@@ -407,7 +406,8 @@ button {
 }
 .contact-us .container,
 .login .container,
-.sign-up .container {
+.sign-up .container,
+.profile-edit .container {
   margin: 0 auto;
   background-color: var(--white-color);
   width: 482px;
@@ -416,26 +416,30 @@ button {
 }
 .contact-us .container .top,
 .login .container .top,
-.sign-up .container .top {
+.sign-up .container .top,
+.profile-edit .container .top {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .contact-us .container .top h2,
 .login .container .top h2,
-.sign-up .container .top h2 {
+.sign-up .container .top h2,
+.profile-edit .container .top h2 {
   color: var(--ink-color);
   font-weight: 600;
   line-height: 44px;
 }
 .contact-us .container .top img,
 .login .container .top img,
-.sign-up .container .top img {
+.sign-up .container .top img,
+.profile-edit .container .top img {
   cursor: pointer;
 }
 .contact-us .container .bottom,
 .login .container .bottom,
-.sign-up .container .bottom {
+.sign-up .container .bottom,
+.profile-edit .container .bottom {
   color: var(--dark-white);
   font-weight: 400;
   line-height: 24px;
@@ -443,12 +447,14 @@ button {
 }
 .contact-us .container .bottom p,
 .login .container .bottom p,
-.sign-up .container .bottom p {
+.sign-up .container .bottom p,
+.profile-edit .container .bottom p {
   margin-bottom: 32px;
 }
 .contact-us .container .bottom input,
 .login .container .bottom input,
-.sign-up .container .bottom input {
+.sign-up .container .bottom input,
+.profile-edit .container .bottom input {
   width: 100%;
   height: 56px;
   margin-top: 16px;
@@ -460,36 +466,41 @@ button {
 }
 .contact-us .container .bottom input:focus,
 .login .container .bottom input:focus,
-.sign-up .container .bottom input:focus {
+.sign-up .container .bottom input:focus,
+.profile-edit .container .bottom input:focus {
   color: var(--green);
   border: 2px solid var(--green) !important;
 }
-.contact-us .container .bottom input:focus::-moz-placeholder, .login .container .bottom input:focus::-moz-placeholder, .sign-up .container .bottom input:focus::-moz-placeholder {
+.contact-us .container .bottom input:focus::-moz-placeholder, .login .container .bottom input:focus::-moz-placeholder, .sign-up .container .bottom input:focus::-moz-placeholder, .profile-edit .container .bottom input:focus::-moz-placeholder {
   color: var(--green);
 }
 .contact-us .container .bottom input:focus::placeholder,
 .login .container .bottom input:focus::placeholder,
-.sign-up .container .bottom input:focus::placeholder {
+.sign-up .container .bottom input:focus::placeholder,
+.profile-edit .container .bottom input:focus::placeholder {
   color: var(--green);
 }
-.contact-us .container .bottom input::-moz-placeholder, .login .container .bottom input::-moz-placeholder, .sign-up .container .bottom input::-moz-placeholder {
+.contact-us .container .bottom input::-moz-placeholder, .login .container .bottom input::-moz-placeholder, .sign-up .container .bottom input::-moz-placeholder, .profile-edit .container .bottom input::-moz-placeholder {
   color: var(--dark-white);
 }
 .contact-us .container .bottom input::placeholder,
 .login .container .bottom input::placeholder,
-.sign-up .container .bottom input::placeholder {
+.sign-up .container .bottom input::placeholder,
+.profile-edit .container .bottom input::placeholder {
   color: var(--dark-white);
 }
 .contact-us .container .bottom img,
 .login .container .bottom img,
-.sign-up .container .bottom img {
+.sign-up .container .bottom img,
+.profile-edit .container .bottom img {
   position: absolute;
   margin-top: 32px;
   margin-left: 15px;
 }
 .contact-us .container .bottom .submit,
 .login .container .bottom .submit,
-.sign-up .container .bottom .submit {
+.sign-up .container .bottom .submit,
+.profile-edit .container .bottom .submit {
   height: 44px;
   padding: 14px 20px;
   border-radius: 12px;
@@ -504,14 +515,16 @@ button {
 }
 .contact-us .container .bottom .submit:hover,
 .login .container .bottom .submit:hover,
-.sign-up .container .bottom .submit:hover {
+.sign-up .container .bottom .submit:hover,
+.profile-edit .container .bottom .submit:hover {
   background: var(--white-color);
   border: 1px solid var(--green);
   color: var(--green);
 }
 .contact-us .container .bottom a,
 .login .container .bottom a,
-.sign-up .container .bottom a {
+.sign-up .container .bottom a,
+.profile-edit .container .bottom a {
   display: flex;
   justify-content: center;
   color: var(--green);
@@ -1176,6 +1189,9 @@ footer p {
   gap: 10px;
   border-radius: 16px;
   transition: 0.5s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   cursor: pointer;
 }
 .xizmatlar .center .left li:hover {
@@ -1412,6 +1428,7 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 50px 0;
 }
 .profile .container .bottom .left .img {
   width: 300px;
@@ -1427,4 +1444,33 @@ footer p {
 }
 .profile .container .bottom .right {
   width: 60%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.profile .container .bottom .right h2 {
+  color: var(--green);
+  display: inline-block;
+  position: relative;
+}
+.profile .container .bottom .right h2:first-child::before {
+  content: "Ism";
+  font-size: 14px;
+  position: absolute;
+  top: -15px;
+  color: var(--dark-white);
+}
+.profile .container .bottom .right h2:nth-child(2)::before {
+  content: "Login";
+  font-size: 14px;
+  position: absolute;
+  top: -15px;
+  color: var(--dark-white);
+}
+.profile .container .bottom .right h2:last-child::before {
+  content: "Parol";
+  font-size: 14px;
+  position: absolute;
+  top: -15px;
+  color: var(--dark-white);
 }/*# sourceMappingURL=style.css.map */

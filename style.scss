@@ -65,7 +65,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
-    border: 1px solid red;
+    // border: 1px solid red;
 
     &::selection {
         background-color: var(--green);
@@ -432,8 +432,9 @@ button {
 
 .contact-us,
 .login,
-.sign-up {
-    display: none;
+.sign-up,
+.profile-edit {
+    // display: none;
     width: 100%;
     height: 100vh;
     z-index: 100;
@@ -1313,6 +1314,7 @@ footer {
                 gap: 10px;
                 border-radius: 16px;
                 transition: .5s;
+                user-select: none;
                 cursor: pointer;
 
                 &:hover {
@@ -1540,14 +1542,16 @@ footer {
 
 // profile page styles
 
-.profile { 
+.profile {
     padding-right: 100px;
     padding-left: 100px;
+
     .container {
         border-radius: 32px;
         background-color: var(--light-white);
         padding: 32px;
         margin-top: 75px;
+
         .top {
             display: flex;
             justify-content: space-between;
@@ -1560,8 +1564,9 @@ footer {
                     line-height: 44px;
                 }
             }
-            .right{
-                .edit{
+
+            .right {
+                .edit {
                     width: 44px;
                     height: 44px;
                     padding: 10px;
@@ -1581,28 +1586,67 @@ footer {
             }
         }
 
-        .bottom{
+        .bottom {
             display: flex;
-            .left{
+
+            .left {
                 width: 40%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                .img{
+                padding: 50px 0;
+
+                .img {
                     width: 300px;
                     height: 300px;
                     overflow: hidden;
                     border-radius: 50%;
-                    img{
+
+                    img {
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
                     }
                 }
             }
-            .right{
+
+            .right {
                 width: 60%;
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+
+                h2 {
+                    color: var(--green);
+                    display: inline-block;
+                    position: relative;
+
+                    &:first-child::before {
+                        content: "Ism";
+                        font-size: 14px;
+                        position: absolute;
+                        top: -15px;
+                        color: var(--dark-white);
+                    }
+
+                    &:nth-child(2)::before {
+                        content: "Login";
+                        font-size: 14px;
+                        position: absolute;
+                        top: -15px;
+                        color: var(--dark-white);
+                    }
+
+                    &:last-child::before {
+                        content: "Parol";
+                        font-size: 14px;
+                        position: absolute;
+                        top: -15px;
+                        color: var(--dark-white);
+                    }
+                }
             }
+
         }
     }
 }
