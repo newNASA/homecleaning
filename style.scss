@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
+
     // border: 1px solid red;
     &::selection {
         background-color: var(--green);
@@ -452,6 +453,7 @@ button {
         width: 482px;
         padding: 32px;
         border-radius: 32px;
+
         .top {
             display: flex;
             align-items: center;
@@ -1019,7 +1021,6 @@ header {
 
                 button {
                     width: 100%;
-                    padding: 14px 20px;
                     border-radius: 12px;
                     border: 1px solid var(--green);
                     background: transparent;
@@ -1027,6 +1028,7 @@ header {
 
                     a {
                         width: 100%;
+                        padding: 14px 20px;
                         height: 100%;
                         display: flex;
                         justify-content: center;
@@ -1098,6 +1100,7 @@ section {
 
         .right {
             width: 40%;
+
             img {
                 position: absolute;
                 right: 17%;
@@ -1137,9 +1140,10 @@ section {
             margin-top: 60px;
 
             .qt {
-                .q-img{
+                .q-img {
                     mix-blend-mode: screen;
                 }
+
                 width: 630px;
                 height: 250px;
                 text-align: center;
@@ -1160,6 +1164,7 @@ section {
 
                 .profile {
                     margin-top: 24px;
+
                     p {
                         color: var(--dark-white);
                         font-size: 16px;
@@ -1194,14 +1199,15 @@ section {
                 line-height: 56px;
             }
         }
-        .slide-bottom{
+
+        .slide-bottom {
             .bottom {
                 display: flex;
                 gap: 20px;
                 margin-top: 60px;
                 margin-bottom: 130px;
                 justify-content: center;
-    
+
                 .logo {
                     width: 190px;
                     height: 90px;
@@ -1340,9 +1346,10 @@ footer {
         padding: 24px;
 
         .left {
-            select{
+            select {
                 display: none;
             }
+
             li {
                 display: inline-block;
                 padding: 10px 16px;
@@ -1581,6 +1588,7 @@ footer {
     padding-right: 100px;
     padding-left: 100px;
     padding-top: 75px;
+
     .container {
         border-radius: 32px;
         background-color: var(--light-white);

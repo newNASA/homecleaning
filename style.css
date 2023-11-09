@@ -943,7 +943,6 @@ header .head-body .head-right img {
 }
 .why-forYou .forYou .bottom .card button {
   width: 100%;
-  padding: 14px 20px;
   border-radius: 12px;
   border: 1px solid var(--green);
   background: transparent;
@@ -951,6 +950,7 @@ header .head-body .head-right img {
 }
 .why-forYou .forYou .bottom .card button a {
   width: 100%;
+  padding: 14px 20px;
   height: 100%;
   display: flex;
   justify-content: center;
