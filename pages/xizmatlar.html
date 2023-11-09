@@ -10,6 +10,10 @@
 
     <!-- link style -->
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive/mobile.css">
+
+    <!-- responsive link -->
+    <link rel="stylesheet" href="../responsive/mobile.css">
 
     <!-- fontlar ulandi -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +33,9 @@
 
 <body>
 
-    <!-- Xizmatlar coding -->
+    <div class="preloader">
+        <div class="pre"></div>
+    </div>
 
     <div class="xizmatlar">
         <div class="top">
@@ -48,6 +54,15 @@
                     <li data-filter="Uy va ofis">Uy va ofis</li>
                     <li data-filter="Bog' va yashil maydonlar">Bog' va yashil maydonlar</li>
                 </ul>
+                <select name="filter" id="filter">
+                    <option value="Barchasi">Barchasi</option>
+                    <option value="Tozalash">Tozalash</option>
+                    <option value="Dizinfeksiya">Dizinfeksiya</option>
+                    <option value="Yuvish">Yuvish</option>
+                    <option value="Oshxona">Oshxona</option>
+                    <option value="Uy va ofis">Uy va ofis</option>
+                    <option value="Bog' va yashil maydonlar">Bog' va yashil maydonlar</option>
+                </select>
             </div>
             <div class="right">
                 <img src="../imgs/search-normal.png" alt="search img">
@@ -112,6 +127,7 @@
 
     <!-- Xizmatlar coding end -->
 
+    <script src="../script.js"></script>
     <script>
         // Your first section of code for listItems styling
         const listItemsStyling = document.querySelectorAll('.center .left li');
@@ -135,22 +151,15 @@
             });
         });
 
-        // Your second section of code for xizmatlar
-        const listItems = document.querySelectorAll('.center .left li');
-        const cards = document.querySelectorAll('.xizmatlar-bottom .card');
+        document.addEventListener('DOMContentLoaded', function () {
+            // Your existing code for listItems styling
 
-        listItems.forEach(item => {
-            item.addEventListener('click', function () {
-                // Remove active class from all list items
-                listItems.forEach(li => {
-                    li.classList.remove('active');
-                });
+            const listItems = document.querySelectorAll('.center .left li');
+            const cards = document.querySelectorAll('.xizmatlar-bottom .card');
+            const selectFilter = document.getElementById('filter');
 
-                // Add active class to the clicked item
-                this.classList.add('active');
-
-                const category = this.getAttribute('data-filter');
-
+            // Function to filter cards based on the selected category
+            function filterCards(category) {
                 cards.forEach(card => {
                     const cardCategory = card.getAttribute('data-category');
                     if (category === 'Barchasi' || category === cardCategory) {
@@ -158,25 +167,46 @@
                     } else {
                         card.style.display = 'none';
                     }
+                });
+            }
 
+            // Event listener for list items
+            listItems.forEach(item => {
+                item.addEventListener('click', function () {
+                    listItems.forEach(li => {
+                        li.classList.remove('active');
+                    });
+
+                    this.classList.add('active');
+
+                    const category = this.getAttribute('data-filter');
+                    filterCards(category);
+                });
+            });
+
+            // Event listener for select element
+            selectFilter.addEventListener('change', function () {
+                const selectedCategory = this.value;
+                filterCards(selectedCategory);
+            });
+
+            // Your existing code for the search functionality
+            const searchInput = document.querySelector(".xizmatlar-search");
+
+            searchInput.addEventListener("input", function () {
+                const query = this.value.trim().toLowerCase();
+
+                cards.forEach(card => {
+                    const cardTitle = card.querySelector('h2').textContent.toLowerCase();
+                    if (cardTitle.includes(query)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
                 });
             });
         });
 
-        const searchInput = document.querySelector(".xizmatlar-search");
-
-        searchInput.addEventListener("input", function () {
-            const query = this.value.trim().toLowerCase();
-
-            cards.forEach(card => {
-                const cardTitle = card.querySelector('h2').textContent.toLowerCase();
-                if (cardTitle.includes(query)) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        });
     </script>
 </body>
 
