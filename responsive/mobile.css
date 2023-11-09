@@ -265,7 +265,7 @@
     font-size: 12px;
   }
   .xizmatlar-2 .b1 .menu-w .siz-btn {
-    transform: translateY(250px);
+    transform: translateY(225px);
   }
   .xizmatlar-2 .b2 {
     display: flex;
@@ -275,6 +275,7 @@
     align-items: center;
   }
   .xizmatlar-2 .b2 .video-youtube {
+    margin-top: 25px;
     width: 350px;
     height: 196px;
   }
