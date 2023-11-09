@@ -29,6 +29,8 @@
 
 <body>
 
+    <!-- Xizmatlar coding -->
+
     <div class="xizmatlar">
         <div class="top">
             <h2>Siz uchun</h2>
@@ -38,13 +40,13 @@
         <div class="center">
             <div class="left">
                 <ul>
-                    <li>Barchasi</li>
-                    <li>Tozalash</li>
-                    <li>Dizinfeksiya</li>
-                    <li>Yuvish</li>
-                    <li>Oshxona</li>
-                    <li>Uy va ofis</li>
-                    <li>Bog' va yashil maydonlar</li>
+                    <li data-filter="Barchasi">Barchasi</li>
+                    <li data-filter="Tozalash">Tozalash</li>
+                    <li data-filter="Dizinfeksiya">Dizinfeksiya</li>
+                    <li data-filter="Yuvish">Yuvish</li>
+                    <li data-filter="Oshxona">Oshxona</li>
+                    <li data-filter="Uy va ofis">Uy va ofis</li>
+                    <li data-filter="Bog' va yashil maydonlar">Bog' va yashil maydonlar</li>
                 </ul>
             </div>
             <div class="right">
@@ -52,21 +54,75 @@
                 <input type="text" placeholder="Qidirish" class="xizmatlar-search">
             </div>
         </div>
-        <div class="xizmatlar-bottom"></div>
+        <div class="xizmatlar-bottom">
+            <div class="card" data-category="Tozalash"><img src="../imgs/clean-ser.png"
+                    alt="Uylarni tozalash"><span>Tozalash</span>
+                <h2>Uylarni tozalash</h2>
+                <p>Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim
+                    etamiz.</p><a href="#">Batafsil</a>
+            </div>
+            <div class="card" data-category="Dizinfeksiya"><img src="../imgs/desinfeksiya-ser.png"
+                    alt="Ofislarni tozalash"><span>Dizinfeksiya</span>
+                <h2>Ofislarni tozalash</h2>
+                <p>Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim
+                    etamiz.</p><a href="#">Batafsil</a>
+            </div>
+            <div class="card" data-category="Yuvish"><img src="../imgs/desinfeksiya-ser.png"
+                    alt="Bog'larni tozalash"><span>Yuvish</span>
+                <h2>Bog'larni tozalash</h2>
+                <p>Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim
+                    etamiz.</p><a href="#">Batafsil</a>
+            </div>
+            <div class="card" data-category="Oshxona"><img src="../imgs/washing-ser.png"
+                    alt="Yashil maydonlarni tozalash"><span>Oshxona</span>
+                <h2>Yashil maydonlarni tozalash</h2>
+                <p>Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim
+                    etamiz.</p><a href="#">Batafsil</a>
+            </div>
+            <div class="card" data-category="Uy va ofis"><img src="../imgs/clean-ser.png"
+                    alt="Qurilish joylarini tozalash"><span>Uy va
+                    ofis</span>
+                <h2>Qurilish joylarini tozalash</h2>
+                <p>Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim
+                    etamiz.</p><a href="#">Batafsil</a>
+            </div>
+            <div class="card" data-category="Bog' va yashil maydonlar"><img src="../imgs/desinfeksiya-ser.png"
+                    alt="Umumiy tozalash"><span>Bog' va yashil
+                    maydonlar</span>
+                <h2>Umumiy tozalash</h2>
+                <p>Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim
+                    etamiz.</p><a href="#">Batafsil</a>
+            </div>
+            <div class="card" data-category="Bog' va yashil maydonlar"><img src="../imgs/desinfeksiya-ser.png"
+                    alt="Mebellarni tozalash"><span>Bog' va yashil
+                    maydonlar</span>
+                <h2>Mebellarni tozalash</h2>
+                <p>Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim
+                    etamiz.</p><a href="#">Batafsil</a>
+            </div>
+            <div class="card" data-category="Bog' va yashil maydonlar"><img src="../imgs/desinfeksiya-ser.png"
+                    alt="Mebellarni tozalash"><span>Bog' va yashil
+                    maydonlar</span>
+                <h2>Mebellarni tozalash</h2>
+                <p>Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim
+                    etamiz.</p><a href="#">Batafsil</a>
+            </div>
+        </div>
     </div>
 
+    <!-- Xizmatlar coding end -->
 
-    <script src="../script.js"></script>
     <script>
-        const listItems = document.querySelectorAll('.center .left li');
+        // Your first section of code for listItems styling
+        const listItemsStyling = document.querySelectorAll('.center .left li');
 
-        listItems[0].style.backgroundColor = 'var(--green)';
-        listItems[0].style.color = 'white';
-        listItems[0].style.lineHeight = '24px';
-        listItems[0].style.fontWeight = '700';
-        listItems.forEach(item => {
+        listItemsStyling[0].style.backgroundColor = 'var(--green)';
+        listItemsStyling[0].style.color = 'white';
+        listItemsStyling[0].style.lineHeight = '24px';
+        listItemsStyling[0].style.fontWeight = '700';
+        listItemsStyling.forEach(item => {
             item.addEventListener('click', function () {
-                listItems.forEach(li => {
+                listItemsStyling.forEach(li => {
                     li.style.backgroundColor = '';
                     li.style.color = '';
                     li.style.fontWeight = '500';
@@ -79,152 +135,31 @@
             });
         });
 
-        // xizmatlar js codes
-
-        const data = [
-            {
-                "img": "../imgs/clean-ser.png",
-                "span": "Tozalash",
-                "title": "Uylarni tozalash",
-                "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
-            },
-            {
-                "img": "../imgs/desinfeksiya-ser.png",
-                "span": "Dizinfeksiya",
-                "title": "Ofislarni tozalash",
-                "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
-            },
-            {
-                "img": "../imgs/desinfeksiya-ser.png",
-                "span": "Yuvish",
-                "title": "Bog'larni tozalash",
-                "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
-            },
-            {
-                "img": "../imgs/washing-ser.png",
-                "span": "Oshxona",
-                "title": "Yashil maydonlarni tozalash",
-                "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
-            },
-            {
-                "img": "../imgs/clean-ser.png",
-                "span": "Uy va ofis",
-                "title": "Qurilish joylarini tozalash",
-                "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
-            },
-            {
-                "img": "../imgs/desinfeksiya-ser.png",
-                "span": "Bog' va yashil maydonlar",
-                "title": "Umumiy tozalash",
-                "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
-            },
-            {
-                "img": "../imgs/desinfeksiya-ser.png",
-                "span": "Bog' va yashil maydonlar",
-                "title": "Mebellarni tozalash",
-                "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
-            },
-            {
-                "img": "../imgs/desinfeksiya-ser.png",
-                "span": "Bog' va yashil maydonlar",
-                "title": "Mebellarni tozalash",
-                "text": "Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim etamiz."
-            }
-        ];
-
-        const xizmatlarCards = document.querySelector(".xizmatlar-bottom");
-
-        // Barcha cardlarni yaratib ko'rsatish funktsiyasi
-        function showAllCards() {
-            xizmatlarCards.innerHTML = '';
-            data.forEach(function (item) {
-                const card = document.createElement("div");
-                card.classList.add("card");
-
-                const cardImage = document.createElement("img");
-                cardImage.setAttribute("src", item.img);
-                cardImage.setAttribute("alt", item.title);
-
-                const cardSpan = document.createElement("span");
-                cardSpan.textContent = item.span
-
-                const cardTitle = document.createElement("h2");
-                cardTitle.textContent = item.title;
-
-                const cardText = document.createElement("p");
-                cardText.textContent = item.text;
-
-                const cardLink = document.createElement("a");
-                cardLink.textContent = "Batafsil"
-                cardLink.href = "#";
-
-                card.appendChild(cardImage);
-                card.appendChild(cardSpan);
-                card.appendChild(cardTitle);
-                card.appendChild(cardText);
-                card.appendChild(cardLink);
-
-                xizmatlarCards.appendChild(card);
-            });
-
-        }
-
-        // Birinchi kirishda barcha cardlar ko'rsatilishi kerak
-        showAllCards();
+        // Your second section of code for xizmatlar
+        const listItems = document.querySelectorAll('.center .left li');
+        const cards = document.querySelectorAll('.xizmatlar-bottom .card');
 
         listItems.forEach(item => {
             item.addEventListener('click', function () {
+                // Remove active class from all list items
                 listItems.forEach(li => {
-                    li.style.backgroundColor = '';
-                    li.style.color = '';
-                    li.style.fontWeight = '500';
+                    li.classList.remove('active');
                 });
 
-                this.style.backgroundColor = 'var(--green)';
-                this.style.color = 'white';
-                this.style.lineHeight = '24px';
-                this.style.fontWeight = '700';
+                // Add active class to the clicked item
+                this.classList.add('active');
 
-                // Filtrlash uchun elementlarni tozalash
-                xizmatlarCards.innerHTML = '';
+                const category = this.getAttribute('data-filter');
 
-                // Ma'lumotlarni filtirlash
-                const selectedSpan = this.textContent;
-                const filteredData = data.filter(item => item.span === selectedSpan);
+                cards.forEach(card => {
+                    const cardCategory = card.getAttribute('data-category');
+                    if (category === 'Barchasi' || category === cardCategory) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
 
-                if (selectedSpan === 'Barchasi') {
-                    showAllCards();
-                } else {
-                    filteredData.forEach(item => {
-                        const card = document.createElement("div");
-                        card.classList.add("card");
-
-                        const cardImage = document.createElement("img");
-                        cardImage.setAttribute("src", item.img);
-                        cardImage.setAttribute("alt", item.title);
-
-                        const cardSpan = document.createElement("span");
-                        cardSpan.textContent = item.span;
-
-                        const cardTitle = document.createElement("h2");
-                        cardTitle.textContent = item.title;
-
-                        const cardText = document.createElement("p");
-                        cardText.textContent = item.text;
-
-                        const cardLink = document.createElement("a");
-                        cardLink.textContent = "Batafsil";
-                        cardLink.href = "#";
-
-                        card.appendChild(cardImage);
-                        card.appendChild(cardSpan);
-                        card.appendChild(cardTitle);
-                        card.appendChild(cardText);
-                        card.appendChild(cardLink);
-
-                        xizmatlarCards.appendChild(card);
-                    });
-                }
+                });
             });
         });
 
@@ -232,45 +167,21 @@
 
         searchInput.addEventListener("input", function () {
             const query = this.value.trim().toLowerCase();
-            xizmatlarCards.innerHTML = '';
 
-            if (query === "") {
-                showAllCards();
-            } else {
-                data.forEach(item => {
-                    if (item.title.toLowerCase().includes(query)) {
-                        const card = document.createElement("div");
-                        card.classList.add("card");
-
-                        const cardImage = document.createElement("img");
-                        cardImage.setAttribute("src", item.img);
-                        cardImage.setAttribute("alt", item.title);
-
-                        const cardSpan = document.createElement("span");
-                        cardSpan.textContent = item.span;
-
-                        const cardTitle = document.createElement("h2");
-                        cardTitle.textContent = item.title;
-
-                        const cardText = document.createElement("p");
-                        cardText.textContent = item.text;
-
-                        const cardLink = document.createElement("a");
-                        cardLink.textContent = "Batafsil";
-                        cardLink.href = "#";
-
-                        card.appendChild(cardImage);
-                        card.appendChild(cardSpan);
-                        card.appendChild(cardTitle);
-                        card.appendChild(cardText);
-                        card.appendChild(cardLink);
-
-                        xizmatlarCards.appendChild(card);
-                    }
-                });
-            }
+            cards.forEach(card => {
+                const cardTitle = card.querySelector('h2').textContent.toLowerCase();
+                if (cardTitle.includes(query)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
         });
     </script>
 </body>
+
+</html>
+
+</script>
 
 </html>

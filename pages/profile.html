@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../imgs/logo.svg" type="image/x-icon">
+
+    <!-- link style -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- link responsive -->
+    <link rel="stylesheet" href="../responsive/mobile.css">
+
+    <!-- fontlar ulandi -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script>
+        let localSTheme = localStorage.getItem('theme');
+        let themeToSet = localSTheme;
+
+        if (!localSTheme) {
+            themeToSet = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+
+        document.documentElement.setAttribute('data-theme', themeToSet);
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Profile edit coding -->
+
+    <div class="profile-edit">
+        <div class="container">
+            <div class="top">
+                <h2>Kirish</h2>
+                <img src="../imgs/add.png" alt="x img" class="login-x">
+            </div>
+            <div class="bottom">
+                <p>Kirish uchun login va parolingizni kiriting</p>
+                <form action="">
+                    <img src="../imgs/profile.png" alt="profile icon">
+                    <input type="text" placeholder="Login" required>
+                    <img src="../imgs/lock.png" alt="phone img">
+                    <input type="text" placeholder="Parol" required>
+                    <input type="submit" value="Kirish" class="submit">
+                </form>
+                <a class="log_sign">Ro'yxatdan o'tish</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profile edit coding -->
+
+    <!-- Profile coding -->
+
+    <div class="profile">
+        <div class="container">
+            <div class="top">
+                <div class="left">
+                    <h2>Profil ma'lumotlari</h2>
+                </div>
+                <div class="right">
+                    <button class="edit"></button>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="left">
+                    <div class="img">
+                        <img src="../imgs/turkiston-muxtoriyati.png" alt="">
+                    </div>
+                </div>
+                <div class="right">
+                    <h2>Azizbek</h2>
+                    <h2>Azizbeklogin</h2>
+                    <h2>●●●●●●●</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profile coding end -->
+</body>
+
+</html>

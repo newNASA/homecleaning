@@ -65,6 +65,24 @@
   }
 }
 
+<<<<<<< HEAD
+=======
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+*::-moz-selection {
+  background-color: var(--green);
+  color: var(--white-color);
+}
+*::selection {
+  background-color: var(--green);
+  color: var(--white-color);
+}
+
+>>>>>>> bc228d1e3c1d17519220b68b316373e196ffadf2
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -391,8 +409,8 @@ button {
 
 .contact-us,
 .login,
-.sign-up {
-  display: none;
+.sign-up,
+.profile-edit {
   width: 100%;
   height: 100vh;
   z-index: 100;
@@ -406,7 +424,8 @@ button {
 }
 .contact-us .container,
 .login .container,
-.sign-up .container {
+.sign-up .container,
+.profile-edit .container {
   margin: 0 auto;
   background-color: var(--white-color);
   width: 482px;
@@ -415,26 +434,30 @@ button {
 }
 .contact-us .container .top,
 .login .container .top,
-.sign-up .container .top {
+.sign-up .container .top,
+.profile-edit .container .top {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .contact-us .container .top h2,
 .login .container .top h2,
-.sign-up .container .top h2 {
+.sign-up .container .top h2,
+.profile-edit .container .top h2 {
   color: var(--ink-color);
   font-weight: 600;
   line-height: 44px;
 }
 .contact-us .container .top img,
 .login .container .top img,
-.sign-up .container .top img {
+.sign-up .container .top img,
+.profile-edit .container .top img {
   cursor: pointer;
 }
 .contact-us .container .bottom,
 .login .container .bottom,
-.sign-up .container .bottom {
+.sign-up .container .bottom,
+.profile-edit .container .bottom {
   color: var(--dark-white);
   font-weight: 400;
   line-height: 24px;
@@ -442,12 +465,14 @@ button {
 }
 .contact-us .container .bottom p,
 .login .container .bottom p,
-.sign-up .container .bottom p {
+.sign-up .container .bottom p,
+.profile-edit .container .bottom p {
   margin-bottom: 32px;
 }
 .contact-us .container .bottom input,
 .login .container .bottom input,
-.sign-up .container .bottom input {
+.sign-up .container .bottom input,
+.profile-edit .container .bottom input {
   width: 100%;
   height: 56px;
   margin-top: 16px;
@@ -459,36 +484,41 @@ button {
 }
 .contact-us .container .bottom input:focus,
 .login .container .bottom input:focus,
-.sign-up .container .bottom input:focus {
+.sign-up .container .bottom input:focus,
+.profile-edit .container .bottom input:focus {
   color: var(--green);
   border: 2px solid var(--green) !important;
 }
-.contact-us .container .bottom input:focus::-moz-placeholder, .login .container .bottom input:focus::-moz-placeholder, .sign-up .container .bottom input:focus::-moz-placeholder {
+.contact-us .container .bottom input:focus::-moz-placeholder, .login .container .bottom input:focus::-moz-placeholder, .sign-up .container .bottom input:focus::-moz-placeholder, .profile-edit .container .bottom input:focus::-moz-placeholder {
   color: var(--green);
 }
 .contact-us .container .bottom input:focus::placeholder,
 .login .container .bottom input:focus::placeholder,
-.sign-up .container .bottom input:focus::placeholder {
+.sign-up .container .bottom input:focus::placeholder,
+.profile-edit .container .bottom input:focus::placeholder {
   color: var(--green);
 }
-.contact-us .container .bottom input::-moz-placeholder, .login .container .bottom input::-moz-placeholder, .sign-up .container .bottom input::-moz-placeholder {
+.contact-us .container .bottom input::-moz-placeholder, .login .container .bottom input::-moz-placeholder, .sign-up .container .bottom input::-moz-placeholder, .profile-edit .container .bottom input::-moz-placeholder {
   color: var(--dark-white);
 }
 .contact-us .container .bottom input::placeholder,
 .login .container .bottom input::placeholder,
-.sign-up .container .bottom input::placeholder {
+.sign-up .container .bottom input::placeholder,
+.profile-edit .container .bottom input::placeholder {
   color: var(--dark-white);
 }
 .contact-us .container .bottom img,
 .login .container .bottom img,
-.sign-up .container .bottom img {
+.sign-up .container .bottom img,
+.profile-edit .container .bottom img {
   position: absolute;
   margin-top: 32px;
   margin-left: 15px;
 }
 .contact-us .container .bottom .submit,
 .login .container .bottom .submit,
-.sign-up .container .bottom .submit {
+.sign-up .container .bottom .submit,
+.profile-edit .container .bottom .submit {
   height: 44px;
   padding: 14px 20px;
   border-radius: 12px;
@@ -503,14 +533,16 @@ button {
 }
 .contact-us .container .bottom .submit:hover,
 .login .container .bottom .submit:hover,
-.sign-up .container .bottom .submit:hover {
+.sign-up .container .bottom .submit:hover,
+.profile-edit .container .bottom .submit:hover {
   background: var(--white-color);
   border: 1px solid var(--green);
   color: var(--green);
 }
 .contact-us .container .bottom a,
 .login .container .bottom a,
-.sign-up .container .bottom a {
+.sign-up .container .bottom a,
+.profile-edit .container .bottom a {
   display: flex;
   justify-content: center;
   color: var(--green);
@@ -1173,6 +1205,9 @@ footer p {
   gap: 10px;
   border-radius: 16px;
   transition: 0.5s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   cursor: pointer;
 }
 .xizmatlar .center .left li:hover {
@@ -1362,4 +1397,96 @@ footer p {
 .xizlmatlar-2 .b2 .video-youtube iframe {
   width: 100%;
   height: 100%;
+}
+
+.profile {
+  padding-right: 100px;
+  padding-left: 100px;
+}
+.profile .container {
+  border-radius: 32px;
+  background-color: var(--light-white);
+  padding: 32px;
+  margin-top: 75px;
+}
+.profile .container .top {
+  display: flex;
+  justify-content: space-between;
+}
+.profile .container .top .left h2 {
+  color: var(--green);
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 44px;
+}
+.profile .container .top .right .edit {
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  color: var(--green);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  border-radius: 12px;
+  background: var(--white-color);
+  cursor: pointer;
+  border: solid var(--light-white) 1px;
+  background-image: url(./imgs/edit.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.profile .container .bottom {
+  display: flex;
+}
+.profile .container .bottom .left {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+.profile .container .bottom .left .img {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.profile .container .bottom .left .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.profile .container .bottom .right {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.profile .container .bottom .right h2 {
+  color: var(--green);
+  display: inline-block;
+  position: relative;
+}
+.profile .container .bottom .right h2:first-child::before {
+  content: "Ism";
+  font-size: 14px;
+  position: absolute;
+  top: -15px;
+  color: var(--dark-white);
+}
+.profile .container .bottom .right h2:nth-child(2)::before {
+  content: "Login";
+  font-size: 14px;
+  position: absolute;
+  top: -15px;
+  color: var(--dark-white);
+}
+.profile .container .bottom .right h2:last-child::before {
+  content: "Parol";
+  font-size: 14px;
+  position: absolute;
+  top: -15px;
+  color: var(--dark-white);
 }/*# sourceMappingURL=style.css.map */

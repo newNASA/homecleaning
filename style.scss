@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     padding: 0;
     margin: 0;
@@ -12,6 +13,9 @@
 
 
 .preloader{
+=======
+.preloader {
+>>>>>>> bc228d1e3c1d17519220b68b316373e196ffadf2
     position: fixed;
     width: 100%;
     height: 100%;
@@ -22,18 +26,22 @@
     // transition: .5s;
     align-items: center;
     animation: preload .5s linear forwards 1.5s;
+
     @keyframes preload {
-        100%{
+        100% {
             opacity: 0;
         }
     }
-    .pre{
+
+    .pre {
         border: 0 solid transparent;
         border-radius: 50%;
         width: 170px;
         height: 170px;
         position: absolute;
-        &::before, &::after{
+
+        &::before,
+        &::after {
             content: '';
             border: 1em solid var(--green);
             border-radius: 50%;
@@ -45,18 +53,22 @@
             animation: pre2 2s linear infinite;
             opacity: 0;
         }
-        &::before{
+
+        &::before {
             animation-delay: .5s;
         }
+
         @keyframes pre2 {
-            0%{
+            0% {
                 transform: scale(0);
                 opacity: 0;
             }
-            50%{
+
+            50% {
                 opacity: 1;
             }
-            100%{
+
+            100% {
                 transform: scale(1);
                 opacity: 0;
             }
@@ -65,6 +77,21 @@
 }
 
 
+<<<<<<< HEAD
+=======
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    // border: 1px solid red;
+
+    &::selection {
+        background-color: var(--green);
+        color: var(--white-color);
+    }
+}
+>>>>>>> bc228d1e3c1d17519220b68b316373e196ffadf2
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -258,15 +285,17 @@ button {
                 padding: 16px;
                 outline: none;
                 color: var(--dark-white);
+
                 &::placeholder {
                     color: var(--dark-white-input-placeholder);
                     line-height: 24px;
                 }
-                
+
                 &:focus {
                     color: var(--green);
+
                     // border: 1px solid var(--green);
-                    &::placeholder{
+                    &::placeholder {
                         color: var(--green);
                     }
                 }
@@ -390,9 +419,10 @@ button {
                 }
 
                 &:focus {
-                    &::placeholder{
+                    &::placeholder {
                         color: var(--green);
                     }
+
                     border: 1px solid var(--green);
                 }
             }
@@ -422,8 +452,9 @@ button {
 
 .contact-us,
 .login,
-.sign-up {
-    display: none;
+.sign-up,
+.profile-edit {
+    // display: none;
     width: 100%;
     height: 100vh;
     z-index: 100;
@@ -476,10 +507,12 @@ button {
                 padding: 16px 52px;
                 outline: none;
                 color: var(--dark-white);
+
                 &:focus {
-                    &::placeholder{
+                    &::placeholder {
                         color: var(--green);
                     }
+
                     color: var(--green);
                     border: 2px solid var(--green) !important;
                 }
@@ -587,7 +620,7 @@ header {
         .left,
         .center,
         .right {
-            display: flex;  
+            display: flex;
             align-items: center;
         }
 
@@ -628,7 +661,7 @@ header {
         .right {
             gap: 10px;
 
-            .gamburger{
+            .gamburger {
                 display: none;
             }
 
@@ -873,7 +906,7 @@ header {
             display: flex;
             margin-top: 40px;
             padding-left: 80px;
-            padding-right: 50px;    
+            padding-right: 50px;
             justify-content: space-evenly;
 
             .bx {
@@ -916,6 +949,7 @@ header {
 
         .top {
             width: 100%;
+
             h2 {
                 color: var(--green);
                 font-size: 24px;
@@ -1300,6 +1334,7 @@ footer {
                 gap: 10px;
                 border-radius: 16px;
                 transition: .5s;
+                user-select: none;
                 cursor: pointer;
 
                 &:hover {
@@ -1328,15 +1363,17 @@ footer {
                 padding: 0 35px;
                 outline: none;
                 color: var(--dark-white);
+
                 &::placeholder {
                     color: var(--dark-white-input-placeholder);
                     line-height: 24px;
                 }
-                
+
                 &:focus {
                     color: var(--green);
                     border: 1px solid var(--green);
-                    &::placeholder{
+
+                    &::placeholder {
                         color: var(--green);
                     }
                 }
@@ -1424,11 +1461,11 @@ footer {
 .xizlmatlar-2 {
     padding: 20px 100px;
     width: 100%;
-// info2: info xizmatlarning asosiy stylelar 
-    
+    // info2: info xizmatlarning asosiy stylelar 
+
     height: 82vh;
 
-//_________________________________________________
+    //_________________________________________________
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1457,7 +1494,8 @@ footer {
                 transform: translateY(4px);
             }
         }
-        .menu-w{
+
+        .menu-w {
             margin-top: 100px;
 
             .sizuchun {
@@ -1518,6 +1556,117 @@ footer {
                 width: 100%;
                 height: 100%;
             }
+        }
+    }
+}
+
+// profile page styles
+
+.profile {
+    padding-right: 100px;
+    padding-left: 100px;
+
+    .container {
+        border-radius: 32px;
+        background-color: var(--light-white);
+        padding: 32px;
+        margin-top: 75px;
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+
+            .left {
+                h2 {
+                    color: var(--green);
+                    font-family: Inter;
+                    font-weight: 600;
+                    line-height: 44px;
+                }
+            }
+
+            .right {
+                .edit {
+                    width: 44px;
+                    height: 44px;
+                    padding: 10px;
+                    color: var(--green);
+                    text-align: center;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    border-radius: 12px;
+                    background: var(--white-color);
+                    cursor: pointer;
+                    border: solid var(--light-white) 1px;
+                    background-image: url(./imgs/edit.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+        }
+
+        .bottom {
+            display: flex;
+
+            .left {
+                width: 40%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 50px 0;
+
+                .img {
+                    width: 300px;
+                    height: 300px;
+                    overflow: hidden;
+                    border-radius: 50%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            .right {
+                width: 60%;
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+
+                h2 {
+                    color: var(--green);
+                    display: inline-block;
+                    position: relative;
+
+                    &:first-child::before {
+                        content: "Ism";
+                        font-size: 14px;
+                        position: absolute;
+                        top: -15px;
+                        color: var(--dark-white);
+                    }
+
+                    &:nth-child(2)::before {
+                        content: "Login";
+                        font-size: 14px;
+                        position: absolute;
+                        top: -15px;
+                        color: var(--dark-white);
+                    }
+
+                    &:last-child::before {
+                        content: "Parol";
+                        font-size: 14px;
+                        position: absolute;
+                        top: -15px;
+                        color: var(--dark-white);
+                    }
+                }
+            }
+
         }
     }
 }
