@@ -57,7 +57,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
-    // border: 1px solid red;  
+    border: 1px solid red;  
 
     &::selection {
         background-color: var(--green);
@@ -839,8 +839,6 @@ header {
     // section "why us"
 
     .why {
-        // height: 60vh;
-
         .top {
             .why-p {
                 color: var(--green);
@@ -874,7 +872,7 @@ header {
             display: flex;
             margin-top: 40px;
             padding-left: 80px;
-            padding-right: 50px;
+            padding-right: 50px;    
             justify-content: space-evenly;
 
             .bx {
@@ -913,10 +911,11 @@ header {
     .forYou {
         padding-left: 150px;
         padding-right: 150px;
-        margin-top: 20px;
+        margin-top: 70px;
 
         .top {
-            .weForYou-p {
+            width: 100%;
+            h2 {
                 color: var(--green);
                 font-size: 24px;
                 font-style: normal;
@@ -951,7 +950,6 @@ header {
 
             .card {
                 width: 300px;
-                height: 400px;
                 display: flex;
                 align-items: flex-start;
                 flex-direction: column;
@@ -976,7 +974,7 @@ header {
 
                 button {
                     width: 100%;
-                    height: 50px;
+                    padding: 14px 20px;
                     border-radius: 12px;
                     border: 1px solid var(--green);
                     background: transparent;
@@ -1013,7 +1011,6 @@ section {
 
     .our-app {
         margin-top: 160px;
-        height: 365px;
         padding: 48px 108px;
         border-radius: 32px;
         display: flex;
@@ -1459,13 +1456,7 @@ footer {
                 transform: translateY(4px);
             }
         }
-<<<<<<< HEAD
-
-        .menu-w {
-            padding: 60px 0;
-=======
         .menu-w{
->>>>>>> f42903bbe036a75e98b6a4d3bc38f79e02729fd7
             margin-top: 100px;
 
             .sizuchun {
