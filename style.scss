@@ -1301,13 +1301,15 @@ footer {
         width: 100%;
         background-color: var(--light-white);
         border-radius: 24px;
-        height: 80px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 24px;
 
         .left {
+            select{
+                display: none;
+            }
             li {
                 display: inline-block;
                 padding: 10px 16px;

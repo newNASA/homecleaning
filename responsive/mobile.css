@@ -167,4 +167,45 @@
   section .our-app .left h2 {
     text-align: center;
   }
+  .xizmatlar {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .xizmatlar .top h2 {
+    font-size: 1rem;
+  }
+  .xizmatlar .top h1 {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+  .xizmatlar .top p {
+    width: 100%;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  .xizmatlar .center {
+    flex-direction: column-reverse;
+  }
+  .xizmatlar .center .left select {
+    width: 240px;
+    height: 45px;
+    border-radius: 12px;
+    padding: 0 15px;
+    display: block;
+    background: var(--green);
+    box-shadow: 0px 8px 32px 0px var(--green-shadow);
+    color: var(--white-color);
+    font-weight: 600;
+    border: 1px solid var(--green);
+    outline: none;
+  }
+  .xizmatlar .center .left ul {
+    display: none;
+  }
+  .xizmatlar .center .right {
+    border: none;
+  }
+  .xizmatlar .xizmatlar-bottom {
+    display: none;
+  }
 }/*# sourceMappingURL=mobile.css.map */

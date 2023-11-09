@@ -1178,11 +1178,13 @@ footer p {
   width: 100%;
   background-color: var(--light-white);
   border-radius: 24px;
-  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 24px;
+}
+.xizmatlar .center .left select {
+  display: none;
 }
 .xizmatlar .center .left li {
   display: inline-block;
