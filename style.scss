@@ -1102,6 +1102,9 @@ section {
             margin-top: 60px;
 
             .qt {
+                .q-img{
+                    mix-blend-mode: screen;
+                }
                 width: 630px;
                 height: 250px;
                 text-align: center;

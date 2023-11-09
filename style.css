@@ -1021,6 +1021,9 @@ section .mijozlarNimaDeydi .bottom .qt {
   align-items: center;
   justify-content: space-around;
 }
+section .mijozlarNimaDeydi .bottom .qt .q-img {
+  mix-blend-mode: screen;
+}
 section .mijozlarNimaDeydi .bottom .qt p {
   margin-top: 16px;
   color: var(--ink-color);
