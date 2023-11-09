@@ -1,7 +1,9 @@
 .preloader {
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
   background: var(--white-color);
   z-index: 99999999999;
   display: flex;
@@ -55,7 +57,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
-  border: 1px solid red;
 }
 *::-moz-selection {
   background-color: var(--green);
@@ -64,15 +65,6 @@
 *::selection {
   background-color: var(--green);
   color: var(--white-color);
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--green);
-  border-radius: 10px;
 }
 
 :root[data-theme=light] {
@@ -390,9 +382,7 @@ button {
   display: flex;
 }
 
-.contact-us,
-.login,
-.sign-up {
+.contact-us, .login, .sign-up {
   display: none;
   width: 100%;
   height: 100vh;
@@ -405,50 +395,36 @@ button {
   align-items: start;
   flex-direction: column;
 }
-.contact-us .container,
-.login .container,
-.sign-up .container {
+.contact-us .container, .login .container, .sign-up .container {
   margin: 0 auto;
   background-color: var(--white-color);
   width: 482px;
   padding: 32px;
   border-radius: 32px;
 }
-.contact-us .container .top,
-.login .container .top,
-.sign-up .container .top {
+.contact-us .container .top, .login .container .top, .sign-up .container .top {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.contact-us .container .top h2,
-.login .container .top h2,
-.sign-up .container .top h2 {
+.contact-us .container .top h2, .login .container .top h2, .sign-up .container .top h2 {
   color: var(--ink-color);
   font-weight: 600;
   line-height: 44px;
 }
-.contact-us .container .top img,
-.login .container .top img,
-.sign-up .container .top img {
+.contact-us .container .top img, .login .container .top img, .sign-up .container .top img {
   cursor: pointer;
 }
-.contact-us .container .bottom,
-.login .container .bottom,
-.sign-up .container .bottom {
+.contact-us .container .bottom, .login .container .bottom, .sign-up .container .bottom {
   color: var(--dark-white);
   font-weight: 400;
   line-height: 24px;
   margin-top: 8px;
 }
-.contact-us .container .bottom p,
-.login .container .bottom p,
-.sign-up .container .bottom p {
+.contact-us .container .bottom p, .login .container .bottom p, .sign-up .container .bottom p {
   margin-bottom: 32px;
 }
-.contact-us .container .bottom input,
-.login .container .bottom input,
-.sign-up .container .bottom input {
+.contact-us .container .bottom input, .login .container .bottom input, .sign-up .container .bottom input {
   width: 100%;
   height: 56px;
   margin-top: 16px;
@@ -458,38 +434,28 @@ button {
   outline: none;
   color: var(--dark-white);
 }
-.contact-us .container .bottom input:focus,
-.login .container .bottom input:focus,
-.sign-up .container .bottom input:focus {
+.contact-us .container .bottom input:focus, .login .container .bottom input:focus, .sign-up .container .bottom input:focus {
   color: var(--green);
   border: 2px solid var(--green) !important;
 }
 .contact-us .container .bottom input:focus::-moz-placeholder, .login .container .bottom input:focus::-moz-placeholder, .sign-up .container .bottom input:focus::-moz-placeholder {
   color: var(--green);
 }
-.contact-us .container .bottom input:focus::placeholder,
-.login .container .bottom input:focus::placeholder,
-.sign-up .container .bottom input:focus::placeholder {
+.contact-us .container .bottom input:focus::placeholder, .login .container .bottom input:focus::placeholder, .sign-up .container .bottom input:focus::placeholder {
   color: var(--green);
 }
 .contact-us .container .bottom input::-moz-placeholder, .login .container .bottom input::-moz-placeholder, .sign-up .container .bottom input::-moz-placeholder {
   color: var(--dark-white);
 }
-.contact-us .container .bottom input::placeholder,
-.login .container .bottom input::placeholder,
-.sign-up .container .bottom input::placeholder {
+.contact-us .container .bottom input::placeholder, .login .container .bottom input::placeholder, .sign-up .container .bottom input::placeholder {
   color: var(--dark-white);
 }
-.contact-us .container .bottom img,
-.login .container .bottom img,
-.sign-up .container .bottom img {
+.contact-us .container .bottom img, .login .container .bottom img, .sign-up .container .bottom img {
   position: absolute;
   margin-top: 32px;
   margin-left: 15px;
 }
-.contact-us .container .bottom .submit,
-.login .container .bottom .submit,
-.sign-up .container .bottom .submit {
+.contact-us .container .bottom .submit, .login .container .bottom .submit, .sign-up .container .bottom .submit {
   height: 44px;
   padding: 14px 20px;
   border-radius: 12px;
@@ -502,16 +468,12 @@ button {
   border: none;
   cursor: pointer;
 }
-.contact-us .container .bottom .submit:hover,
-.login .container .bottom .submit:hover,
-.sign-up .container .bottom .submit:hover {
+.contact-us .container .bottom .submit:hover, .login .container .bottom .submit:hover, .sign-up .container .bottom .submit:hover {
   background: var(--white-color);
   border: 1px solid var(--green);
   color: var(--green);
 }
-.contact-us .container .bottom a,
-.login .container .bottom a,
-.sign-up .container .bottom a {
+.contact-us .container .bottom a, .login .container .bottom a, .sign-up .container .bottom a {
   display: flex;
   justify-content: center;
   color: var(--green);
@@ -609,16 +571,24 @@ header nav .center a:active {
 header nav .right {
   gap: 10px;
 }
+header nav .right .toggle-theme {
+  background-image: url(./imgs/sun.svg);
+}
+header nav .right .profile {
+  background-image: url(./imgs/profile.svg);
+}
 header nav .right .gamburger {
-  display: none;
+  background-image: url(./imgs/textalign-justifycenter.svg);
+}
+header nav .right .toggle-theme, header nav .right .profile, header nav .right .gamburger {
+  background-repeat: no-repeat;
+  background-position: center;
 }
 header nav .right button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 44px;
   height: 44px;
   padding: 10px;
+  gap: 10px;
   color: var(--green);
   text-align: center;
   font-size: 14px;
@@ -651,8 +621,7 @@ header nav .right .hidden {
   width: 44px;
   display: none;
 }
-header nav .right .hidden .ru,
-header nav .right .hidden .en {
+header nav .right .hidden .ru, header nav .right .hidden .en {
   width: 100%;
   height: 44px;
   padding: 10px;
@@ -786,6 +755,9 @@ header .head-body .head-right img {
 .why-forYou {
   margin-top: 120px;
   text-align: center;
+}
+.why-forYou .why {
+  height: 60vh;
 }
 .why-forYou .why .top .why-p {
   color: var(--green);
@@ -974,7 +946,7 @@ section .our-app .right {
 section .our-app .right img {
   position: absolute;
   right: 17%;
-  margin-top: -100px;
+  margin-top: -360px;
 }
 section .mijozlarNimaDeydi {
   margin-top: 200px;
@@ -1285,7 +1257,7 @@ footer p {
   color: var(--light-white);
 }
 
-.xizlmatlar-2 {
+.xizmatlar-2 {
   padding: 20px 100px;
   width: 100%;
   height: 82vh;
@@ -1293,47 +1265,47 @@ footer p {
   justify-content: center;
   align-items: center;
 }
-.xizlmatlar-2 .b1 {
+.xizmatlar-2 .b1 {
   width: 40%;
   height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.xizlmatlar-2 .b1 .menu-x {
+.xizmatlar-2 .b1 .menu-x {
   margin-top: -100px;
 }
-.xizlmatlar-2 .b1 .menu-x .a1 {
+.xizmatlar-2 .b1 .menu-x .a1 {
   color: gray;
 }
-.xizlmatlar-2 .b1 .menu-x a {
+.xizmatlar-2 .b1 .menu-x a {
   font-size: 20px;
   color: var(--dark-white);
 }
-.xizlmatlar-2 .b1 .menu-x img {
+.xizmatlar-2 .b1 .menu-x img {
   transform: translateY(4px);
 }
-.xizlmatlar-2 .b1 .menu-w {
+.xizmatlar-2 .b1 .menu-w {
   margin-top: 100px;
 }
-.xizlmatlar-2 .b1 .menu-w .sizuchun {
+.xizmatlar-2 .b1 .menu-w .sizuchun {
   margin-bottom: 40px;
   font-size: 20px;
   color: #0FC36D;
   font-weight: 600;
 }
-.xizlmatlar-2 .b1 .menu-w .siz-2 {
+.xizmatlar-2 .b1 .menu-w .siz-2 {
   margin-bottom: 40px;
   font-size: 40px;
   font-weight: 600;
   color: var(--dark-white);
 }
-.xizlmatlar-2 .b1 .menu-w .siz-3 {
+.xizmatlar-2 .b1 .menu-w .siz-3 {
   margin-bottom: 40px;
   font-size: 14px;
   color: gray;
 }
-.xizlmatlar-2 .b1 .menu-w .siz-btn {
+.xizmatlar-2 .b1 .menu-w .siz-btn {
   padding: 14px 20px;
   background: var(--green);
   box-shadow: 0px 8px 32px 0px var(--green-shadow);
@@ -1344,25 +1316,25 @@ footer p {
   cursor: pointer;
   border: 1px solid var(--green);
 }
-.xizlmatlar-2 .b1 .menu-w .siz-btn:hover {
+.xizmatlar-2 .b1 .menu-w .siz-btn:hover {
   background: transparent;
   box-shadow: 0px 8px 32px 0px var(--ink-shadow);
   color: var(--green);
 }
-.xizlmatlar-2 .b2 {
+.xizmatlar-2 .b2 {
   width: 60%;
   height: 100%;
   display: flex;
   justify-content: end;
   align-items: center;
 }
-.xizlmatlar-2 .b2 .video-youtube {
+.xizmatlar-2 .b2 .video-youtube {
   width: 700px;
   height: 392px;
   border-radius: 20px;
   overflow: hidden;
 }
-.xizlmatlar-2 .b2 .video-youtube iframe {
+.xizmatlar-2 .b2 .video-youtube iframe {
   width: 100%;
   height: 100%;
 }/*# sourceMappingURL=style.css.map */

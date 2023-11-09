@@ -1,3 +1,4 @@
+@import "../style.css";
 @media screen and (max-width: 376px) {
   .nav-top {
     padding-right: 25px;
@@ -167,4 +168,80 @@
   section .our-app .left h2 {
     text-align: center;
   }
+}
+@media screen and (max-width: 376px) {
+  * {
+    padding: 0;
+  }
+  .xizmatlar-2 {
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 0 25px;
+    height: 100vh;
+  }
+  .xizmatlar-2 .b1 {
+    width: 100%;
+    display: flex;
+    margin-top: 30%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .xizmatlar-2 .b1 .menu-x {
+    text-align: center;
+    width: 100%;
+  }
+  .xizmatlar-2 .b1 .menu-w {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    flex-direction: column;
+  }
+  .xizmatlar-2 .b1 .menu-w .sizuchun {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  .xizmatlar-2 .b1 .menu-w .siz-2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  .xizmatlar-2 .b1 .menu-w .siz-3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 12px;
+  }
+  .xizmatlar-2 .b1 .menu-w .siz-btn {
+    transform: translateY(250px);
+  }
+  .xizmatlar-2 .b2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    transform: translateY(-80px);
+    align-items: center;
+  }
+  .xizmatlar-2 .b2 .video-youtube {
+    width: 350px;
+    height: 196px;
+  }
+}
+section {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+section .our-app {
+  display: flex;
+  padding: 32px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section .our-app .left {
+  width: 100%;
+  text-align: center !important;
+}
+section .our-app .left h2 {
+  text-align: center;
 }/*# sourceMappingURL=mobile.css.map */
