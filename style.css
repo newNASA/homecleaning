@@ -909,7 +909,7 @@ header .head-body .head-right img {
   color: var(--dark);
 }
 .why-forYou .forYou .bottom .card .content-p {
-  color: var(--ink-color);
+  color: var(--dark-white);
   font-size: 14px;
   font-weight: 500;
   line-height: 22px;
