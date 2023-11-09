@@ -1,7 +1,9 @@
 .preloader {
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
   background: var(--white-color);
   z-index: 99999999999;
   display: flex;
@@ -63,15 +65,6 @@
 *::selection {
   background-color: var(--green);
   color: var(--white-color);
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--green);
-  border-radius: 10px;
 }
 
 :root[data-theme=light] {
@@ -627,12 +620,10 @@ header nav .right .gamburger {
   display: none;
 }
 header nav .right button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 44px;
   height: 44px;
   padding: 10px;
+  gap: 10px;
   color: var(--green);
   text-align: center;
   font-size: 14px;
@@ -665,8 +656,7 @@ header nav .right .hidden {
   width: 44px;
   display: none;
 }
-header nav .right .hidden .ru,
-header nav .right .hidden .en {
+header nav .right .hidden .ru, header nav .right .hidden .en {
   width: 100%;
   height: 44px;
   padding: 10px;
@@ -800,6 +790,9 @@ header .head-body .head-right img {
 .why-forYou {
   margin-top: 120px;
   text-align: center;
+}
+.why-forYou .why {
+  height: 60vh;
 }
 .why-forYou .why .top .why-p {
   color: var(--green);
@@ -1304,7 +1297,7 @@ footer p {
   color: var(--light-white);
 }
 
-.xizlmatlar-2 {
+.xizmatlar-2 {
   padding: 20px 100px;
   width: 100%;
   height: 82vh;
@@ -1312,47 +1305,47 @@ footer p {
   justify-content: center;
   align-items: center;
 }
-.xizlmatlar-2 .b1 {
+.xizmatlar-2 .b1 {
   width: 40%;
   height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.xizlmatlar-2 .b1 .menu-x {
+.xizmatlar-2 .b1 .menu-x {
   margin-top: -100px;
 }
-.xizlmatlar-2 .b1 .menu-x .a1 {
+.xizmatlar-2 .b1 .menu-x .a1 {
   color: gray;
 }
-.xizlmatlar-2 .b1 .menu-x a {
+.xizmatlar-2 .b1 .menu-x a {
   font-size: 20px;
   color: var(--dark-white);
 }
-.xizlmatlar-2 .b1 .menu-x img {
+.xizmatlar-2 .b1 .menu-x img {
   transform: translateY(4px);
 }
-.xizlmatlar-2 .b1 .menu-w {
+.xizmatlar-2 .b1 .menu-w {
   margin-top: 100px;
 }
-.xizlmatlar-2 .b1 .menu-w .sizuchun {
+.xizmatlar-2 .b1 .menu-w .sizuchun {
   margin-bottom: 40px;
   font-size: 20px;
   color: #0FC36D;
   font-weight: 600;
 }
-.xizlmatlar-2 .b1 .menu-w .siz-2 {
+.xizmatlar-2 .b1 .menu-w .siz-2 {
   margin-bottom: 40px;
   font-size: 40px;
   font-weight: 600;
   color: var(--dark-white);
 }
-.xizlmatlar-2 .b1 .menu-w .siz-3 {
+.xizmatlar-2 .b1 .menu-w .siz-3 {
   margin-bottom: 40px;
   font-size: 14px;
   color: gray;
 }
-.xizlmatlar-2 .b1 .menu-w .siz-btn {
+.xizmatlar-2 .b1 .menu-w .siz-btn {
   padding: 14px 20px;
   background: var(--green);
   box-shadow: 0px 8px 32px 0px var(--green-shadow);
@@ -1363,25 +1356,25 @@ footer p {
   cursor: pointer;
   border: 1px solid var(--green);
 }
-.xizlmatlar-2 .b1 .menu-w .siz-btn:hover {
+.xizmatlar-2 .b1 .menu-w .siz-btn:hover {
   background: transparent;
   box-shadow: 0px 8px 32px 0px var(--ink-shadow);
   color: var(--green);
 }
-.xizlmatlar-2 .b2 {
+.xizmatlar-2 .b2 {
   width: 60%;
   height: 100%;
   display: flex;
   justify-content: end;
   align-items: center;
 }
-.xizlmatlar-2 .b2 .video-youtube {
+.xizmatlar-2 .b2 .video-youtube {
   width: 700px;
   height: 392px;
   border-radius: 20px;
   overflow: hidden;
 }
-.xizlmatlar-2 .b2 .video-youtube iframe {
+.xizmatlar-2 .b2 .video-youtube iframe {
   width: 100%;
   height: 100%;
 }

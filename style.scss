@@ -1,12 +1,13 @@
 .preloader {
     position: fixed;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
     background: var(--white-color);
     z-index: 99999999999;
     display: flex;
     justify-content: center;
-    // transition: .5s;
     align-items: center;
     animation: preload .5s linear forwards 1.5s;
 
@@ -73,15 +74,6 @@
     }
 }
 
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--green);
-    border-radius: 10px;
-}
-
 :root[data-theme="light"] {
     --white-color: #fff;
     --light-white: #F6F7ED;
@@ -96,7 +88,6 @@
     --light-green: #41f19c;
     --green-shadow: rgba(15, 195, 109, 0.32);
 }
-
 :root[data-theme="dark"] {
     --white-color: #00111c;
     --light-white: #002945;
@@ -111,7 +102,6 @@
     --light-green: #41f19c;
     --green-shadow: rgba(15, 195, 109, 0.32);
 }
-
 body {
     background: var(--white-color);
 }
@@ -172,7 +162,7 @@ button {
     width: 422px;
     height: 500px;
     position: fixed;
-    display: flex;
+    display: flex;  
     flex-direction: column;
     right: 32px;
     bottom: 100px;
@@ -236,8 +226,7 @@ button {
                 margin-top: 5px;
                 margin-right: 20px;
             }
-
-            &:last-child {
+            &:last-child{
                 margin-bottom: 20px;
             }
         }
@@ -364,8 +353,7 @@ button {
                 margin-top: 5px;
                 margin-right: 20px;
             }
-
-            &:last-child {
+            &:last-child{
                 margin-bottom: 20px;
             }
         }
@@ -374,6 +362,7 @@ button {
             width: 0px;
         }
     }
+
 
     .bottom {
         display: flex;
@@ -423,7 +412,7 @@ button {
 
 // login styles
 
-.login {
+.login{
     display: flex;
 }
 
@@ -529,7 +518,7 @@ button {
                 }
             }
 
-            a {
+            a{
                 display: flex;
                 justify-content: center;
                 color: var(--green);
@@ -586,7 +575,6 @@ nav,
 }
 
 // headerga styles
-
 header {
 
     nav {
@@ -646,12 +634,10 @@ header {
             }
 
             button {
-                display: flex;
-                align-items: center;
-                justify-content: center;
                 width: 44px;
                 height: 44px;
                 padding: 10px;
+                gap: 10px;
                 color: var(--green);
                 text-align: center;
                 font-size: 14px;
@@ -663,20 +649,20 @@ header {
                 border: solid var(--light-white) 1px;
             }
 
-            .language {
+            .language{
                 z-index: 10;
                 user-select: none;
             }
 
-            .lang-border {
+            .lang-border{
                 border: solid var(--green) 1px;
             }
 
-            .hidden {
+            .hidden{
                 display: none;
             }
 
-            .hidden {
+            .hidden{
                 display: inline-block;
                 position: absolute;
                 margin-top: 148px;
@@ -685,9 +671,7 @@ header {
                 overflow: hidden;
                 width: 44px;
                 display: none;
-
-                .ru,
-                .en {
+                .ru, .en{
                     width: 100%;
                     height: 44px;
                     padding: 10px;
@@ -704,18 +688,17 @@ header {
                     user-select: none;
                     border: solid var(--green) 1px;
                 }
-
-                .ru {
+                .ru{
                     margin-bottom: 5px;
                 }
             }
 
-            .lang-on {
+            .lang-on{
                 display: flex;
                 flex-direction: column;
             }
 
-            .lang-fixer {
+            .lang-fixer{
                 width: 100%;
                 height: 100vh;
                 position: fixed;
@@ -725,7 +708,7 @@ header {
                 display: none;
             }
 
-            .lang-fix {
+            .lang-fix{
                 display: flex;
             }
 
@@ -853,6 +836,7 @@ header {
     // section "why us"
 
     .why {
+        height: 60vh;
         .top {
             .why-p {
                 color: var(--green);
@@ -1440,7 +1424,7 @@ footer {
 // info-xizmatlar sytle
 
 
-.xizlmatlar-2 {
+.xizmatlar-2{
     padding: 20px 100px;
     width: 100%;
     // info2: info xizmatlarning asosiy stylelar 
@@ -1451,56 +1435,47 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    .b1 {
+    .b1{
         width: 40%;
         height: 100%;
         display: flex;
         justify-content: center;
         flex-direction: column;
-
-        .menu-x {
+        .menu-x{
             margin-top: -100px;
-
-            .a1 {
+            .a1{
                 color: gray;
             }
-
-            a {
+            a{
                 font-size: 20px;
                 color: var(--dark-white);
-
+                
             }
-
-            img {
+            img{
                 transform: translateY(4px);
             }
         }
 
         .menu-w {
             margin-top: 100px;
-
-            .sizuchun {
+            .sizuchun{
                 margin-bottom: 40px;
                 font-size: 20px;
                 color: #0FC36D;
                 font-weight: 600;
             }
-
-            .siz-2 {
+            .siz-2{
                 margin-bottom: 40px;
                 font-size: 40px;
                 font-weight: 600;
                 color: var(--dark-white);
             }
-
-            .siz-3 {
+            .siz-3{
                 margin-bottom: 40px;
                 font-size: 14px;
                 color: gray;
             }
-
-            .siz-btn {
+            .siz-btn{
                 padding: 14px 20px;
                 background: var(--green);
                 box-shadow: 0px 8px 32px 0px var(--green-shadow);
@@ -1510,7 +1485,6 @@ footer {
                 transition: 0.5s;
                 cursor: pointer;
                 border: 1px solid var(--green);
-
                 &:hover {
                     background: transparent;
                     box-shadow: 0px 8px 32px 0px var(--ink-shadow);
@@ -1520,21 +1494,18 @@ footer {
         }
     }
 
-    .b2 {
-
+    .b2{
         width: 60%;
         height: 100%;
         display: flex;
         justify-content: end;
         align-items: center;
-
-        .video-youtube {
+        .video-youtube{
             width: 700px;
             height: 392px;
             border-radius: 20px;
             overflow: hidden;
-
-            iframe {
+            iframe{
                 width: 100%;
                 height: 100%;
             }
