@@ -182,3 +182,28 @@ function swapTextContent(element1, element2) {
 ru.addEventListener('click', function () {
     swapTextContent(ru, uz);
 });
+
+
+var gamMenu = document.querySelector('.gamburger')
+var menuX = document.querySelector('.menu-btn-x')
+var responsiveIn = document.querySelector('.resposive-menu-in')
+var responsiveMenu = document.querySelector('.responsive-menu')
+var responsiveMenuFixer = document.querySelector('.resposive-menu-fixer')
+
+gamMenu.addEventListener('click', ()=>{
+    responsiveMenu.style.display = 'flex'
+    responsiveMenuFixer.classList.add('resposive-menu-fixer-on')
+    responsiveIn.classList.add('resposive-menu-in-on')
+})
+
+menuX.addEventListener('click', ()=>{
+    responsiveMenuFixer.classList.add('resposive-menu-fixer-of')
+    responsiveIn.classList.add('resposive-menu-in-of')
+    setTimeout(()=>{
+        responsiveMenu.style.display = 'none'
+        responsiveMenuFixer.classList.remove('resposive-menu-fixer-of')
+        responsiveIn.classList.remove('resposive-menu-in-of')
+        responsiveMenuFixer.classList.remove('resposive-menu-fixer-on')
+        responsiveIn.classList.remove('resposive-menu-in-on')
+    },500)
+})

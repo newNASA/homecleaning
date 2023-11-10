@@ -3,14 +3,11 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
-
-    // border: 1px solid red;
     &::selection {
         background-color: var(--green);
         color: var(--white-color);
     }
 }
-
 
 .preloader {
     position: fixed;
@@ -37,7 +34,6 @@
         width: 170px;
         height: 170px;
         position: absolute;
-
         &::before,
         &::after {
             content: '';
@@ -46,8 +42,8 @@
             width: inherit;
             height: inherit;
             position: absolute;
-            left: 0;
-            top: 0;
+            left: -17px;
+            top: -17px;
             animation: pre2 2s linear infinite;
             opacity: 0;
         }
@@ -72,6 +68,14 @@
             }
         }
     }
+}
+
+.responsive-menu{
+    display: none;
+}
+
+.responsive-on{
+    display: none;
 }
 
 
@@ -586,16 +590,14 @@ button {
 }
 
 nav,
-.nav-top,
-.footer-bottom {
+.nav-top{
     padding-left: 100px;
     padding-right: 100px;
     display: flex;
     align-items: center;
 }
 
-.nav-top,
-.footer-bottom {
+.nav-top{
     height: 50px;
     font-size: 0.9rem;
     color: var(--white-color);
@@ -606,7 +608,7 @@ nav,
     .left,
     .right {
         display: flex;
-        align-items: center;
+        // align-items: center;
         gap: 10px;
     }
 
@@ -808,18 +810,17 @@ header {
             }
 
             h1 {
-                width: 615px;
                 color: var(--ink-color);
                 font-size: 3.5rem;
                 font-weight: 700;
                 line-height: 72px;
+                width: 600px;
             }
 
             p {
                 margin-top: 24px;
                 color: var(--dark-white);
                 line-height: 24px;
-                width: 479px;
             }
 
             .btns {
@@ -1139,7 +1140,6 @@ section {
             display: flex;
             justify-content: space-between;
             margin-top: 60px;
-
             .qt {
                 .q-img {
                     mix-blend-mode: screen;
@@ -1210,8 +1210,7 @@ section {
                 justify-content: center;
 
                 .logo {
-                    width: 190px;
-                    height: 90px;
+                    padding: 25px 40px;
                     border-radius: 16px;
                     display: flex;
                     justify-content: center;
@@ -1239,7 +1238,6 @@ footer {
         padding: 48px 325px;
         text-align: center;
         border-radius: 32px;
-
         h2 {
             color: var(--green);
             font-weight: 600;
@@ -1414,6 +1412,7 @@ footer {
         margin-top: 56px;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 24px;
 
         div {
@@ -1551,10 +1550,15 @@ footer {
                 transition: 0.5s;
                 cursor: pointer;
                 border: 1px solid var(--green);
-
+                a{
+                    color: var(--white-color);
+                }
                 &:hover {
                     background: transparent;
                     box-shadow: 0px 8px 32px 0px var(--ink-shadow);
+                    color: var(--green);
+                }
+                &:hover.siz-btn a{
                     color: var(--green);
                 }
             }
