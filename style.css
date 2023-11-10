@@ -627,6 +627,9 @@ header nav .left {
   color: var(--green);
   line-height: 44px;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 header nav .center {
   width: 30%;
