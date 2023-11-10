@@ -1,3 +1,716 @@
+@import "../style.css";
+
+@media screen and (max-width: 1025px){
+    .nav-top{
+        padding: 0 60px;
+        .left{
+            align-items: center;
+            img{
+                width: 30px;
+                height: 30px;
+            }
+            .text{
+                width: 250px;
+                display: inline-block;
+                text-align: center;
+            }
+        }
+    }
+    header{
+        nav{
+            padding: 0 60px;
+            .left{
+                h1{
+                    // width: 200px;
+                    font-size: 25px;
+                }
+            }
+            .center{
+                justify-content: space-evenly;
+                align-items: center;
+                margin-left: 40px;
+                a{
+                    font-size: 1rem;
+                }
+            }
+            .right{
+                button{
+                    width: 40px;
+                    height: 40px;
+
+                }
+                .hidden{
+                    width: 40px;
+                    margin-left: 50px;
+                    margin-top: 138px;
+                    .en, .ru{
+                        height: 40px;
+                    }
+                }
+            }
+        }
+        .head-body{
+            .head-left{
+                padding: 100px 0 100px 60px;
+                h2 {
+                    color: var(--green);
+                    font-weight: 600;
+                    font-size: 1.8rem;
+                    line-height: 104px;
+                }
+                
+                h1 {
+                    color: var(--ink-color);
+                    font-weight: 700;
+                    line-height: 60px;
+                    font-size: 2.8rem;
+                }
+            }
+            .head-right{
+                display: flex;
+                padding: 0;
+                align-items: end;
+                overflow: hidden;
+                img{
+                    width: 550px;
+                    height: 550px;
+                }
+            }
+        }
+    }
+    
+    section{
+        padding: 0 70px;
+        .our-app{
+            padding: 50px 70px;
+            .left{
+                h2{
+                    font-size: 1.5rem;
+                    margin-bottom: 20px;
+                }
+                h1{
+                    font-size: 2.5rem;
+                    line-height: 50px;
+                }
+                p{
+                    width: 350px;
+                }
+                .platforms{
+                    margin-top: 30px;
+                }
+            }
+            .right{
+                img{
+                    margin-top: -77px;
+                }
+            }
+        }
+        .mijozlarNimaDeydi{
+            .top{
+                p{
+                    font-size: 20px;
+                }
+                h1{
+                    font-size: 36px;
+
+                }
+            }
+            .bottom{
+                margin-bottom: 200px;
+                .qt{
+                    p{
+                        font-size: 19px;
+                    }
+                    .profile{
+                        margin-top: 0;
+                        .im1{
+                            width: 40px;
+                            height: 40px;
+                        }
+                        // font-size: ;
+                    }
+                }
+            }
+        }
+        .hamkorlar{
+            .top{
+                p{
+                    font-size: 22px;
+                }
+                h1{
+                    font-size: 36px;
+                }
+            }
+            .slide-bottom{
+                .bottom{
+                    .logo{
+                        padding: 20px 30px;
+                        img{
+                            width: 80px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        padding: 80px  70px;
+        .foot-container{
+            padding: 60px 190px;
+        }
+    }
+}
+
+@media screen and (max-width:768px) and (min-width: 426px){
+    .responsive-menu{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 111111111;
+        display: none;
+        align-items: center;
+        justify-content: end;
+        .resposive-menu-fixer{
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(5px);
+            background-color: rgba(0, 0, 0 , 0.3);
+            position: absolute;
+        }
+        .resposive-menu-fixer-on{
+            animation: menu-fix .5s ease-out forwards;
+        }
+        .resposive-menu-fixer-of{
+            animation: menu-fix-of .5s ease-out forwards;
+        }
+
+
+@keyframes menu-fix {0%{backdrop-filter: blur(0px);background-color: rgba(0, 0, 0 , 0);}100%{backdrop-filter: blur(5px);background-color: rgba(0, 0, 0 , 0.3);}}
+@keyframes menu-fix-of {0%{backdrop-filter: blur(5px);background-color: rgba(0, 0, 0 , 0.3);}100%{backdrop-filter: blur(0px);background-color: rgba(0, 0, 0 , 0);}}
+        
+
+        .resposive-menu-in{
+            width: 80%;
+            height: 100%;
+            background: var(--light-white);
+            opacity: 1;
+            z-index: 12;
+            display: flex;
+            align-items: end;
+            flex-direction: column;
+            transform: translateX(300px);
+            opacity: 0;
+            .menu-btn-x{
+                width: 30px;
+                height: 30px;
+                margin: 20px 20px;
+                background: url(../imgs/add.png);
+                background-repeat: no-repeat;
+                background-size: 130%;
+                padding: 0;
+                background-position: center;
+                cursor: pointer;
+            }
+            .texts{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                a{
+                    color: var(--green);
+                }
+                .btn-in-menu{
+                    color: var(--white-color);
+                }
+                // margin-top: ;
+                .all-responsive-menu{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 40px;
+                    font-size: 20px;
+                    color: var(--green);
+                    border: solid transparent 2px;
+                    border-bottom: solid var(--green) 2px;
+                    margin-bottom: 20px;
+                }
+                button{
+                    padding: 14px 20px;
+                    background: var(--green);
+                    box-shadow: 0px 8px 32px 0px var(--green-shadow);
+                    color: var(--white-color);
+                    font-weight: 600;
+                    cursor: pointer;
+                    border: 1px solid var(--green);
+                    border-radius: 12px;
+                    &:hover {
+                        background: transparent;
+                        box-shadow: 0px 8px 32px 0px var(--ink-shadow);
+                        color: var(--green);
+                    }
+                }
+            }
+        }
+        
+        .resposive-menu-in-on{
+            animation: menu-in .5s ease-out forwards;
+        }
+        .resposive-menu-in-of{
+            animation: menu-in-of .5s ease-out forwards;
+        }
+    }
+    
+    @keyframes menu-in {0%{transform: translateX(300px);}50%{opacity: 1;}100%{opacity: 1;transform: translateX(0px);}}
+    @keyframes menu-in-of {0%{transform: translateX(0px);opacity: 1;}50%{opacity: 0;}100%{opacity: 0;transform: translateX(300px); }}
+
+    .nav-top{
+        padding: 0 40px;
+        .left{
+            .arrow{
+                display: none;
+            }
+            .text,.ish{
+                display: none;
+            }
+        }
+    }
+    header{
+        nav{
+        padding: 0 40px;
+            .left{
+                h1{
+                    display: flex;
+                }
+            }
+            .center{
+                display: none;
+            }
+            .right{
+                .gamburger{
+                    display: flex;
+                }
+                .ilova{
+                    display: none;
+                }
+            }
+        }
+        .head-body{
+            .head-left{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h2{
+                    width: fit-content;
+                }
+                h1{
+                    text-align: center;
+                }
+                p{
+                    width: 400px;
+                    text-align: center;
+                }
+            }
+            .head-right{
+                display: none;
+            }
+        }
+    }
+
+    .why-forYou{
+        .why{
+            .bottom{
+                padding: 0 0px;
+                .bx{
+                    margin: 0 20px;
+                }
+            }
+        }
+        .forYou{
+            padding: 0px 150px;
+            .bottom{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    section{
+        .our-app{
+            .left{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                h1{
+                    text-align: center;
+                }
+                p{
+                    text-align: center;
+                }
+                .platforms{
+                    width: fit-content;
+                    a{
+                        margin: 0 20px;
+                    }
+                }
+            }
+            .right{
+                display: none;
+            }
+        }
+        .mijozlarNimaDeydi{
+            margin-top: 160px;
+            .bottom{
+                width: fit-content;
+                height: fit-content;
+                display: flex;
+                flex-direction: column;
+                .qt{
+                    width: fit-content;
+                    height: fit-content;
+                    margin: 30px 0;
+                    padding: 0 100px;
+                    .profile{
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+        .hamkorlar{
+            margin: 0;
+            .slide-bottom{
+                overflow: auto;
+                .bottom{
+                    margin: 50px 0;
+                }
+            }
+        }
+    }
+    footer{
+        .foot-container{
+            padding: 60px;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) and (min-width:377px){
+    .nav-top{
+        padding: 0 40px;
+        .left{
+            .arrow{
+                display: none;
+            }
+            .text,.ish{
+                display: none;
+            }
+        }
+    }
+    header{
+        nav{
+        padding: 0 40px;
+            .left{
+                h1{
+                    display: flex;
+                }
+            }
+            .center{
+                display: none;
+            }
+            .right{
+                .gamburger{
+                    display: flex;
+                }
+                .ilova{
+                    display: none;
+                }
+            }
+        }
+        .head-body{
+            .head-left{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h2{
+                    width: fit-content;
+                }
+                h1{
+                    text-align: center;
+                }
+                p{
+                    width: 400px;
+                    text-align: center;
+                }
+            }
+            .head-right{
+                display: none;
+            }
+        }
+    }
+
+    .why-forYou{
+        .why{
+            .bottom{
+                padding: 0 0px;
+                .bx{
+                    margin: 0 20px;
+                }
+            }
+        }
+        .forYou{
+            padding: 0px 150px;
+            .bottom{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    section{
+        .our-app{
+            .left{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                h1{
+                    text-align: center;
+                }
+                p{
+                    text-align: center;
+                }
+                .platforms{
+                    width: fit-content;
+                    a{
+                        margin: 0 20px;
+                    }
+                }
+            }
+            .right{
+                display: none;
+            }
+        }
+        .mijozlarNimaDeydi{
+            margin-top: 160px;
+            .bottom{
+                width: fit-content;
+                height: fit-content;
+                display: flex;
+                flex-direction: column;
+                .qt{
+                    width: fit-content;
+                    height: fit-content;
+                    margin: 30px 0;
+                    padding: 0 100px;
+                    .profile{
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+        .hamkorlar{
+            margin: 0;
+            .slide-bottom{
+                .bottom{
+                    margin: 50px 0;
+                }
+            }
+        }
+    }
+    footer{
+        .foot-container{
+            padding: 60px;
+        }
+    }
+    .nav-top,
+    .footer-bottom {
+        padding-right: 25px;
+        padding-left: 25px;
+        font-size: 14px;
+        height: 40px;
+
+        .left {
+            img {
+                width: 20px;
+                height: 20px;
+            }
+
+            .arrow,
+            .text,
+            .ish {
+                display: none;
+            }
+        }
+
+    }
+    header{
+        nav{
+            .left{
+                h1{
+                    display: none;
+                }
+            }
+        }
+        .head-body{
+            .head-left{
+                padding: 100px 30px;
+                h2{
+                    font-size: 1.5rem;
+                }
+                h1{
+                    font-size: 2rem;
+                    width: fit-content;
+                }
+            }
+        }
+    }
+    .why-forYou{
+        .forYou{
+            padding: 0 50px;
+        }
+        .why{
+            .top{
+                padding: 0 30px;
+                .why-ct{
+                    width: fit-content;
+                }
+            }
+            .bottom{
+                display: flex;
+                flex-direction: column;
+                .bx{
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+    section{
+        padding: 0 30px;
+        .our-app{
+            padding: 50px 0;
+            .left{
+                h2{
+                    font-size: 1.5rem;
+                }
+                h1{
+                    font-size: 2rem;
+                }
+                p{
+                    font-size: 14px;
+                }
+                .platforms{
+                    a{
+                        margin: 10px 10px ;
+                        img{
+                            width: 140px;
+                            
+                        }
+                    }
+                }
+            }
+        }
+        .mijozlarNimaDeydi{
+            .bottom{
+                .qt{
+                    padding: 0 8px;
+                }
+            }
+        }
+        .slide-bottom {
+            display: flex;
+            width: 114%;
+            overflow: hidden;
+            margin-left: -7%;
+
+            .bottom {
+                display: flex;
+                align-items: center;
+                height: 130px;
+
+                .logo {
+                    width: 275px;
+                    height: 110;
+                    margin-left: 45.5px;
+                }
+
+                .log1 {
+                    animation: log1 14s linear infinite;
+
+                    @keyframes log1 {
+                        0% {
+                            margin-left: 46px;
+                        }
+
+                        10% {
+                            margin-left: 46px;
+                        }
+
+                        90% {
+                            margin-left: -167.5%;
+                        }
+
+                        100% {
+                            margin-left: -167.5%
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        padding: 80px 30px;
+        height: fit-content;
+        .foot-container{
+            padding: 60px 20px;
+            h2{
+                font-size: 1.5rem;
+            }
+            h1{
+                font-size: 2rem;
+                line-height: 50px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+    .chat{
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .chat-active, .chat-unactive{
+        width: 402px;
+        right: 12px;
+        padding: 32px 26px 20px 26px;
+        z-index: 20;
+        .bottom{
+            form{
+                .text{
+                    width: 285px;
+                    height: 58px;
+                    padding: 15px;
+                }
+                button{
+                    width: 58px;
+                    height: 58px;
+                }
+            }
+        }
+    }
+
+    .contact-us,
+    .login,
+    .sign-up,
+    .profile-edit {
+        .container {
+            width: 370px;
+        }
+    }
+}
+
 @media screen and (max-width:376px) {
 
     .xizmatlar{
@@ -279,7 +992,6 @@
 
                     button {
                         font-size: 12px;
-                        padding: 10px 16px;
                     }
                 }
             }
@@ -532,6 +1244,7 @@
         width: 350px;
         right: 12px;
         padding: 32px 26px 20px 26px;
+        z-index: 20;
         .bottom{
             form{
                 .text{
