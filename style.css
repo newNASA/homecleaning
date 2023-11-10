@@ -13,6 +13,16 @@
   color: var(--white-color);
 }
 
+.responsive-menu-fixer {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: green;
+  z-index: 111111111;
+}
+
 .preloader {
   position: fixed;
   width: 100%;
