@@ -127,6 +127,9 @@
   footer .foot-container {
     padding: 60px 190px;
   }
+  .xizmatlar .center {
+    height: auto;
+  }
 }
 @media screen and (max-width: 768px) and (min-width: 426px) {
   .responsive-menu {
@@ -956,7 +959,6 @@
   .xizmatlar .center {
     flex-direction: column-reverse;
     justify-content: center;
-    height: 150px;
   }
   .xizmatlar .center .left select {
     outline: none;

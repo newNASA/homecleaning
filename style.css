@@ -597,6 +597,7 @@ nav,
 .nav-top .left,
 .nav-top .right {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 .nav-top .right li {
@@ -1208,11 +1209,10 @@ footer p {
   width: 100%;
   background-color: var(--light-white);
   border-radius: 24px;
-  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px;
+  padding: 0 24px;
 }
 .xizmatlar .center .left select {
   display: none;
@@ -1238,7 +1238,6 @@ footer p {
 .xizmatlar .center .right {
   display: flex;
   align-items: center;
-  border-left: 1px solid #786868;
   height: 100%;
   padding: 24px;
 }

@@ -193,6 +193,12 @@
             padding: 60px 190px;
         }
     }
+
+    .xizmatlar{
+        .center{
+            height: auto;
+        }
+    }
 }
 
 @media screen and (max-width:768px) and (min-width: 426px) {
@@ -504,7 +510,6 @@
 
             .slide-bottom {
                 overflow: auto;
-
                 .bottom {
                     margin: 50px 0;
                 }
@@ -1250,7 +1255,6 @@
         .center {
             flex-direction: column-reverse;
             justify-content: center;
-            height: 150px;
 
             .left {
                 select {
