@@ -676,63 +676,6 @@ header nav .right button {
   cursor: pointer;
   border: solid var(--light-white) 1px;
 }
-header nav .right .language {
-  z-index: 10;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-}
-header nav .right .lang-border {
-  border: solid var(--green) 1px;
-}
-header nav .right .hidden {
-  display: inline-block;
-  position: absolute;
-  margin-top: 148px;
-  margin-left: 54px;
-  z-index: 9;
-  overflow: hidden;
-  width: 44px;
-  display: none;
-}
-header nav .right .hidden .ru,
-header nav .right .hidden .en {
-  width: 100%;
-  height: 44px;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--green);
-  font-size: 14px;
-  font-weight: 600;
-  border-radius: 12px;
-  background: var(--light-white);
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  border: solid var(--green) 1px;
-}
-header nav .right .hidden .ru {
-  margin-bottom: 5px;
-}
-header nav .right .lang-on {
-  display: flex;
-  flex-direction: column;
-}
-header nav .right .lang-fixer {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 8;
-  display: none;
-}
-header nav .right .lang-fix {
-  display: flex;
-}
 header nav .right a {
   background-color: var(--green);
   padding: 14px 20px;
@@ -1180,6 +1123,7 @@ footer p {
   padding-right: 100px;
   padding-left: 100px;
   margin-top: 120px;
+  margin-bottom: 100px;
 }
 .xizmatlar .top {
   text-align: center;
@@ -1346,9 +1290,8 @@ footer p {
 }
 
 .xizmatlar-2 {
-  padding: 20px 100px;
+  padding: 100px;
   width: 100%;
-  height: 82vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1431,6 +1374,9 @@ footer p {
 .xizmatlar-2 .b2 .video-youtube iframe {
   width: 100%;
   height: 100%;
+}
+.xizmatlar-2 .b2 .siz-btn {
+  display: none;
 }
 
 .profile {

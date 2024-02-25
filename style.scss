@@ -702,68 +702,6 @@ header {
                 border: solid var(--light-white) 1px;
             }
 
-            .language {
-                z-index: 10;
-                user-select: none;
-            }
-
-            .lang-border {
-                border: solid var(--green) 1px;
-            }
-
-            .hidden {
-                display: inline-block;
-                position: absolute;
-                margin-top: 148px;
-                margin-left: 54px;
-                z-index: 9;
-                overflow: hidden;
-                width: 44px;
-                display: none;
-
-                .ru,
-                .en {
-                    width: 100%;
-                    height: 44px;
-                    padding: 10px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    color: var(--green);
-                    // text-align: center;
-                    font-size: 14px;
-                    font-weight: 600;
-                    border-radius: 12px;
-                    background: var(--light-white);
-                    cursor: pointer;
-                    user-select: none;
-                    border: solid var(--green) 1px;
-                }
-
-                .ru {
-                    margin-bottom: 5px;
-                }
-            }
-
-            .lang-on {
-                display: flex;
-                flex-direction: column;
-            }
-
-            .lang-fixer {
-                width: 100%;
-                height: 100vh;
-                position: fixed;
-                top: 0;
-                left: 0;
-                z-index: 8;
-                display: none;
-            }
-
-            .lang-fix {
-                display: flex;
-            }
-
             a {
                 background-color: var(--green);
                 padding: 14px 20px;
@@ -1305,6 +1243,7 @@ footer {
     padding-right: 100px;
     padding-left: 100px;
     margin-top: 120px;
+    margin-bottom: 100px;
 
     .top {
         text-align: center;
@@ -1486,15 +1425,9 @@ footer {
 
 // info-xizmatlar sytle
 
-
 .xizmatlar-2 {
-    padding: 20px 100px;
+    padding:  100px;
     width: 100%;
-    // info2: info xizmatlarning asosiy stylelar 
-
-    height: 82vh;
-
-    //_________________________________________________
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1590,6 +1523,9 @@ footer {
                 width: 100%;
                 height: 100%;
             }
+        }
+        .siz-btn{
+            display: none;
         }
     }
 }

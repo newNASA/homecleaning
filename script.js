@@ -1,7 +1,3 @@
-var pre = document.querySelector('.preloader')
-setTimeout(()=>{
-    pre.style.display = 'none'
-},2000)
 
 // sayt nav-topdan o'tganda navbar fixedga aylanadi
 
@@ -86,11 +82,11 @@ chat.addEventListener("click", function () {
     if (chat_active.classList.contains("chat-active")) {
         chat.style.backgroundColor = "var(--white-color)";
         chat.style.border = "1px solid var(--green)";
-        chat.style.backgroundImage = "url(./imgs/add.png)";
+        chat.style.backgroundImage = "url(/imgs/add.png)";
     } else {
         chat.style.backgroundColor = "var(--green)";
         chat.style.border = "none";
-        chat.style.backgroundImage = "url(./imgs/sms.png)";
+        chat.style.backgroundImage = "url(/imgs/sms.png)";
     }
 });
 
@@ -136,52 +132,6 @@ if (elThemeTogglerButton) {
 }
 
 // ___________________________________________________________________________
-
-// change language
-
-var lang = document.querySelector('.hidden');
-var langFixer = document.querySelector('.lang-fixer')
-let uz = document.querySelector('.uz');
-let en = document.querySelector('.en');
-let ru = document.querySelector('.ru');
-
-window.addEventListener('scroll', () => {
-    lang.classList.remove('lang-on');
-    langFixer.classList.remove('lang-fix')
-    uz.classList.remove('lang-border')
-});
-
-uz.addEventListener('click', () => {
-    uz.classList.toggle('lang-border')
-    lang.classList.toggle('lang-on')
-    langFixer.classList.toggle('lang-fix')
-})
-
-langFixer.addEventListener('click', ()=>{
-    uz.classList.remove('lang-border')
-    lang.classList.remove('lang-on')
-    langFixer.classList.remove('lang-fix')
-})
-
-function swapTextContent(element1, element2) {
-    var temp = element1.textContent;
-    element1.textContent = element2.textContent;
-    element2.textContent = temp;
-}
-
-en.addEventListener('click', function () {
-    swapTextContent(en, uz);
-});
-
-function swapTextContent(element1, element2) {
-    var temp = element1.textContent;
-    element1.textContent = element2.textContent;
-    element2.textContent = temp;
-}
-
-ru.addEventListener('click', function () {
-    swapTextContent(ru, uz);
-});
 
 
 var gamMenu = document.querySelector('.gamburger')
