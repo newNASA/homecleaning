@@ -793,7 +793,6 @@
     color: var(--dark-white);
   }
   section .our-app .left .platforms {
-    width: 115%;
     overflow: hidden;
     display: flex;
     justify-content: space-between;

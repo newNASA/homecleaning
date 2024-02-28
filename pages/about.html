@@ -2,36 +2,37 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Xizmatlar</title>
 
-    <link rel="shortcut icon" href="../imgs/logo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../imgs/logo.svg" type="image/x-icon" />
 
     <!-- link style -->
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style.css" />
 
     <!-- responsive link -->
-    <link rel="stylesheet" href="../responsive/mobile.css">
+    <link rel="stylesheet" href="../responsive/mobile.css" />
 
     <!-- fontlar ulandi -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
     <script>
-        let localSTheme = localStorage.getItem('theme');
+        let localSTheme = localStorage.getItem("theme");
         let themeToSet = localSTheme;
 
         if (!localSTheme) {
-            themeToSet = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            themeToSet = window.matchMedia("(prefers-color-scheme: dark)").matches
+                ? "dark"
+                : "light";
         }
 
-        document.documentElement.setAttribute('data-theme', themeToSet);
+        document.documentElement.setAttribute("data-theme", themeToSet);
     </script>
 </head>
 
 <body>
-
     <div class="preloader">
         <div class="pre"></div>
     </div>
@@ -44,19 +45,20 @@
         <div class="top">
             <h2>Chat</h2>
             <p>Bizga qandaydir savolingiz bormi?</p>
-            <hr>
+            <hr />
         </div>
         <div class="center"></div>
         <div class="bottom">
             <form>
-                <input type="text" class="text" placeholder="Yozishni boshlash" required>
-                <button class="send-btn"><img src="../imgs/send-2.png" alt="send img"></button>
+                <input type="text" class="text" placeholder="Yozishni boshlash" required />
+                <button class="send-btn">
+                    <img src="../imgs/send-2.png" alt="send img" />
+                </button>
             </form>
         </div>
     </div>
 
     <!-- chat coding end -->
-
 
     <!-- login page coding -->
 
@@ -64,16 +66,16 @@
         <div class="container">
             <div class="top">
                 <h2>Kirish</h2>
-                <img src="../imgs/add.png" alt="x img" class="login-x">
+                <img src="../imgs/add.png" alt="x img" class="login-x" />
             </div>
             <div class="bottom">
                 <p>Kirish uchun login va parolingizni kiriting</p>
                 <form action="">
-                    <img src="../imgs/profile.png" alt="profile icon">
-                    <input type="text" placeholder="Login" required>
-                    <img src="../imgs/lock.png" alt="phone img">
-                    <input type="text" placeholder="Parol" required>
-                    <input type="submit" value="Kirish" class="submit">
+                    <img src="../imgs/profile.png" alt="profile icon" />
+                    <input type="text" placeholder="Login" required />
+                    <img src="../imgs/lock.png" alt="phone img" />
+                    <input type="text" placeholder="Parol" required />
+                    <input type="submit" value="Kirish" class="submit" />
                 </form>
                 <a class="log_sign">Ro'yxatdan o'tish</a>
             </div>
@@ -88,20 +90,20 @@
         <div class="container">
             <div class="top">
                 <h2>Ro'yxatdan o'tish</h2>
-                <img src="./imgs/add.png" alt="x img" class="sign-up-x">
+                <img src="./imgs/add.png" alt="x img" class="sign-up-x" />
             </div>
             <div class="bottom">
                 <p>Ro'yxatdan o'tish uchun login va parolingizni kiriting</p>
                 <form action="">
-                    <img src="../imgs/profile-circle.svg" alt="profile icon">
-                    <input type="text" placeholder="Ismingiz" required>
-                    <img src="../imgs/profile.png" alt="profile icon">
-                    <input type="text" placeholder="Login" required>
-                    <img src="../imgs/lock.png" alt="phone img">
-                    <input type="text" placeholder="Parol" required>
-                    <img src="../imgs/lock.png" alt="lock img">
-                    <input type="text" placeholder="Parolni qaytadan kiriting" required>
-                    <input type="submit" value="Ro'yxatdan o'tish" class="submit">
+                    <img src="../imgs/profile-circle.svg" alt="profile icon" />
+                    <input type="text" placeholder="Ismingiz" required />
+                    <img src="../imgs/profile.png" alt="profile icon" />
+                    <input type="text" placeholder="Login" required />
+                    <img src="../imgs/lock.png" alt="phone img" />
+                    <input type="text" placeholder="Parol" required />
+                    <img src="../imgs/lock.png" alt="lock img" />
+                    <input type="text" placeholder="Parolni qaytadan kiriting" required />
+                    <input type="submit" value="Ro'yxatdan o'tish" class="submit" />
                 </form>
                 <a class="sign_log">Kirish</a>
             </div>
@@ -110,23 +112,25 @@
 
     <!-- sign up coding end -->
 
-
     <!-- contact-us coding -->
 
     <div class="contact-us">
         <div class="container">
             <div class="top">
                 <h2>Aloqa ma'lumotlari</h2>
-                <img src="../imgs/add.png" alt="x img" class="contact-us-x">
+                <img src="../imgs/add.png" alt="x img" class="contact-us-x" />
             </div>
             <div class="bottom">
-                <p>Aloqaga chiqishimiz uchun quyida so’ralgan ma’lumotlarni bizga jo’nating</p>
+                <p>
+                    Aloqaga chiqishimiz uchun quyida so’ralgan ma’lumotlarni bizga
+                    jo’nating
+                </p>
                 <form action="">
-                    <img src="../imgs/profile.png" alt="profile icon">
-                    <input type="text" placeholder="Ismingiz" required>
-                    <img src="../imgs/call.png" alt="phone img">
-                    <input type="text" placeholder="Telefon raqamingiz" required>
-                    <input type="submit" value="Yuborish" class="submit">
+                    <img src="../imgs/profile.png" alt="profile icon" />
+                    <input type="text" placeholder="Ismingiz" required />
+                    <img src="../imgs/call.png" alt="phone img" />
+                    <input type="text" placeholder="Telefon raqamingiz" required />
+                    <input type="submit" value="Yuborish" class="submit" />
                 </form>
             </div>
         </div>
@@ -139,13 +143,23 @@
         <div class="resposive-menu-in">
             <div class="menu-btn-x"></div>
             <div class="texts">
-                <div class="all-responsive-menu menu1"><a href="/">Bosh Sahifa</a></div>
-                <div class="all-responsive-menu menu1"><a href="/pages/xizmatlar.html">Xizmatlar</a></div>
-                <div class="all-responsive-menu menu2"><a href="/pages/blog.html">Blog</a></div>
-                <div class="all-responsive-menu menu3"><a href="/pages/about.html">Biz haqimizda</a></div>
-                <button><a class="btn-in-menu"
+                <div class="all-responsive-menu menu1">
+                    <a href="/">Bosh Sahifa</a>
+                </div>
+                <div class="all-responsive-menu menu1">
+                    <a href="/pages/xizmatlar.html">Xizmatlar</a>
+                </div>
+                <div class="all-responsive-menu menu2">
+                    <a href="/pages/blog.html">Blog</a>
+                </div>
+                <div class="all-responsive-menu menu3">
+                    <a href="/pages/about.html">Biz haqimizda</a>
+                </div>
+                <button>
+                    <a class="btn-in-menu"
                         href="https://play.google.com/store/apps/details?id=io.hometasker.android">Ilovamizni sinab
-                        ko’ring</a></button>
+                        ko’ring</a>
+                </button>
             </div>
         </div>
     </div>
@@ -154,19 +168,26 @@
         <!-- Navbar coding -->
         <div class="nav-top">
             <div class="left">
-                <img width="30px" src="../imgs/call.png" alt="call img">
+                <img width="30px" src="../imgs/call.png" alt="call img" />
                 <p>77 57</p>
-                <img src="../imgs/arrow-left.png" alt="arrow img" class="arrow">
-                <p class="text">Xizmatlarimiz haqida bepul ma’lumot olish uchun qo'ng'iroq qiling!</p>
-                <img src="../imgs/arrow-left.png" alt="arrow img" class="arrow">
+                <img src="../imgs/arrow-left.png" alt="arrow img" class="arrow" />
+                <p class="text">
+                    Xizmatlarimiz haqida bepul ma’lumot olish uchun qo'ng'iroq qiling!
+                </p>
+                <img src="../imgs/arrow-left.png" alt="arrow img" class="arrow" />
                 <p class="ish">Ish vaqti: 09:00 - 18:00</p>
             </div>
             <div class="right">
                 <ul>
-                    <li><a href="https://www.youtube.com/channel/UCa70h5GSkNoVnnPKbvq12ww" target="_blank">YouTube</a>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCa70h5GSkNoVnnPKbvq12ww" target="_blank">YouTube</a>
                     </li>
-                    <li><a href="https://t.me/homecleaning_az" target="_blank">Telegram</a></li>
-                    <li><a href="https://www.instagram.com/aziziy.me/   " target="_blank">Instagram</a></li>
+                    <li>
+                        <a href="https://t.me/homecleaning_az" target="_blank">Telegram</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/aziziy.me/   " target="_blank">Instagram</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -174,7 +195,7 @@
         <nav>
             <a href="/">
                 <div class="left">
-                    <img src="../imgs/logo.svg" alt="logo img">
+                    <img src="../imgs/logo.svg" alt="logo img" />
                     <h1>Toza Makon</h1>
                 </div>
             </a>
@@ -185,13 +206,13 @@
             </div>
             <div class="right">
                 <button class="toggle-theme">
-                    <img src="../imgs/sun.svg" alt="Sun img">
+                    <img src="../imgs/sun.svg" alt="Sun img" />
                 </button>
                 <button class="profile">
-                    <img src="../imgs/profile.svg" alt="profile img">
+                    <img src="../imgs/profile.svg" alt="profile img" />
                 </button>
                 <button class="gamburger">
-                    <img src="../imgs/icons8-hamburger-menu-24.svg" alt="gamburger img">
+                    <img src="../imgs/icons8-hamburger-menu-24.svg" alt="gamburger img" />
                 </button>
                 <a href="https://play.google.com/store/apps/details?id=io.hometasker.android" target="_blank"
                     class="ilova">Ilovamizni sinab ko’ring</a>
@@ -203,34 +224,47 @@
 
     <!-- info-xizmatlar bo'limi -->
 
-    <div class="xizmatlar-2">
+    <div class="about xizmatlar-2">
         <div class="b1">
-
             <!-- info-xizmatlar bo'limi asosiy matinlar -->
 
             <div class="menu-x">
                 <a class="a1" href="../index.html">Bosh sahifa</a>
-                <img src="../imgs/arrow-right.svg" alt="">
-                <a href="xizmatlar.html">Xizmatlar</a>
-                <img src="../imgs/arrow-right.svg" alt="">
-                <a href="info-xizmatlar.html">Batafsil</a>
+                <img src="../imgs/arrow-right.svg" alt="" />
+                <a href="about.html">Biz haqimizda</a>
             </div>
             <div class="menu-w">
-                <div class="sizuchun">
-                    Biz siz uchun
-                </div>
-                <div class="siz-2">
-                    Uylarni tozalash xizmatini <br>
-                    taklif qilamiz
-                </div>
+                <div class="sizuchun">Toza Makon</div>
+                <h1 class="siz-2">Biz haqimizda</h1>
                 <div class="siz-3">
-                    Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng <br>
-                    ko'lamli xizmatlarni taqdim etamiz .
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat
+                    blanditiis rerum iste nihil et? Pariatur sint laudantium modi
+                    dolorem ducimus rerum error optio tenetur esse atque cum ipsam quasi
+                    est eum tempore obcaecati similique odio vel ut reiciendis possimus
+                    quibusdam, repellat iure. Quam alias fuga accusamus nihil explicabo
+                    nostrum tempore quae dolorum illum, natus laboriosam itaque ea
+                    quibusdam quod eius facilis temporibus ut dolorem quidem
+                    repellendus? Fugit dignissimos dolor dolorum reiciendis. Impedit
+                    ducimus ex nulla, repellendus qui eum corporis laudantium provident,
+                    magnam, aliquam molestias facere libero tenetur eos nam officia
+                    cumque? Quisquam vitae laudantium distinctio accusamus ipsam rem
+                    nihil laboriosam?
                 </div>
-                <button class="siz-btn contact"><a href="#">Buyurtma qilish</a></button>
             </div>
-
-
+            <div class="infos">
+                <div>
+                    <p>Mijozlarimiz</p>
+                    <h2>2000+</h2>
+                </div>
+                <div>
+                    <p>Ish Tajribamiz</p>
+                    <h2>10 yil</h2>
+                </div>
+                <div>
+                    <p>Ishchilar</p>
+                    <h2>500+</h2>
+                </div>
+            </div>
         </div>
 
         <!-- info-xizmatlar bo'limi asosiy video -->
@@ -244,114 +278,134 @@
             </div>
             <button class="siz-btn contact"><a href="#">Buyurtma qilish</a></button>
         </div>
-
-
     </div>
 
     <div class="why-forYou">
         <!-- nima uchun bizni tanlashingiz shart bo'limi -->
 
-        <div class="why" style="margin-bottom: 100px;">
+        <div class="why" style="margin-bottom: 100px">
             <div class="top">
                 <p class="why-p">Nima uchun</p>
                 <h1>Bizni tanlashingiz shart</h1>
-                <p class="why-ct">Xizmatlarimizdan foydalanishda quyidagi qulayliklarga <br> va imkoniyatlarga ega
-                    bo’lasiz</p>
+                <p class="why-ct">
+                    Xizmatlarimizdan foydalanishda quyidagi qulayliklarga <br />
+                    va imkoniyatlarga ega bo’lasiz
+                </p>
             </div>
             <div class="bottom">
                 <div class="bx left">
-                    <img src="../imgs/enjoy-cleanliness.png" alt="enjoy cleanliness img">
+                    <img src="../imgs/enjoy-cleanliness.png" alt="enjoy cleanliness img" />
                     <h4>Tozalikdan rohatlanish</h4>
-                    <p>Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun <br> keng ko'lamli xizmatlarni
-                        taqdim etamiz.</p>
+                    <p>
+                        Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun
+                        <br />
+                        keng ko'lamli xizmatlarni taqdim etamiz.
+                    </p>
                 </div>
                 <div class="bx center">
-                    <img src="../imgs/professional.png" alt="Professional img">
+                    <img src="../imgs/professional.png" alt="Professional img" />
                     <h4>Professionallik</h4>
-                    <p>Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun <br> keng ko'lamli xizmatlarni
-                        taqdim etamiz.</p>
+                    <p>
+                        Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun
+                        <br />
+                        keng ko'lamli xizmatlarni taqdim etamiz.
+                    </p>
                 </div>
                 <div class="bx right">
-                    <img src="../imgs/pro-service.png" alt="pro service img">
+                    <img src="../imgs/pro-service.png" alt="pro service img" />
                     <h4>Mutaxassislar xizmati</h4>
-                    <p>Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun <br> keng ko'lamli xizmatlarni
-                        taqdim etamiz.</p>
+                    <p>
+                        Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun
+                        <br />
+                        keng ko'lamli xizmatlarni taqdim etamiz.
+                    </p>
                 </div>
             </div>
         </div>
-
-        <!-- xizmat-tavsiya  -->
-    
-        <div class="xizmat-tavsiya xizmatlar">
-
-            <div class="top">
-                <h2>Siz uchun</h2>
-                <h1>Boshqa xizmatlarimiz</h1>
-                <p>Biz sizning uyingiz, ofisingiz tozaligi va farovonligi uchun quyidagi xizmatlarni taklif qilamiz</p>
-            </div>
-
-            <div class="bottom">
-                <div class="card" data-category="Tozalash"><img src="../imgs/clean-ser.png"
-                    alt="Uylarni tozalash"><span>Tozalash</span>
-                <h2>Uylarni tozalash</h2>
-                <p>Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim
-                    etamiz.</p><a href="/pages/info-xizmatlar.html">Batafsil</a>
-            </div>
-            <div class="card" data-category="Dizinfeksiya"><img src="../imgs/desinfeksiya-ser.png"
-                    alt="Ofislarni tozalash"><span>Dizinfeksiya</span>
-                <h2>Ofislarni tozalash</h2>
-                <p>Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim
-                    etamiz.</p><a href="/pages/info-xizmatlar.html">Batafsil</a>
-            </div>
-            <div class="card" data-category="Yuvish"><img src="../imgs/desinfeksiya-ser.png"
-                    alt="Bog'larni tozalash"><span>Yuvish</span>
-                <h2>Bog'larni tozalash</h2>
-                <p>Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim
-                    etamiz.</p><a href="/pages/info-xizmatlar.html">Batafsil</a>
-            </div>
-            <div class="card" data-category="Oshxona"><img src="../imgs/washing-ser.png"
-                    alt="Yashil maydonlarni tozalash"><span>Oshxona</span>
-                <h2>Yashil maydonlarni tozalash</h2>
-                <p>Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim
-                    etamiz.</p><a href="/pages/info-xizmatlar.html">Batafsil</a>
-            </div>
-            <div class="card" data-category="Uy va ofis"><img src="../imgs/clean-ser.png"
-                    alt="Qurilish joylarini tozalash"><span>Uy va
-                    ofis</span>
-                <h2>Qurilish joylarini tozalash</h2>
-                <p>Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim
-                    etamiz.</p><a href="/pages/info-xizmatlar.html">Batafsil</a>
-            </div>
-            <div class="card" data-category="Bog' va yashil maydonlar"><img src="../imgs/desinfeksiya-ser.png"
-                    alt="Umumiy tozalash"><span>Bog' va yashil
-                    maydonlar</span>
-                <h2>Umumiy tozalash</h2>
-                <p>Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim
-                    etamiz.</p><a href="/pages/info-xizmatlar.html">Batafsil</a>
-            </div>
-            <div class="card" data-category="Bog' va yashil maydonlar"><img src="../imgs/desinfeksiya-ser.png"
-                    alt="Mebellarni tozalash"><span>Bog' va yashil
-                    maydonlar</span>
-                <h2>Mebellarni tozalash</h2>
-                <p>Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim
-                    etamiz.</p><a href="/pages/info-xizmatlar.html">Batafsil</a>
-            </div>
-            <div class="card" data-category="Bog' va yashil maydonlar"><img src="../imgs/desinfeksiya-ser.png"
-                    alt="Mebellarni tozalash"><span>Bog' va yashil
-                    maydonlar</span>
-                <h2>Mebellarni tozalash</h2>
-                <p>Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim
-                    etamiz.</p><a href="/pages/info-xizmatlar.html">Batafsil</a>
-            </div>
-            </div>
-        </div>
-    
-        <!-- xizmat-tavsiya end -->
     </div>
 
     <!-- nima uchun end -->
 
+    <section>
+        <!-- Bizning ilova coding -->
 
+        <div class="our-app">
+            <div class="left">
+                <h2>Biz siz uchun</h2>
+                <h1>Ilovamizdan foydalanib ko’ring!</h1>
+                <p>
+                    Ilovamizni hoziroq yuklab oling va u orqali xizmatlarimizdan tez va
+                    oson foydalaning.
+                </p>
+                <div class="platforms">
+                    <a href="https://play.google.com/store/apps/details?id=io.hometasker.android" target="_blank"><img
+                            src="../imgs/Google Play - eng.png" alt="Google Play img" /></a>
+                    <a href="https://www.apple.com/lae/app-store/" target="_blank"><img
+                            src="../imgs/App Store - eng.png" alt="App Store img" /></a>
+                </div>
+            </div>
+            <div class="right">
+                <img src="../imgs/iPhone 15 Pro Black Titanium Mockup Portrait.png" alt="iphone mockup img" />
+            </div>
+        </div>
+
+        <!-- Bizning ilova coding end -->
+
+        <!-- Mijozlar nima deydi coding -->
+
+        <div class="mijozlarNimaDeydi">
+            <div class="top">
+                <p>Biz haqimizda</p>
+                <h1>Mijozlar nima deydi</h1>
+            </div>
+            <div class="bottom">
+                <div class="qt quato1">
+                    <img class="q-img" src="../imgs/quato-img.png" alt="quato-img" width="32px">
+                    <p>Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim
+                        etamiz.</p>
+                    <div class="profile">
+                        <img class="im1" src="../imgs/profile-img.png" alt="profile-img">
+                        <p>John Doe</p>
+                        <img src="../imgs/stars.png" alt="stars">
+                    </div>
+                </div>
+
+                <div class="qt quato2">
+                    <img class="q-img" src="../imgs/quato-img.png" alt="quato-img" width="32px">
+                    <p>Biz sizning uyingiz va ofisingiz tozaligi va farovonligi uchun keng ko'lamli xizmatlarni taqdim
+                        etamiz.</p>
+                    <div class="profile">
+                        <img class="im1" src="../imgs/profile-img.png" alt="profile-img">
+                        <p>John Doe</p>
+                        <img src="../imgs/stars.png" alt="stars">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mijozlar nima deydi end -->
+
+        <!-- Hamkorlar coding -->
+
+        <div class="hamkorlar">
+            <div class="top">
+                <p>Biz bilan ishlovchi</p>
+                <h1>Hamkor kompaniyalar</h1>
+            </div>
+            <div class="slide-bottom">
+                <div class="bottom">
+                    <div class="logo log1"><img src="../imgs/LOGO.png" alt="LOGO"></div>
+                    <div class="logo"><img src="../imgs/LOGO.png" alt="LOGO"></div>
+                    <div class="logo"><img src="../imgs/LOGO.png" alt="LOGO"></div>
+                    <div class="logo"><img src="../imgs/LOGO.png" alt="LOGO"></div>
+                    <div class="logo"><img src="../imgs/LOGO.png" alt="LOGO"></div>
+                    <div class="logo"><img src="../imgs/LOGO.png" alt="LOGO"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hamkorlar coding end -->
+    </section>
 
     <!-- footer start -->
 
@@ -360,12 +414,12 @@
             <h2>Biz uchun</h2>
             <h1>Yana savollaringiz bormi?</h1>
             <p>
-                Sizni qiynayotgan savollaringiz bo’lsa biz bilan bog’laning! Mutaxassislarimiz sizning
-                savollaringizgajavob berishadi!
+                Sizni qiynayotgan savollaringiz bo’lsa biz bilan bog’laning!
+                Mutaxassislarimiz sizning savollaringizgajavob berishadi!
             </p>
             <button class="contact">Buyurtma qilish</button>
         </div>
-        <img src="../imgs/logo.svg" alt="log img">
+        <img src="../imgs/logo.svg" alt="log img" />
         <h1>Toza Makon</h1>
         <p class="tozalik">Tozalik biz bilan boshlanadi</p>
     </footer>
@@ -374,31 +428,37 @@
 
     <div class="nav-top">
         <div class="left">
-            <img src="../imgs/call.png" alt="call img">
+            <img src="../imgs/call.png" alt="call img" />
             <p>77 57</p>
-            <img src="../imgs/arrow-left.png" alt="arrow img" class="arrow">
-            <p class="text">Xizmatlarimiz haqida bepul ma’lumot olish uchun qo'ng'iroq qiling!</p>
-            <img src="../imgs/arrow-left.png" alt="arrow img" class="arrow">
+            <img src="../imgs/arrow-left.png" alt="arrow img" class="arrow" />
+            <p class="text">
+                Xizmatlarimiz haqida bepul ma’lumot olish uchun qo'ng'iroq qiling!
+            </p>
+            <img src="../imgs/arrow-left.png" alt="arrow img" class="arrow" />
             <p class="ish">Ish vaqti: 09:00 - 18:00</p>
         </div>
         <div class="right">
             <ul>
-                <li><a href="https://www.youtube.com/channel/UCa70h5GSkNoVnnPKbvq12ww" target="_blank">YouTube</a>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCa70h5GSkNoVnnPKbvq12ww" target="_blank">YouTube</a>
                 </li>
-                <li><a href="https://t.me/homecleaning_az" target="_blank">Telegram</a></li>
-                <li><a href="https://www.instagram.com/aziziy.me/   " target="_blank">Instagram</a></li>
+                <li>
+                    <a href="https://t.me/homecleaning_az" target="_blank">Telegram</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/aziziy.me/   " target="_blank">Instagram</a>
+                </li>
             </ul>
         </div>
     </div>
 
-
     <script src="../script.js"></script>
 
     <script>
-        let loader = document.querySelector('.preloader');
+        let loader = document.querySelector(".preloader");
 
-        window.addEventListener('load', function () {
-            loader.style.display = 'none';
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
         });
     </script>
 </body>
