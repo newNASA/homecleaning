@@ -1282,14 +1282,12 @@
             height: 100%;
 
             .menu-x {
-                text-align: center;
                 width: 100%;
             }
 
             .menu-w {
                 display: flex;
                 justify-content: center;
-                align-items: center;
                 margin-top: 70px;
                 flex-direction: column;
 
@@ -1299,13 +1297,13 @@
                 }
 
                 .siz-2 {
-                    text-align: center;
+                    text-align: left;
                     margin-bottom: 30px;
-                    font-size: 2rem;
+                    font-size:1.5rem;
                 }
 
                 .siz-3 {
-                    text-align: center;
+                    text-align: justify;
                     margin-bottom: 30px;
                     font-size: 12px;
                 }

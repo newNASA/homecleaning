@@ -981,13 +981,11 @@
     height: 100%;
   }
   .xizmatlar-2 .b1 .menu-x {
-    text-align: center;
     width: 100%;
   }
   .xizmatlar-2 .b1 .menu-w {
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: 70px;
     flex-direction: column;
   }
@@ -996,12 +994,12 @@
     margin-bottom: 30px;
   }
   .xizmatlar-2 .b1 .menu-w .siz-2 {
-    text-align: center;
+    text-align: left;
     margin-bottom: 30px;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .xizmatlar-2 .b1 .menu-w .siz-3 {
-    text-align: center;
+    text-align: justify;
     margin-bottom: 30px;
     font-size: 12px;
   }
