@@ -451,11 +451,11 @@
         }
 
         .forYou {
-            padding: 0px 150px;
+            padding: 0px 20px;
 
             .bottom {
                 display: flex;
-                flex-direction: column;
+                flex-wrap: wrap;
             }
         }
     }
@@ -516,9 +516,25 @@
 
             .slide-bottom {
                 overflow: auto;
-
+                
+                &::-webkit-scrollbar{
+                    display: none;
+                }
                 .bottom {
                     margin: 50px 0;
+
+                    .log1 {
+                        animation: log1 8s linear infinite;
+
+                        @keyframes log1 {
+                            0%{
+                                margin-left: 0;
+                            }
+                            50%{
+                                margin-left: 55%;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -1152,7 +1168,7 @@
 
             .slide-bottom {
                 display: flex;
-                width: 114%;
+                width: 114%;    
                 overflow: hidden;
                 margin-left: -7%;
 
@@ -1375,6 +1391,19 @@
                         }
                     }
                 }
+            }
+        }
+    }
+
+    .blog-detail{
+        padding: 20px;
+        .container{
+            flex-direction: column;
+            .left, .right {
+                width: 100%;
+            }
+            .right{
+                margin-top: 20px;
             }
         }
     }

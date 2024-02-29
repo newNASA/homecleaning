@@ -331,11 +331,11 @@
     margin: 0 20px;
   }
   .why-forYou .forYou {
-    padding: 0px 150px;
+    padding: 0px 20px;
   }
   .why-forYou .forYou .bottom {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
   }
   section .our-app .left {
     width: 100%;
@@ -386,8 +386,22 @@
   section .hamkorlar .slide-bottom {
     overflow: auto;
   }
+  section .hamkorlar .slide-bottom::-webkit-scrollbar {
+    display: none;
+  }
   section .hamkorlar .slide-bottom .bottom {
     margin: 50px 0;
+  }
+  section .hamkorlar .slide-bottom .bottom .log1 {
+    animation: log1 8s linear infinite;
+  }
+  @keyframes log1 {
+    0% {
+      margin-left: 0;
+    }
+    50% {
+      margin-left: 55%;
+    }
   }
   footer .foot-container {
     padding: 60px;
@@ -1053,5 +1067,17 @@
   .xizmatlar-2 .b2 .profile .container .bottom .right {
     align-items: start;
     gap: 35px;
+  }
+  .blog-detail {
+    padding: 20px;
+  }
+  .blog-detail .container {
+    flex-direction: column;
+  }
+  .blog-detail .container .left, .blog-detail .container .right {
+    width: 100%;
+  }
+  .blog-detail .container .right {
+    margin-top: 20px;
   }
 }/*# sourceMappingURL=mobile.css.map */
