@@ -406,6 +406,62 @@
   footer .foot-container {
     padding: 60px;
   }
+  .xizmatlar {
+    padding: 50px;
+  }
+  .xizmatlar-2 {
+    flex-direction: column;
+    padding: 50px;
+  }
+  .xizmatlar-2 .b1, .xizmatlar-2 .b2 {
+    width: 100%;
+  }
+  .xizmatlar-2 .b1 .menu-x {
+    margin-top: -50px;
+  }
+  .xizmatlar-2 .b1 .siz-btn {
+    display: none;
+  }
+  .xizmatlar-2 .b2 {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .xizmatlar-2 .b2 .siz-btn {
+    margin-top: 20px;
+    display: block;
+    padding: 14px 20px;
+    background: var(--green);
+    box-shadow: 0px 8px 32px 0px var(--green-shadow);
+    color: var(--white-color);
+    font-weight: 600;
+    border-radius: 12px;
+    transition: 0.5s;
+    cursor: pointer;
+    border: 1px solid var(--green);
+  }
+  .xizmatlar-2 .b2 .siz-btn a {
+    color: var(--white-color);
+  }
+  .xizmatlar-2 .b2 .siz-btn:hover {
+    background: transparent;
+    box-shadow: 0px 8px 32px 0px var(--ink-shadow);
+    color: var(--green);
+  }
+  .xizmatlar-2 .b2 .siz-btn:hover.siz-btn a {
+    color: var(--green);
+  }
+  .blog-detail {
+    padding: 20px 50px;
+  }
+  .blog-detail .container {
+    flex-direction: column;
+  }
+  .blog-detail .container .left, .blog-detail .container .right {
+    width: 100%;
+  }
+  .blog-detail .container .right {
+    margin-top: 20px;
+  }
 }
 @media screen and (max-width: 426px) {
   .responsive-menu {
